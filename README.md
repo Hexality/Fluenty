@@ -7,6 +7,9 @@
     <blockquote><p>How it currently looks</p></blockquote>
   </div>
 </div>
+<h3> </h3>
+<h1> </h1>
+<h3> </h3>
 
 To do (unsorted):
 - [ ] Library;
