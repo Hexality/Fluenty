@@ -11,6 +11,7 @@
 To do (unsorted):
 - [ ] Library;
 - [ ] Collections
+- [ ] Steam frame [WIP/May change]
 - [x] Download page [WIP];
 - [ ] BigPicture (Prob won't do tbh)
 - [ ] Dropdown menus;
