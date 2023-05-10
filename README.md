@@ -8,3 +8,23 @@
   </div>
 </div>
 
+To do (unsorted):
+- [ ] Library;
+- [ ] Collections
+- [x] Download page [WIP];
+- [ ] BigPicture (Prob won't do tbh)
+- [ ] Dropdown menus;
+- [ ] Friend list
+- [ ] Chats
+- [ ] Music player
+- [ ] Account switcher
+- [ ] Loading screen
+- [ ] Login screen
+- [ ] Shutdown dialog
+- [ ] Small mode
+- [ ] Screenshot manager
+- [ ] Server list
+- [ ] "Players" panel
+- [ ] Settings
+- [ ] News panel
+- [ ] About steam popup
