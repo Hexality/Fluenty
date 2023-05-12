@@ -1,0 +1,745 @@
+[class*="steamdesktop_Wrapper_"] {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-top: none;
+    box-sizing: border-box;
+    border: none !important;
+    background-color: #202020 !important;
+}
+
+[class*="steamdesktop_Wrapper_"].WindowFocus[class*="steamdesktop_FocusBar_"], 
+.WindowFocus [class*="steamdesktop_Wrapper_"] [class*="steamdesktop_FocusBar_"] {
+    background: none !important;
+}
+
+[class*="steamdesktop_Wrapper_"] [class*="steamdesktop_FocusBar_"] {
+    width: 100%;
+    height: 1px;
+    display: none;
+    position: absolute;
+    background-color: #202020 !important;
+}
+
+[class*="steamdesktop_TopBar_"] {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex: 0 0 auto;
+    user-select: none;
+    padding-left: 49px;
+    flex-direction: column;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
+[class*="steamdesktop_TitleBar_"] {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 50px !important;
+    -webkit-app-region: drag;
+}
+
+[class*="titlebarcontrols_TitleBarControls_"] {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 0 !important;
+    margin-right: 12px !important;
+}
+
+[class*="titlebarcontrols_AnnouncementsButton_"] {
+    display: flex;
+    cursor: pointer;
+    color: #8b929a;
+    padding: 0 !important;
+    width: 40px !important;
+    height: 36px !important;
+    justify-content: center;
+    border-radius: 4px !important;
+    background: transparent !important;
+    transition: background .15s ease-in !important;
+}
+
+[class*="titlebarcontrols_AnnouncementsButton_"]:hover {
+    background: #2d2d2d !important;
+    transition: background .15s ease-out !important;
+}
+
+[class*="titlebarcontrols_NotificationsButton_"] {
+    padding: 0 !important;
+    width: 40px !important;
+    height: 36px !important;
+    border-radius: 4px !important;
+    background: transparent !important;
+    transition: background .15s ease-in !important;
+}
+
+[class*="titlebarcontrols_NotificationButtonContainer_"] {
+    display: block !important;
+}
+
+[class*="titlebarcontrols_NotificationsButton_"]:hover {
+    background: #2d2d2d !important;
+    transition: background .15s ease-out !important;
+}
+
+[class*="titlebarcontrols_Button_"][class*="titlebarcontrols_AnnouncementsButton_"]::before {
+    content: "";
+    color: #fff;
+    font-size: 14px;
+    font-family: var(--iconography);
+}
+
+[class*="titlebarcontrols_NotificationButtonContainer_"] div [class*="titlebarcontrols_NotificationsButton_"]::before {
+    content: "";
+    color: #fff;
+    font-size: 14px;
+    font-family: var(--iconography);
+}
+
+/* [class*="titlebarcontrols_TitleBarControls_"][class*="steamdesktop_TitleBarControls_"] div:nth-child(3)::before div div {
+    padding: 6px 12px !important;
+    border-radius: 4px !important;
+    background: #2d2d2d !important;
+} */
+
+[class*="titlebarcontrols_TitleBarControls_"][class*="steamdesktop_TitleBarControls_"] div:nth-child(3) div div div svg {
+    display: none;
+}
+
+[class*="titlebarcontrols_AccountMenu_"] {
+    gap: 4px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: unset !important;
+    font-size: 11px !important;
+    background: none !important;
+    padding: 6px 12px !important;
+    border-radius: 4px !important;
+    transition: background .15s ease-out !important;
+}
+
+[class*="titlebarcontrols_TitleBarControls_"][class*="steamdesktop_TitleBarControls_"] div:nth-child(3) {
+    order: 0;
+}
+
+[class*="titlebarcontrols_TitleBarControls_"][class*="steamdesktop_TitleBarControls_"] div:nth-child(1) {
+    order: 1;
+}
+
+[class*="titlebarcontrols_TitleBarControls_"][class*="steamdesktop_TitleBarControls_"] div:nth-child(2) {
+    order: 2;
+}
+
+[class*="titlebarcontrols_TitleBarControls_"][class*="steamdesktop_TitleBarControls_"] div:nth-child(4) {
+    order: 3;
+}
+
+[class*="titlebarcontrols_AccountMenu_"]:hover {
+    padding: 6px 12px !important;
+    background: #2d2d2d !important;
+    transition: background .15s ease-in !important;
+}
+
+[class*="steamavatar_avatarHolder_"].X-Small {
+    width: 36px !important;
+    height: 36px !important;
+}
+
+[class*="steamavatar_avatar_"] {
+    width: 100%;
+    height: 100%;
+    border: none;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: none !important;
+    transition: filter .24s ease-in-out;
+}
+
+[class*="steamavatar_avatarStatus_"].right {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0 !important;
+    position: absolute;
+    border-radius: 50%;
+    width: unset !important;
+}
+.online [class*="steamavatar_avatarStatus_"] {
+    background: none !important;
+    box-shadow: inset 0 0 0px 2px #6ccb5f;
+}
+
+[class*="titlebarcontrols_GamepadUIToggle_"] {
+    color: #fff;
+    cursor: pointer;
+    width: 40px !important;
+    height: 36px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+[class*="titlebarcontrols_GamepadUIToggle_"]:hover {
+    border-radius: 4px !important;
+    background: #2d2d2d !important;
+}
+
+[class*="titlebarcontrols_GamepadUIToggle_"] [class*="titlebarcontrols_Icon_"] {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: unset !important;
+}
+
+[class*="titlebarcontrols_Button_"][class*="titlebarcontrols_GamepadUIToggle_"] svg {
+    display: none;
+}
+[class*="titlebarcontrols_Button_"][class*="titlebarcontrols_GamepadUIToggle_"]::before {
+    content: "";
+    color: #fff;
+    font-size: 14px;
+    font-family: var(--iconography);
+}
+
+[class*="steamdesktop_TitleBar_"] [class*="steamdesktop_RootMenuBar_"] {
+    flex: 0 0 auto;
+    padding-top: 0 !important;
+}
+
+.title-area-highlight {
+    opacity: 0;
+    height: 24px;
+    user-select: none;
+    pointer-events: none;
+    mask: none !important;
+    background: none !important;
+    -webkit-mask: none !important;
+    transition: opacity .18s ease-in-out;
+}
+
+[class*="rootmenu_RootMenuBar_"][class*="steamdesktop_RootMenuBar_"] > div:nth-child(1):hover {
+    padding-left: 12px !important;
+    transition: padding-left .15s ease-out;
+}
+[class*="rootmenu_RootMenuBar_"][class*="steamdesktop_RootMenuBar_"] > div:nth-child(1) {
+    padding-left: 0 !important;
+    transition: padding-left .15s ease-in;
+}
+
+[class*="rootmenu_RootMenuBar_"] {
+    height: 100%;
+    display: flex;
+    gap: 4px !important;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 0 !important;
+}
+
+[class*="rootmenu_SteamButton_"] {
+    gap: 4px;
+    display: flex;
+    padding-top: .5px;
+    flex-direction: row;
+    align-items: center;
+}
+
+[class*="rootmenu_RootMenuButton_"] {
+    color: #fff !important;
+    font-size: 13px !important;
+    padding: 8px 12px !important;
+    transition: background .15s ease-out;
+}
+
+[class*="rootmenu_RootMenuButton_"]:hover:not([class*="rootmenu_Disabled_"]) {
+    cursor: pointer;
+    border-radius: 4px !important;
+    background: #2d2d2d !important;
+}
+
+[class*="steamdesktop_TitleBar_"] [class*="steamdesktop_WindowControls_"] {
+    cursor: pointer;
+    flex: 0 0 180px !important;
+    position: unset !important;
+}
+
+.title-area .title-bar-actions {
+    top: 0;
+    bottom: 0;
+    display: flex;
+    min-width: 30px;
+    position: absolute;
+    right: 0 !important;
+    pointer-events: auto;
+    flex-direction: row-reverse;
+    -webkit-app-region: no-drag;
+    max-height: unset !important;
+}
+
+.title-area-icon {
+    margin: unset !important;
+}
+
+.title-area {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    position: absolute;
+    max-height: 0 !important;
+    -webkit-app-region: drag;
+    min-height: unset !important;
+}
+
+[class*="titlebarcontrols_Button_2Szzh"][class*="titlebarcontrols_AnnouncementsButton_"] svg,
+[class*="titlebarcontrols_NotificationButtonContainer_3mGEz"] div [class*="titlebarcontrols_NotificationsButton_"] svg,
+.title-bar-actions .title-area-icon.closeButton svg,
+.title-bar-actions .title-area-icon.maximizeButton svg,
+.title-bar-actions .title-area-icon.restoreButton svg,
+.title-bar-actions .title-area-icon.minimizeButton svg {
+    display: none;
+}
+.title-bar-actions .title-area-icon.closeButton::before {
+    content: "";
+    font-size: 10px;
+    text-align: center;
+    font-family: var(--iconography);
+}
+.title-bar-actions .title-area-icon.restoreButton::before {
+    content: "";
+    font-size: 10px;
+    text-align: center;
+    font-family: var(--iconography);
+}
+.title-bar-actions .title-area-icon.maximizeButton::before {
+    content: "";
+    font-size: 10px;
+    text-align: center;
+    font-family: var(--iconography);
+}
+.title-bar-actions .title-area-icon.minimizeButton::before {
+    content: "";
+    font-size: 10px;
+    margin-top: 1px;
+    text-align: center;
+    font-family: var(--iconography);
+}
+
+.DesktopUI .title-area-icon:hover, 
+.friendsui-container .title-area-icon:hover {
+    border-radius: 2px;
+    background: #ffffff0f;
+    transition: background .15s ease-out;
+}
+
+.DesktopUI .title-area-icon, 
+.friendsui-container .title-area-icon {
+    display: flex;
+    cursor: default;
+    align-items: center;
+    width: 40px !important;
+    height: 30px !important;
+    justify-content: center;
+    margin-top: unset !important;
+    transition: stroke .15s ease-out;
+}
+
+.DesktopUI .title-area .title-bar-actions, 
+.friendsui-container .title-area .title-bar-actions {
+    margin-right: unset !important;
+}
+
+[class*="steamdesktop_LocalContentContainer_"] [class*="steamdesktop_URLBarReplacement_"] {
+    height: 12px;
+    display: none;
+    min-height: 6px;
+    background: #171d25;
+    box-shadow: inset rgba(61,68,80,.75) 1px 0px 0px 0px,
+                inset rgba(61,68,80,.25) -1px -1px 0px 0px;
+}
+
+[class*="steamdesktop_ContentFrame_"] {
+    flex-grow: 1 !important;
+    display: flex !important;
+    overflow: hidden !important;
+    margin-left: 49px !important;
+    flex-direction: column !important;
+    border-top-left-radius: 8px !important;
+    border-top: 1px solid #1d1d1d !important;
+    border-left: 1px solid #1d1d1d !important;
+}
+
+[class*="steamdesktop_BrowserWrapper_"] [class*="steamdesktop_URLBar_"] {
+    display: flex;
+    position: relative;
+    align-items: center;
+    box-shadow: none !important;
+    padding: 4px 4px 4px !important;
+    background: #1c1c1c !important;
+    border-top-left-radius: 8px !important;
+}
+
+[class*="library_Container_"] {
+    flex-grow: 1;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+}
+
+[class*="steamdesktop_SuperNavBar_"] {
+    left: 0 !important;
+    top: 8px !important;
+    width: 42px !important;
+    height: 100% !important;
+    display: flex !important;
+    padding: 0 4px !important;
+    min-height: 42px !important;
+    position: absolute !important;
+    flex-direction: column !important;
+    -webkit-app-region: drag !important;
+}
+
+[class*="supernav_SuperNav_"] {
+    width: 100% !important;
+    height: auto !important;
+    flex-grow: 1 !important;
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: column !important;
+}
+
+[class*="supernav_SuperNavMenu_"] {
+    height: auto !important;
+    color: #fff !important;
+    font-size: 16px !important;
+    cursor: pointer !important;
+    font-weight: 100 !important;
+    padding: 10px 12px !important;
+    overflow-x: hidden !important;
+    border-radius: 4px !important;
+    overflow-y: visible !important;
+    text-transform: none !important;
+    background: transparent !important; 
+    font-family: var(--iconography);
+}
+
+[class*="supernav_SuperNavMenu_"]:hover {
+    background: #2D2D2D !important;
+}
+[class*="supernav_SuperNavMenu_"]:active {
+    background: #292929 !important;
+}
+
+/* ------------------- Navigation arrows ------------------- */
+
+[class*="supernav_SuperNav_"] svg:nth-child(1) {
+    /* ← */
+    border-radius: 4px;
+    margin-bottom: 6px;
+    transform: none !important;
+    transition: background .15s ease-out;
+}
+
+[class*="supernav_SuperNav_"] svg:nth-child(1) > path {
+    /* ← */
+    color: #fff;
+    d: path("M16 8.00311C16 8.11249 15.9792 8.21665 15.9375 8.31561C15.8958 8.40936 15.8385 8.4927 15.7656 8.56561C15.6927 8.63853 15.6068 8.69582 15.5078 8.73749C15.4141 8.77915 15.3125 8.79999 15.2031 8.79999H2.72656L7.76562 13.8312C7.92188 13.9875 8 14.175 8 14.3937C8 14.5031 7.97917 14.6073 7.9375 14.7062C7.89583 14.8052 7.83854 14.8911 7.76562 14.9641C7.69792 15.037 7.61458 15.0943 7.51562 15.1359C7.41667 15.1776 7.3125 15.1984 7.20312 15.1984C6.97917 15.1984 6.78906 15.1203 6.63281 14.9641L0.210938 8.54218V8.53436C0.0703125 8.39374 0 8.21665 0 8.00311C0 7.77915 0.078125 7.58905 0.234375 7.4328L6.63281 1.03436C6.78906 0.878113 6.97917 0.799988 7.20312 0.799988C7.3125 0.799988 7.41406 0.820821 7.50781 0.862488C7.60677 0.904154 7.69271 0.961446 7.76562 1.03436C7.83854 1.10728 7.89583 1.19322 7.9375 1.29218C7.97917 1.38593 8 1.48749 8 1.59686C8 1.82082 7.92188 2.01093 7.76562 2.16718L2.73438 7.19843H15.2031C15.3125 7.19843 15.4141 7.21926 15.5078 7.26093C15.6068 7.30259 15.6927 7.36249 15.7656 7.44061C15.8385 7.51353 15.8958 7.59947 15.9375 7.69843C15.9792 7.79218 16 7.89374 16 8.00311Z") !important;
+    transition: .15s cubic-bezier(.42,0,.58,1);
+}
+[class*="supernav_SuperNav_"] svg:nth-child(1):hover {
+    /* ← */
+    background: #2d2d2d;
+    transition: background .15s ease-in;
+}
+[class*="supernav_SuperNav_"] svg:nth-child(1):active {
+    /* ← */
+    background: #292929;
+}
+[class*="supernav_SuperNav_"] svg:nth-child(1):active > path {
+    /* ← */
+    color: #a8a8a8;
+    d: path("M16 8.00311C16 8.11249 15.9792 8.21665 15.9375 8.31561C15.8958 8.40936 15.8385 8.4927 15.7656 8.56561C15.6927 8.63853 15.6068 8.69582 15.5078 8.73749C15.4141 8.77915 15.3125 8.79999 15.2031 8.79999H5.72656L10.7656 13.8312C10.9219 13.9875 11 14.175 11 14.3937C11 14.5031 10.9792 14.6073 10.9375 14.7062C10.8958 14.8052 10.8385 14.8911 10.7656 14.9641C10.6979 15.037 10.6146 15.0943 10.5156 15.1359C10.4167 15.1776 10.3125 15.1984 10.2031 15.1984C9.97917 15.1984 9.78906 15.1203 9.63281 14.9641L3.21094 8.54218V8.53436C3.07031 8.39374 3 8.21665 3 8.00311C3 7.77915 3.07812 7.58905 3.23438 7.4328L9.63281 1.03436C9.78906 0.878113 9.97917 0.799988 10.2031 0.799988C10.3125 0.799988 10.4141 0.820821 10.5078 0.862488C10.6068 0.904154 10.6927 0.961446 10.7656 1.03436C10.8385 1.10728 10.8958 1.19322 10.9375 1.29218C10.9792 1.38593 11 1.48749 11 1.59686C11 1.82082 10.9219 2.01093 10.7656 2.16718L5.73438 7.19843H15.2031C15.3125 7.19843 15.4141 7.21926 15.5078 7.26093C15.6068 7.30259 15.6927 7.36249 15.7656 7.44061C15.8385 7.51353 15.8958 7.59947 15.9375 7.69843C15.9792 7.79218 16 7.89374 16 8.00311Z") !important;
+}
+
+[class*="supernav_MenuButton_"] {
+    /* Hide → */
+    display: none;
+}
+
+[class*="supernav_SuperNav_"] svg:nth-child(2) {
+    /* Try hidding original icon */
+    display: none;
+}
+
+[class*="supernav_Arrow_"] {
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    min-height: 16px;
+    color: #67707b;
+    -webkit-app-region: no-drag;
+    padding: 10px 12px !important;
+    transition: color .15s ease-out;
+}
+
+/* ------------------- Navigation buttons ------------------- */
+
+[class*="menu_MenuWrapper_"][class*="supernav_SuperNavMenu_"]::after {
+    transition: background .15s ease-out;
+}
+
+[class*="menu_MenuWrapper_"][class*="supernav_SuperNavMenu_"][class*="supernav_Selected_"]::after {
+    left: 5px;
+    width: 3px;
+    content: "";
+    height: 16px;
+    position: absolute;
+    border-radius: 1.5px;
+    background: #f46762;
+    transition: background .15s ease-in;
+}
+
+[class*="menu_MenuWrapper_"][class*="supernav_SuperNavMenu_"] {
+    transition: background .15s ease-out;
+}
+
+[class*="menu_MenuWrapper_"][class*="supernav_SuperNavMenu_"]:not(:last-child) {
+    margin-bottom: 4px !important;
+}
+
+[class*="menu_MenuWrapper_"][class*="supernav_SuperNavMenu_"][class*="supernav_Selected_"] {
+    background: #2d2d2d !important;
+    transition: background .15s ease-in;
+}
+
+[class*="supernav_MenuButton_"] {
+    /* Hide navigation text in order to change to icons */
+    display: none;
+}
+
+[class*="supernav_SuperNav_"] div:not([class*="supernav_Arrow_"])::before {
+    /* Set default font for the icons */
+    font-family: var(--iconography);
+    transition: background .15s ease-in;
+}
+
+[class*="supernav_SuperNav_"] div:nth-child(3)::before {
+    /* "Store" icon */
+    content: "";
+    text-align: center;
+}
+
+[class*="supernav_SuperNav_"] div:nth-child(4)::before {
+    /* "Home/library" icon */
+    content: "";
+    text-align: center;
+}
+/* Home context menu */
+[class*="menu_MenuPopup_"] div {
+    border-radius: 4px;
+}
+[class*="menu_MenuPopup_"] div:not(:last-child) {
+    margin-bottom: 4px !important;
+    }
+/* ----------------- */
+
+[class*="supernav_SuperNav_"] div:nth-child(5)::before {
+    /* "Community" icon */
+    content: '';
+}
+
+[class*="supernav_SuperNav_"] div:nth-child(6)::before {
+    /* "User" icon */
+    content: '';
+}
+
+[class*="supernav_SuperNav_"] div:nth-child(7)::before {
+    /* "Useless dev console" icon */
+    content: '';
+}
+
+/* Future settings icon: <div class="menu_MenuWrapper_2Lu3d supernav_SuperNavMenu_7AlhC"><div class="supernav_MenuButton_19axK">Settings</div></div>
+    .steamSettingsButton {
+    order: 10 !important;
+    position: absolute;
+    bottom: 9px;
+    margin-bottom: 4px;
+}
+.steamSettingsButton::before {
+    content: "";
+}*/
+
+/* Button orders */
+
+[class*="supernav_SuperNav_"] div:nth-child(3) {
+    /* Move "store" to 2nd */
+    order: 1 !important;
+}
+
+[class*="supernav_SuperNav_"] div:nth-child(4) {
+    /* Set "Home/library" as first */
+    order: 0 !important;
+}
+
+[class*="supernav_SuperNav_"] div:nth-child(5) {
+    /* Set "community" as 3rd */
+    order: 2 !important;
+}
+
+[class*="supernav_SuperNav_"] div:nth-child(6) {
+    /* Set "User" as 4th */
+    order: 3 !important;
+}
+
+[class*="supernav_SuperNav_"] div:nth-child(7) {
+    /* Set "Useless console icon" as 5th */
+    order: 4 !important;
+}
+
+/* ----------------------- Bottom bar ----------------------- */
+
+[class*="bottombar_BottomBar_"] {
+    display: flex;
+    padding: 0px 16px;
+    align-items: center;
+    flex-direction: row;
+    background: #171d25;
+    flex: none !important;
+    -webkit-app-region: drag;
+    background: radial-gradient(155.42% 100% at 0% 0%, 
+                #23262E 0 0%, #0e141b 100%);
+    box-shadow: inset rgba(61,68,80,.65) 1px 1px 0px 0px, 
+                inset rgba(61,68,80,.45) -1px -1px 0px 0px;
+}
+
+[class*="bottombar_FriendsButton_"],
+[class*="bottombar_AddGameButton_"] {
+    /* Hidden extra unnedded "friends" and "add games" buttons */
+    display: none !important;
+}
+
+[class*="bottombar_DownloadStatusContent_"] {
+    flex-grow: 1;
+    display: flex;
+    cursor: pointer;
+    height: fit-content;
+    align-items: center;
+    flex-direction: row;
+    gap: 2px !important;
+    left: 5px !important;
+    bottom: 5px !important;
+    -webkit-app-region: none;
+    transition-duration: .1s;
+    z-index: unset !important;
+    max-width: 40px !important;
+    color: rgba(255,255,255,.8);
+    position: absolute !important;
+    border-radius: 4px !important;
+}
+
+[class*="bottombar_DetailedDownloadProgress_"] {
+    flex-grow: 1;
+    display: flex;
+    position: relative;
+    gap: 2px !important;
+    width: unset !important;
+    align-items: normal !important;
+    flex-direction: column !important;
+}
+
+[class*="bottombar_DetailedDownloadProgress_"] [class*="bottombar_Icon_"] {
+    overflow: hidden;
+    width: 40px !important;
+    height: 40px !important;
+    transition-duration: .1s;
+    box-shadow: none !important;
+    transition-property: filter;
+    border-radius: 4px !important;
+    transition-timing-function: ease-in-out;
+}
+
+[class*="bottombar_DownloadStatusContent_"] > [class*="bottombar_Icon_"] {
+    color: #fff !important;
+    transition-property: color;
+    transition-duration: .1s;
+    transition-timing-function: ease-in-out;
+    padding: 11px 12px 13px !important;
+    border-radius: 4px !important;
+    transition: background .15s ease-out;
+}
+
+[class*="bottombar_DownloadStatusContent_"] [class*="bottombar_Icon_"]:hover {
+    background: #2d2d2d !important;
+    transition: background .15s ease-in;
+}
+
+[class*="bottombar_DownloadStatusContent_"] [class*="bottombar_Icon_"]:active {
+    background: #292929 !important;
+    transition: background .15s ease-in;
+}
+
+[class*="bottombar_Queue_"],
+[class*="bottombar_Icon_"] svg {
+    display: none !important;
+}
+
+[class*="bottombar_DownloadStatusContent_"] > [class*="bottombar_Icon_"]::before {
+    content: "";
+    font-family: var(--iconography);
+    font-size: 16px;
+}
+
+[class*="bottombar_ProgressBarWrapper_"] [class*="bottombar_StatusLine_"] {
+    display: none !important;
+}
+
+[class*="bottombar_Icon_"] [class*="libraryassetimage_Container_"][class*="libraryassetimage_GreyBackground_"] img {
+    width: auto;
+    height: 40px !important;
+}
+
+[class*="bottombar_DetailedDownloadProgress_"] [class*="bottombar_IconBevel_"] {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    pointer-events: none;
+    width: 40px !important;
+    background-image: none !important;
+}
+
+[class*="bottombar_ProgressBarWrapper_"] {
+    flex-grow: 1;
+    display: flex;
+    position: absolute;
+    left: 2px !important;
+    gap: unset !important;
+    bottom: 2px !important;
+    flex-direction: column;
+}
+
+[class*="bottombar_ProgressBarWrapper_"] [class*="bottombar_ProgressBar_"] {
+    padding: 2px;
+    border-radius: 10px;
+    width: 30px !important;
+    height: 3px !important;
+    border: 1px solid #1a9fff;
+    --color-progress-bar-foreground: #1a9fff;
+    --color-progress-bar-background: #000000;
+}
+
+[class*="progressbar_ProgressBar_"]::after {
+    content: "";
+    height: 100%;
+    display: block;
+    border-radius: 6px !important;
+    width: calc(100%*var(--percent));
+    background-color: var(--color-progress-bar-foreground);
+}
+
+/* ---------------------------------------------------------- */

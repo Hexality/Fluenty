@@ -1,0 +1,33 @@
+@import url('interface/gui.download.css');
+@import url('interface/gui.frame.css');
+@import url('interface/gui.library.css');
+@import url('interface/gui.settings.css');
+@import url('interface/gui.friends.css');
+@import url('interface/gui.screenshots.css');
+
+:root {
+    --iconography: 'Segoe Fluent Icons','Segoe MDL2 Icons' !important;
+    --type_body: 'Segoe UI Variable Text', 'Segoe UI', sans-serif !important;
+
+    /* Windows 11 Typography Guidelines */
+    /*     Usage    |   Weight  |   Size/line height    */
+    /* ------------------------------------------------ */
+    /*   Captions   |   Small   |	    12/16 epx       */
+    /*     Body     |   Text    |       14/20 epx       */
+    /*  Body strong | Text semi |       14/20 epx       */
+    /*  Body large  |   Text    |       18/24 epx       */
+    /*  Subtitles   | Disp semi |       20/28 epx       */
+    /*    Title     | Disp semi |       28/36 epx       */
+    /*  Title large | Disp semi |       40/52 epx       */
+    /*   Display    | Disp semi |       68/92 epx       */
+}
+
+:focus {
+    outline: none;
+}
+
+body, body[class*="shared_common_v6_"] {
+    color: #fff !important;
+    font-family: var(--type_body);
+}
+
