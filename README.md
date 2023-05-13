@@ -18,7 +18,7 @@
 <h3> </h3>
 <div align="center">
   <ol align="left">
-    <li>Download SFP+</li>
+    <li><a href="https://github.com/PhantomGamers/SFP/releases">Download SFP+</a></li>
     <li>Download all files and place on <code>%ProgramFiles(x86)\Steam\steamui%</code> (assuming you have steam installed on the main disk).</li>
     <li>Then press <img height="18" src="https://github.com/Hexality/Fluenty/assets/17398632/0bba1334-321a-4785-83de-bf4688d130f6"> and you're done.</li>
     <h3></h3>
