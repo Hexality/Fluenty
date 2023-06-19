@@ -9,7 +9,7 @@
   </div>
   <div align="left" width="480">
     <div height="20"><h3/></div>
-    <img src="https://github.com/Hexality/Fluenty/assets/17398632/a45707b8-ff77-4e43-8ce8-95e7412cec62">
+    <img src="https://github.com/Hexality/Fluenty/assets/17398632/780b4885-c77a-4220-b952-e308d93b360f">
     <blockquote><p>Currently rewritting the entire theme.</p></blockquote>
       Note: it will look a bit different from the original one, I'm sorry.
   </div>
