@@ -6,6 +6,7 @@
   <div align="center">
   <h1></h1>
   <a href="https://discord.gg/GwJxKZnJDT"><h1>Join Fluenty's development Discord server</h1></a>
+
   <a href="https://ko-fi.com/U7U71X5BN"><img src="https://ko-fi.com/img/githubbutton_sm.svg"></a>
   </div>
   <div align="left" width="480">
