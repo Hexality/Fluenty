@@ -20,8 +20,10 @@
 <h3> </h3>
 <div align="center">
   <ol align="left">
-    <li><a href="https://github.com/PhantomGamers/SFP/releases">Download SFP+</a></li>
-    <li>Download all files and place on <code>%ProgramFiles(x86)%\Steam\steamui</code> (assuming you have steam installed on the main disk).</li>
+    <li><a href="https://github.com/PhantomGamers/SFP/releases/latest">Download SFP+</a></li>
+    <li>Enable <code>Inject Javascript</code> in the settings (SFP).</li>
+    <li>Download all files and place on <code>%ProgramFiles(x86)%\Steam\steamui\skins\fluenty</code> (assuming you have steam installed on the main disk).</li>
+    <li>Select the the skin in SFP+ (Dropdown under the argument box).</li>
     <li>Then press <img height="18" src="https://github.com/Hexality/Fluenty/assets/17398632/0bba1334-321a-4785-83de-bf4688d130f6"> and you're done.</li>
     <h3></h3>
     <b>Enjoy</b>
@@ -34,8 +36,8 @@
 To do (unsorted):
 - [ ] Library;
 - [ ] Collections
-- [x] Steam frame [WIP/May change]
-- [x] Download page [WIP];
+- [x] Steam frame [WIP]
+- [ ] Download page [WIP];
 - [ ] BigPicture (Prob won't do tbh)
 - [ ] Dropdown menus;
 - [ ] Friend list
