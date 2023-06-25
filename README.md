@@ -5,7 +5,7 @@
   <p><i>(Beta 1683666132 or superior + <a href="https://github.com/PhantomGamers/SFP/releases">SFP+</a> required)</i></p>
   <div align="center">
   <h1></h1>
-<h1>Join Fluenty's development Discord server <a href="https://discord.gg/GwJxKZnJDT">here</a></h1>
+<h2>Want to report a bug? Join Fluenty's development Discord server <a href="https://discord.gg/GwJxKZnJDT">here</a>!</h2>
 
   <a href="https://ko-fi.com/U7U71X5BN"><img src="https://ko-fi.com/img/githubbutton_sm.svg"></a>
   </div>
