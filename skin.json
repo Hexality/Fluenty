@@ -1,0 +1,94 @@
+{
+    "Patches": [
+        {
+            "MatchRegexString": "https://store.steampowered.com",
+            "TargetCss": "styles/webkit.css",
+            "TargetJs": "webkit.js"
+        },
+        {
+            "MatchRegexString": "https://steamcommunity.com",
+            "TargetCss": "styles/webkit.css",
+            "TargetJs": "webkit.js"
+        },
+        {
+            "MatchRegexString": "^Steam$",
+            "TargetCss": "libraryroot.custom.css",
+            "TargetJs": "libraryroot.custom.js"
+        },
+        {
+            "MatchRegexString": "^OverlayBrowser_Browser$",
+            "TargetCss": "libraryroot.custom.css",
+            "TargetJs": "friends.custom.js"
+        },
+        {
+            "MatchRegexString": "^SP Overlay:",
+            "TargetCss": "libraryroot.custom.css",
+            "TargetJs": "libraryroot.custom.js"
+        },
+        {
+            "MatchRegexString": "Menu$",
+            "TargetCss": "libraryroot.custom.css",
+            "TargetJs": "libraryroot.custom.js"
+        },
+        {
+            "MatchRegexString": "Supernav$",
+            "TargetCss": "libraryroot.custom.css",
+            "TargetJs": "libraryroot.custom.js"
+        },
+        {
+            "MatchRegexString": "^notificationtoasts_",
+            "TargetCss": "libraryroot.custom.css",
+            "TargetJs": "libraryroot.custom.js"
+        },
+        {
+            "MatchRegexString": "^SteamBrowser_Find$",
+            "TargetCss": "libraryroot.custom.css",
+            "TargetJs": "libraryroot.custom.js"
+        },
+        {
+            "MatchRegexString": "^OverlayTab\\d+_Find$",
+            "TargetCss": "libraryroot.custom.css",
+            "TargetJs": "libraryroot.custom.js"
+        },
+        {
+            "MatchRegexString": "^Steam Big Picture Mode$",
+            "TargetCss": "styles/bigpicture.custom.css",
+            "TargetJs": "bigpicture.custom.js"
+        },
+        {
+            "MatchRegexString": "^QuickAccess_",
+            "TargetCss": "styles/bigpicture.custom.css",
+            "TargetJs": "bigpicture.custom.js"
+        },
+        {
+            "MatchRegexString": "^MainMenu_",
+            "TargetCss": "styles/bigpicture.custom.css",
+            "TargetJs": "bigpicture.custom.js"
+        },
+        {
+            "MatchRegexString": ".friendsui-container",
+            "TargetCss": "styles/friends.custom.css",
+            "TargetJs": "friends.custom.js"
+        },
+        {
+            "MatchRegexString": ".ModalDialogPopup",
+            "TargetCss": "libraryroot.custom.css",
+            "TargetJs": "libraryroot.custom.js"
+        },
+        {
+            "MatchRegexString": ".FullModalOverlay",
+            "TargetCss": "libraryroot.custom.css",
+            "TargetJs": "libraryroot.custom.js"
+        }
+    ],
+    "Fluenty": [
+        {
+            "palette": {
+                "primary":"",
+                "secondary":"",
+                "tertiary":"",
+                "quaternary":""
+            }
+        }
+    ]
+}
