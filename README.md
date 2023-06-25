@@ -11,8 +11,9 @@
   </div>
   <div align="left" width="480">
     <div height="20"><h3/></div>
-    <img src="https://github.com/Hexality/Fluenty/assets/17398632/b5151826-1447-4b22-9290-0af84bbd21d7">
-    <blockquote><p>How it currently looks</p></blockquote>
+    <img src="https://github.com/Hexality/Fluenty/assets/17398632/3efce610-8d94-4f69-9f03-4d567afe7778">
+    <blockquote><p>How it currently looks (winui rewrite [alpha])</p></blockquote>
+    <p>Note: Background accent colors can be changed by editing the css file located in <code>src/styles/frame.css</code></p>
   </div>
 </div>
 <h3> </h3>
