@@ -1,0 +1,3 @@
+.content-frame [class*="gamelistbar_GameListHomeAndSearch_"] {
+    display: none !important;
+}
