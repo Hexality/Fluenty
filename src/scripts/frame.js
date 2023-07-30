@@ -1,4 +1,5 @@
 import { waitForElement } from "./waitForElement.js";
+import { insertBefore } from "./insertBefore.js";
 /* import { provideFluentDesignSystem, fluentMenu, fluentMenuItem } from "./fluentui-web-components.2.5.15.min.js" */
 const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
@@ -50,15 +51,18 @@ const createNodes = () => {
       }
     } else if (i >= 6) {
       node.classList.add("sidebar", "navbuttons");
+      node.innerHTML = `
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="" fill="white"/>
+        </svg>      
+      `;
       switch (i) {
         case 6:
           node.classList.add("stg-button");
-          node.innerHTML = '';
           node.addEventListener("click", () => { location.href = 'steam://open/settings' }, false);
           break;
         case 7:
           node.classList.add("str-button");
-          node.innerHTML = '';
           node.addEventListener(
             "click",
             () => {
@@ -74,7 +78,6 @@ const createNodes = () => {
           break;
         case 8:
           node.classList.add("com-button");
-          node.innerHTML = '';
           node.addEventListener(
             "click",
             () => {
@@ -90,7 +93,6 @@ const createNodes = () => {
           break;
         case 9:
           node.classList.add("col-button");
-          node.innerHTML = '';
           node.addEventListener(
             "click",
             () => {
@@ -101,7 +103,6 @@ const createNodes = () => {
           break;
         case 10:
           node.classList.add("lib-button");
-          node.innerHTML = '';
           node.addEventListener(
             "click",
             () => {
@@ -173,24 +174,6 @@ const moveElements = (parent, child) => {
   }
 };
 
-const inserBefore = (parent, child, before) => {
-  if (!!parent && !!child) {
-    document
-      .querySelector(parent)
-      .insertBefore(
-        document.querySelector(child),
-        document.querySelector(before)
-      );
-  } else {
-    if (!!!parent) {
-      console.log("Element 'parent' not specified");
-    }
-    if (!!!child) {
-      console.log("Element 'child' not specified");
-    }
-  }
-};
-
 const removeGarb = () => {
   const elements = [
     '[class*="steamdesktop_URLBarReplacement_"]',
@@ -207,7 +190,7 @@ const removeGarb = () => {
 };
 
 const elemels = async () => {
-  const { querySelector, matchedElements } = await waitForElement(
+  const { matchedElements } = await waitForElement(
     '[class*="steamdesktop_OuterFrame_"]',
     3000
   );
@@ -228,7 +211,7 @@ const elemels = async () => {
       '[class*="steamdesktop_ContentFrame_"]'
     );
 
-    inserBefore(
+    insertBefore(
       ".sidebar.top-nav",
       '[class*="supernav_Arrow_25lBL"]:nth-child(1)',
       ".sidebar.navbuttons.lib-button"
@@ -238,9 +221,7 @@ const elemels = async () => {
 
     fluentImporter();
 
-    
-    
-    console.log('Main module loaded successfully.');
+    window.opener.console.log('Main module loaded successfully.');
   });
 };
 
