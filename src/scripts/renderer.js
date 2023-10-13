@@ -1,4 +1,3 @@
-import { attr } from "./attrib.js";
 import { createSidebar } from "./components/sidebar.js";
 import { waitForElement } from "./waitForElement.js";
 

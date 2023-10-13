@@ -25,27 +25,42 @@
 
 :root {
   --text-font-family: "Segoe UI Variable Text", "Segoe UI";
-
+  --background-fill-color-acrylic-background-default: url("../media/noise.jpeg");
+  --fill-color-accent-default: #005fb8;
+  --fill-color-accent-secondary: rgba(96, 205, 255, 0.9);
   --background-fill-color-mica-background-base: rgb(32 32 32);
   --stroke-color-card-stroke-default: rgba(0, 0, 0, 0.1);
   --background-fill-color-layer-default: rgba(58, 58, 58, 0.3);
-  --fill-color-accent-secondary: rgba(96, 205, 255, 0.9);
+  --main-accent-default: var(--fill-color-accent-secondary);
   --fill-color-subtle-secondary: rgba(255, 255, 255, 0.06);
   --fill-color-text-primary: rgba(255, 255, 255, 1);
 
   --fill-color-acrylic-background-default: rgba(44, 44, 44, 0.96);
-  --background-fill-color-acrylic-background-default: url('../media/noise.jpeg');
 }
 
-@media (prefer-color-scheme: dark) {
+/* @media (prefer-color-scheme: dark) {
+  :root {
+    --background-fill-color-mica-background-base: rgb(32 32 32);
+    --stroke-color-card-stroke-default: rgba(0, 0, 0, 0.1);
+    --background-fill-color-layer-default: rgba(58, 58, 58, 0.3);
+    --main-accent-default: var(--fill-color-accent-secondary);
+    --fill-color-subtle-secondary: rgba(255, 255, 255, 0.06);
+    --fill-color-text-primary: rgba(255, 255, 255, 1);
+
+    --fill-color-acrylic-background-default: rgba(44, 44, 44, 0.96);
+  }
 }
 
 @media (prefer-color-scheme: light) {
   :root {
+    --background-fill-color-mica-background-base: rgb(243, 243, 243);
+    --stroke-color-card-stroke-default: rgba(0, 0, 0, 0.06);
+    --background-fill-color-layer-default: rgba(255, 255, 255, 0.5);
+    --mica-accent-default: var(--fill-color-accent-default);
     --fill-color-subtle-secondary: rgba(0, 0, 0, 0.04);
     --fill-color-text-primary: rgba(0, 0, 0, 0.9);
   }
-}
+} */
 
 body {
   font-family: var(--text-font-family);
@@ -82,7 +97,7 @@ body {
   width: 3px;
   height: 16px;
   border-radius: 1.5px;
-  background: var(--fill-color-accent-secondary);
+  background: var(--main-accent-default);
 }
 
 .section {
@@ -679,7 +694,8 @@ html[class*="contextmenu_ContextMenuPopup_"] body {
   min-width: 250px !important;
 }
 
-html[class*="contextmenu_ContextMenuPopup_"] [class*="contextmenu_contextMenu_"] {
+html[class*="contextmenu_ContextMenuPopup_"]
+  [class*="contextmenu_contextMenu_"] {
   position: static;
   box-shadow: none !important;
   display: inline-block;

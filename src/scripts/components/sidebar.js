@@ -1,5 +1,3 @@
-import { waitForElement } from "../waitForElement.js";
-
 export function createSidebar(t, si) {
   if (!!!t) {
     return `
