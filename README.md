@@ -38,7 +38,7 @@
 To do (unsorted):
 - [ ] Library;
 - [ ] Collections
-- [x] Steam frame [WIP]
+- [x] Steam frame [WIP] ### Arrow back button doesn't work yet cause of a weird but I'm trying to solve.
 - [ ] Download page [WIP];
 - [ ] BigPicture (Prob won't do tbh)
 - [ ] Dropdown menus;
