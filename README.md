@@ -2,7 +2,7 @@
   <img height="256" alt="art" src="https://github.com/Hexality/Fluenty/assets/17398632/c23da243-3024-4ee9-a763-d6bf00dcada6">
   <h2></h2>
 <p>A in-early-development theme for Steam based on Windows 11 Fluent WinUI design</p>
-  <p><i>(Beta 1683666132 or superior + <a href="https://github.com/PhantomGamers/SFP/releases">SFP+</a> required)</i></p>
+  <p><i>(Beta 1683666132 or superior + <a href="https://github.com/PhantomGamers/SFP/releases">SFP+</a>/<a href="https://github.com/ShadowMonster99/millennium-steam-patcher">Millenium</a> required)</i></p>
   <div align="center">
   <h1></h1>
 <h2>Want to report a bug? Join Fluenty's development Discord server <a href="https://discord.gg/GwJxKZnJDT">here</a>!</h2>
