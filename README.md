@@ -21,7 +21,7 @@
 <h3> </h3>
 <div align="center">
   <ol align="left">
-    <li><a href="https://github.com/PhantomGamers/SFP/releases/latest">Download SFP+</a></li>
+    <li><a href="https://github.com/PhantomGamers/SFP/releases/latest">Download SFP+</a> or <a href="https://github.com/ShadowMonster99/millennium-steam-patcher">Millenium</a></li>
     <li>If you're using it on Windows 10 or any other OS, please also download and install both <a href="https://aka.ms/SegoeFluentIcons">"Segoe Fluent Icons"</a> and <a href="https://aka.ms/SegoeUIVariable">"Segoe UI Variable"</a> fonts.</li>
     <li>Enable <code>Inject Javascript</code> in the settings (SFP).</li>
     <li>Download all files and place on <code>%ProgramFiles(x86)%\Steam\steamui\skins\fluenty</code> (assuming you have steam installed on the main disk).</li>
