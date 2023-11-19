@@ -1,0 +1,5230 @@
+:root {
+    --icon-disabled: rgba(255, 255, 255, 0.7);
+    --text-disabled: rgba(255, 255, 255, 54.42%);
+    --text-normal: rgba(255, 255, 255, 89.56%);
+    --accent-color: #135ef2;
+    --accent-color-1: #dc8111;
+    --accent-color-2: ;
+    --accent-color-3: ;
+    --border8: 8px;
+    --border4: 4px;
+    --normal: rgba(255, 255, 255, 3.19%);
+    --hover: rgba(255, 255, 255, 4.19%);
+    --selected: rgba(255, 255, 255, 6.05%);
+
+    /***/
+
+    --gpText-HeadingLarge: normal 700 26px/1.4 "Segoe UI Variable Display", Arial, Sans-serif !important;
+    --gpText-HeadingMedium: normal 700 22px/1.4 "Segoe UI Variable Text", Arial, Sans-serif !important;
+    --gpText-HeadingSmall: normal 700 18px/1.4 "Segoe UI Variable Text", Arial, Sans-serif !important;
+    --gpText-BodyLarge: normal 400 16px/1.4 "Segoe UI Variable Text", Arial, Sans-serif !important;
+    --gpText-BodyMedium: normal 400 14px/1.4 "Segoe UI Variable Text", Arial, Sans-serif !important;
+    --gpText-BodySmall: normal 400 12px/1.4 "Segoe UI Variable Small", Arial, Sans-serif !important;
+}
+*::-webkit-scrollbar {
+    width: 16px;
+    border-radius: 8px;
+    border: 1px solid #202020!important;
+    background: #202020!important;
+    box-sizing: border-box;
+}
+*::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 54.42%)!important;
+    border-radius: 8px!important;
+    border: 6px solid #202020!important;
+    box-sizing: border-box;
+}
+*::-webkit-scrollbar-button:vertical:decrement {
+    display: flex;
+    transform: scale(1);
+    width: 14px;
+    height: 16px;
+    background: url(resources/scrollbar/Caret/CaretUpSolid8.svg) no-repeat center center;);
+}
+*::-webkit-scrollbar-button:vertical:increment {
+    display: flex;
+    transform: scale(1);
+    width: 14px;
+    height: 16px;
+    background: url(resources/scrollbar/Caret/CaretDownSolid8.svg) no-repeat center center;);
+}
+*::-webkit-scrollbar-button:vertical:increment:hover, *::-webkit-scrollbar-button:vertical:decrement:hover {
+    transform: scale(0.9);
+} 
+/*bordertopleft radius*/
+.responsive_page_frame.no_header::after {
+    content: "";
+    left: 0;
+    top: 0;
+    box-shadow: -5px -5px #191919;
+    position: fixed;
+    width: 11px;
+    height: 11px;
+    z-index: 99;
+    background: transparent;
+    border-top-left-radius: 8px;
+}
+
+/*button add to cart*/
+.game_area_description {
+    font-family: "Segoe UI Variable Text" !important;
+    line-height: 20px !important;
+    color: var(--text-normal) !important;
+}
+
+span#gamePurchaseAddToCartBtn_responsive {
+    margin: 1px 0px 3px 0px !important;
+    border-radius: 4px !important;
+}
+
+.game_area_purchase_game,
+.game_area_offsite_purchase {
+    background: #191919 !important;
+    border-radius: 8px !important;
+    border: 1px solid #ffffff05 !important;
+}
+
+.game_purchase_action_bg {
+    background-color: transparent !important;
+}
+
+.btn_addtocart .btn_green_steamui>span {
+    border-radius: 14px !important;
+    display: block !important;
+    background: #0e81f7 !important;
+    font-family: "Segoe UI Variable Small" !important;
+    font-size: 12px !important;
+    color: #FFF !important;
+    text-shadow: none !important;
+
+}
+
+.game_purchase_action .game_purchase_price {
+    background-color: #0000008c !important;
+    border-radius: 18px !important;
+}
+
+/*store add banner*/
+.store_bg_overlay {
+    width: 100% !important;
+    z-index: 2 !important;
+}
+
+a.promo_link .fullscreen-bg__video {
+    width: 100% !important;
+
+}
+
+/*background home*/
+.page_title_area.game_title_area.page_content {}
+
+/*navegation game area store*/
+.game_page_background.game .responsive_store_nav_ctn_spacer div#store_header {
+    position: fixed !important;
+    width: 100% !important;
+    z-index: 9999 !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    background: linear-gradient(180deg, #191919 0%, rgba(25, 25, 25, 0) 260%) !important;
+    backdrop-filter: blur(60px) saturate(3) !important;
+    min-width: auto !important;
+}
+
+.game_page_background.game .responsive_store_nav_ctn_spacer div#store_header .content {
+    position: relative !important;
+    width: 100% !important;
+    z-index: 300 !important;
+}
+
+/*navegation store*/
+.home_ctn {
+
+    background: #232323 !important;
+    padding-top: 12px !important;
+    padding-bottom: 0px !important;
+}
+
+.home_page_content .responsive_store_nav_ctn_spacer {
+    background-image: url(noise.png) repeat;
+    box-shadow: -20px -20px 20px 0px #191919 !important;
+    border-top-left-radius: 8px !important;
+    background: linear-gradient(180deg, #272727 0%, rgba(25, 25, 25, 0) 260%);
+    backdrop-filter: blur(60px) saturate(3);
+    padding: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: auto;
+    z-index: 500;
+    height: 54px !important;
+
+
+}
+
+#store_nav_area {
+    top: 2px;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+div#store_header,
+div#store_header .content {
+    height: 52px !important;
+}
+
+a#store_search_link img {
+    width: 16px !important;
+    height: 16px !important;
+    position: relative;
+    top: 0px !important;
+    background: transparent !important;
+    right: 0px !important;
+    background-image: none !important;
+}
+
+/*search icon text*/
+a#store_search_link::before {
+    content: "" !important;
+    right: 0 !important;
+    font-weight: 400 !important;
+    font-family: "Segoe Fluent Icons";
+    position: absolute !important;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.69);
+}
+
+a#store_search_link {
+    position: absolute;
+    left: 7px !important;
+    height: 16px !important;
+    width: 16px !important;
+    top: 7px !important;
+}
+
+.store_nav {
+    height: auto;
+    margin: 0 4px 0px 5px !important;
+}
+
+#store_nav_area .store_nav_bg,
+.home_page_body_ctn.has_takeover #store_nav_area .store_nav_bg {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.home_page_content .responsive_store_nav_ctn_spacer div#store_header .content {
+    position: absolute;
+    width: 100% !important;
+}
+
+a#store_search_link img {
+    background-image: ;
+}
+
+.store_nav .tab {
+    display: flex !important;
+}
+
+.store_nav .tab>span {
+    color: #fff !important;
+    font-size: 12px !important;
+    text-shadow: none !important;
+    font-family: "Segoe UI Variable Small" !important;
+    font-weight: 600 !important;
+}
+
+.searchbox {
+    background-image: none !important;
+    background-color: #1919194d !important;
+    border-radius: 4px !important;
+    border: 1px solid rgb(255 255 255 / 6%) !important;
+    border-bottom: 2px solid gray !important;
+    box-shadow: none !important;
+    color: #fff !important;
+    margin-bottom: 0px !important;
+    outline: none !important;
+    height: 32px !important;
+    box-sizing: border-box !important;
+    padding: 0px 24px !important;
+}
+
+.searchbox input.default::placeholder {
+    content: "Search for games, software, and more..." !important;
+    color: transparent !important;
+    font-size: 14px !important;
+    margin-top: 1px !important;
+    text-shadow: none !important;
+    font-style: normal !important;
+    font-family: "Segoe UI Variable Text" !important;
+}
+
+/*contextmenu*/
+
+body.v6 .store_nav .popup_block_new .popup_body {
+    background: #232323 !important;
+    border-radius: 8px !important;
+
+}
+
+.popup_block_new {
+    border-radius: 8px !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 26%) !important;
+    border: 1px solid #00000045 !important;
+}
+
+.store_nav .popup_menu .popup_menu_item {
+    padding: 6px 6px 6px 18px !important;
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
+    margin-left: 4px !important;
+    margin-right: 4px !important;
+    min-width: 246px !important;
+    align-items: center !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    color: rgba(255, 255, 255, 89.56%) !important;
+    font-family: "Segoe UI variable text", sans-serif !important;
+}
+
+.store_nav .popup_menu .popup_menu_item:hover,
+.store_nav .popup_menu .popup_menu_item.focus {
+    background-color: #ffffff0d !important;
+    border-radius: 4px !important;
+    border-bottom: none !important;
+    transition-property: none !important;
+    transition-duration: none !important;
+    transition-timing-function: none !important;
+}
+
+/*carrusel grid*/
+.carousel_container.maincap {
+    display: grid;
+    grid-template-rows: 1fr 38px;
+    grid-template-columns: 40px min-content 40px;
+    height: 380px;
+    margin-top: 5px;
+}
+
+.carousel_container.maincap .carousel_items {
+    grid-row: 1;
+    grid-column: 1 / 4;
+}
+
+.carousel_container .carousel_thumbs {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.carousel_container.maincap#home_maincap_v7 .arrow.left {
+    position: relative !important;
+    grid-row: 1 / auto !important;
+    grid-column: 1 / auto !important;
+    justify-self: start !important;
+    align-self: center;
+    left: 4px !important;
+    top: -45px;
+    background-color: rgba(13, 13, 13, 0.605) !important;
+    backdrop-filter: blur(60px) saturate(6) !important;
+    box-shadow: 0 16px 8px #00000020 !important;
+}
+
+.carousel_container.maincap#home_maincap_v7 .arrow.right {
+    grid-row: 1 / auto !important;
+    grid-column: 3 / auto !important;
+    justify-self: end !important;
+    align-self: center;
+    left: -4px !important;
+    top: -45px;
+    background-color: rgba(13, 13, 13, 0.605) !important;
+    backdrop-filter: blur(60px) saturate(6) !important;
+    box-shadow: 0 16px 8px #00000020 !important;
+    position: relative !important;
+
+}
+
+/* 
+
+    grid-row: 1 / auto!important;
+    grid-column: 1 / auto!important;
+    justify-self: end!important;
+    align-self: center;
+    background: var(--hover)!important;
+    top: -56px!important;
+    backdrop-filter: blur(60px)!important;
+    box-shadow: 0 4px 8px #00000020!important;
+
+     */
+/*carrusel styles*/
+/*page pipes */
+.carousel_container .carousel_thumbs {
+    display: flex !important;
+    justify-self: center;
+    width: min-content !important;
+    align-items: center !important;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.carousel_container .carousel_thumbs>div {
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 8px !important;
+}
+
+.carousel_container .carousel_thumbs>div.focus {
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 12px !important;
+    transition: .2s ease-in-out;
+}
+
+/**/
+.carousel_container .arrow>div {
+    background-image: none !important;
+    width: 8px !important;
+    height: 8px !important;
+}
+
+.carousel_container .arrow.left {
+    left: 0 !important;
+    padding: 0 !important;
+    width: 16px !important;
+    height: 38px !important;
+    background: transparent !important;
+    transform: scale(1);
+}
+
+.carousel_container .arrow.left:hover {
+    left: 0 !important;
+    padding: 0 !important;
+    width: 16px !important;
+    height: 38px !important;
+    background: transparent !important;
+    transform: scale(1.2);
+}
+
+.carousel_container .arrow.left:active {
+    left: 0 !important;
+    padding: 0 !important;
+    width: 16px !important;
+    height: 38px !important;
+    background: transparent !important;
+    transform: scale(0.9);
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.carousel_container .arrow.right {
+    right: 0 !important;
+    padding: 0 !important;
+    width: 16px !important;
+    height: 38px !important;
+    background: transparent !important;
+    transform: scale(1);
+}
+
+.carousel_container .arrow.right:hover {
+    left: 0 !important;
+    padding: 0 !important;
+    width: 16px !important;
+    height: 38px !important;
+    background: transparent !important;
+    transform: scale(1.2);
+}
+
+.carousel_container .arrow.right:active {
+    left: 0 !important;
+    padding: 0 !important;
+    width: 16px !important;
+    height: 38px !important;
+    background: transparent !important;
+    transform: scale(0.9);
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.carousel_container .arrow.left ::before {
+    background-image: none !important;
+    position: absolute;
+    content: "";
+    font-family: "Segoe Fluent Icons";
+    font-size: 8px;
+    top: calc(50% - 4px);
+    left: calc(50% - 4px);
+
+
+}
+
+.carousel_container .arrow.right ::before {
+    background-image: none !important;
+    position: absolute;
+    content: "";
+    font-family: "Segoe Fluent Icons";
+    font-size: 8px;
+    top: calc(50% - 4px);
+    left: calc(50% - 4px);
+
+
+}
+
+.carousel_container .arrow {
+    background: transparent;
+
+    border-radius: 4px !important;
+
+
+
+}
+
+/*list*/
+/*your store*/
+.tab.flyout_tab#foryou_tab .pulldown .pulldown_desktop {
+    font-family: "Segoe UI Variable Small" !important;
+    font-size: 12px !important;
+    line-height: 12px !important;
+    display: flex;
+    flex-direction: row !important;
+    gap: 12px !important;
+    align-items: center !important;
+}
+
+.tab.flyout_tab#foryou_tab .pulldown {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+}
+
+.tab.flyout_tab#foryou_tab .pulldown::after {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    width: 10px;
+    height: 1px !important;
+
+    background: green !important;
+}
+
+.tab.flyout_tab#foryou_tab .pulldown .pulldown_desktop::after {
+    content: "";
+    font-family: "Segoe Fluent Icons";
+    font-size: 12px;
+
+
+}
+.store_nav .tab img.foryou_avatar {
+    display: none;
+}
+/* .tab.flyout_tab#foryou_tab .pulldown .pulldown_desktop::before {
+    content: "";
+    font-family: "Segoe Fluent Icons";
+    font-size: 18px;
+    font-weight: 400;
+
+
+} */
+
+/*categories*/
+.tab.flyout_tab#genre_tab .pulldown .pulldown_desktop {
+    font-family: "Segoe UI Variable Small" !important;
+    font-size: 12px !important;
+    line-height: 12px !important;
+    display: flex;
+    flex-direction: row !important;
+    gap: 12px !important;
+    align-items: center !important;
+}
+
+.tab.flyout_tab#genre_tab .pulldown {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+}
+
+.tab.flyout_tab#genre_tab .pulldown .pulldown_desktop::after {
+    content: "";
+    font-family: "Segoe Fluent Icons";
+    font-size: 12px;
+
+
+}
+
+.tab.flyout_tab#genre_tab .pulldown .pulldown_desktop::before {
+    content: "";
+    font-family: "Segoe Fluent Icons";
+    font-size: 18px;
+    font-weight: 400;
+
+
+}
+
+/*new & networth*/
+.tab.flyout_tab#noteworthy_tab .pulldown .pulldown_desktop {
+    font-family: "Segoe UI Variable Small" !important;
+    font-size: 12px !important;
+    line-height: 12px !important;
+    display: flex;
+    text-shadow: transparent !important;
+    flex-direction: row !important;
+    gap: 12px !important;
+    align-items: center !important;
+}
+
+.tab.flyout_tab#noteworthy_tab .pulldown {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+}
+
+.tab.flyout_tab#noteworthy_tab .pulldown .pulldown_desktop::after {
+    content: "";
+    font-family: "Segoe Fluent Icons";
+    font-size: 12px;
+
+
+}
+
+.tab.flyout_tab#noteworthy_tab .pulldown .pulldown_desktop::before {
+    content: "";
+    font-family: "Segoe Fluent Icons";
+    font-size: 18px;
+    font-weight: 400;
+
+
+}
+
+/*lista de deseados*/
+div#store_controls {
+    top: 110% !important;
+}
+
+.store_header_btn_gray.store_header_btn {
+    position: relative !important;
+    background-color: rgba(255, 0, 0, 0) !important;
+    background-image: none !important;
+    width: auto !important;
+    height: 32px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    box-shadow: none;
+
+}
+
+
+#wishlist_link {
+    padding: 0 10px !important;
+    text-transform: none !important;
+    height: 32px !important;
+    background-image: none !important;
+    background: transparent !important;
+    font-weight: 600 !important;
+    font-family: "Segoe UI Variable Small" !important;
+    font-size: 12px !important;
+    line-height: 12px !important;
+    display: flex;
+    text-shadow: transparent !important;
+    flex-direction: row !important;
+    align-items: center !important;
+
+}
+
+#wishlist_link::before {
+    content: "";
+    margin-right: 12px !important;
+    font-family: "Segoe Fluent Icons";
+    font-size: 18px;
+    font-weight: 400;
+    align-items: center;
+    display: flex;
+}
+
+/*carrito de compras*/
+.store_header_btn_green.store_header_btn {
+    position: relative !important;
+    background-color: rgba(255, 0, 0, 0) !important;
+    background-image: none !important;
+    width: auto !important;
+    height: 32px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    box-shadow: none;
+
+
+}
+
+.store_header_btn_green.store_header_btn:hover {
+    position: relative !important;
+    background-color: rgba(255, 0, 0, 0) !important;
+    background-image: none !important;
+    width: auto !important;
+    height: 32px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    box-shadow: none;
+
+
+}
+
+#cart_link,
+.cart_item_count_value {
+    height: 32px !important;
+    padding: 0 10px !important;
+    text-transform: none !important;
+    background-image: none !important;
+    background: transparent !important;
+    font-weight: 600 !important;
+    font-family: "Segoe UI Variable Small" !important;
+    font-size: 12px !important;
+    line-height: 12px !important;
+    display: flex;
+    text-shadow: transparent !important;
+    flex-direction: row !important;
+    align-items: center !important;
+
+
+}
+
+#cart_link::before {
+    content: "";
+    margin-right: 12px !important;
+    font-family: "Segoe Fluent Icons";
+    font-size: 18px;
+    font-weight: 400;
+    align-items: center;
+    display: flex;
+    transform: translate3d(0, 0, 0);
+    animation-name: bounce;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    align-items: center !important;
+
+
+}
+
+@keyframes bounce {
+
+    2%,
+    18% {
+        transform: translate3d(-3px, 0, 0);
+        transition: Cubic-Bezier(0.85, 0, 0, 1);
+    }
+
+    4%,
+    16% {
+        transform: translate3d(3px, 0, 0);
+        transition: Cubic-Bezier(0.85, 0, 0, 1);
+    }
+
+    6%,
+    10%,
+    14% {
+        transform: translate3d(-3px, 0, 0);
+        transition: Cubic-Bezier(0.85, 0, 0.75, 1)
+    }
+
+    8%,
+    12% {
+        transform: translate3d(3px, 0, 0);
+        transition: Cubic-Bezier(0.85, 0, 0, 1)
+    }
+
+    18.1% {
+        transform: translate3d(0px, 0, 0);
+        transition: Cubic-Bezier(0.85, 0, 0, 1);
+    }
+}
+
+/*hover*/
+#cart_link:hover {
+    color: #fff;
+    background: #ffffff1a !important;
+    border-radius: 4px
+}
+
+#wishlist_link:hover {
+    color: #fff;
+    background: #ffffff1a !important;
+    border-radius: 4px
+}
+
+.store_header_btn_gray.store_header_btn:hover {
+    background: transparent !important;
+    border-radius: 4px;
+}
+
+.store_header_btn_green.store_header_btn:hover {
+    background: transparent !important;
+    border-radius: 4px;
+}
+
+/* div#store_controls {
+    position: absolute!important;
+    bottom: 60px!important;
+    right: 12px!important;
+}
+a.store_header_btn_content::before {
+    content:"";
+    font-family: "Segoe Fluent Icons";
+    font-size: 18px;
+
+} */
+/*hover*/
+.store_nav .tab:hover>span,
+.store_nav .tab:hover,
+.store_nav .tab.focus>span,
+.store_nav .tab.focus {
+    border-radius: 20px !important;
+    background: transparent !important;
+}
+
+.store_nav .tab .span:hover {
+    border-radius: 20px !important;
+    background: #ffffff1a !important;
+}
+
+.tab.flyout_tab .pulldown:hover,
+.tab.flyout_tab.focus .pulldown:hover {
+    background: #ffffff1a !important;
+    border-radius: 4px !important;
+}
+
+/*removes*/
+
+/*spotlight content*/
+.spotlight_content {
+    border-radius: 0 0 8px 8px ! !important;
+}
+
+/*Browse by category*/
+/*title*/
+.home_page_content.content_hub_carousel_ctn .title {
+    color: rgba(255, 255, 255, 89.52%) !important;
+    font-family: "Segoe UI Variable Display";
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    padding: 12px 0 !important;
+    text-transform: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.034) !important;
+    letter-spacing: normal !important;
+}
+
+/**/
+.content_hub_capsule_ctn:hover {
+    transform: scale(1.02) !important;
+
+
+}
+
+.content_hub_carousel_ctn .content_hub_capsule_ctn {
+    border-radius: 8px !important;
+}
+
+.content_hub_capsule_ctn .label_ctn {
+    position: relative !important;
+    color: none !important;
+    bottom: 16px !important;
+    text-align: center !important;
+    padding: 12px !important;
+}
+
+.content_hub_carousel_ctn .content_hub_capsule_ctn {
+
+    box-shadow: 0 2px 2px #00000020 !important;
+}
+
+.content_hub_carousel_ctn .content_hub_capsule_ctn img {
+    border-radius: 8px;
+    box-sizing: border-box !important;
+    border: 1px solid transparent;
+}
+
+.content_hub_capsule_ctn .gradient {
+    position: absolute !important;
+    bottom: 0 !important;
+    top: inherit !important;
+    height: 25% !important;
+    width: 100% !important;
+    border-radius: 0 0 8px 8px;
+    border: 1px solid #00000020;
+    box-sizing: border-box !important;
+    background: #2e2e2e6c !important;
+    backdrop-filter: blur(50px) saturate(2) !important;
+}
+
+.content_hub_capsule_ctn .label {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0 !important;
+    font-family: "Segoe UI Variable Text" !important;
+    color: rgba(255, 255, 255, 89.52%) !important;
+    text-transform: none !important;
+    text-shadow: none !important;
+}
+
+/*special offers*/
+.home_area_spotlight {
+    border-radius: 8px !important;
+    background-image: none !important;
+    box-shadow: 0 2px 4px #00000020 !important;
+}
+
+.spotlight_content {
+    padding: 12px 12px 12px 12px !important;
+    background-image: none !important;
+    margin: 0px !important;
+    width: 100% !important;
+    border-radius: 0px 0px 8px 8px !important;
+    min-height: 23px !important;
+    background-size: none !important;
+    background: #2e2e2ea4 !important;
+    backdrop-filter: blur(50px) saturate(4) !important;
+    box-sizing: border-box !important;
+    border: 1px solid rgba(0, 0, 0, 26%) !important;
+}
+
+.spotlight_img {
+    box-sizing: border-box !important;
+    border: 1px solid rgba(0, 0, 0, 26%) !important;
+    border-radius: 8px !important;
+}
+
+/*special offert*/
+.discount_block.discount_block_spotlight.discount_block_large .discount_pct {
+    border-radius: 4px 0 0 4px;
+
+}
+
+.discount_block_large .discount_pct,
+.discount_block_large .bundle_base_discount {
+    display: flex !important;
+    align-items: center !important;
+    line-height: 18px !important;
+    font-family: "Segoe UI Variable Text" !important;
+    font-size: 14px !important;
+    padding: 0 12px !important;
+}
+
+.discount_block.discount_block_spotlight.discount_block_large .discount_pct::before {
+    content: "";
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 12px !important;
+    font-family: "Segoe Fluent Icons";
+    font-size: 14px;
+
+}
+
+.discount_block.discount_block_spotlight.discount_block_large .discount_block {
+    line-height: 16px !important;
+    padding: 9px 12px !important;
+    display: flex !important;
+    background: #ffffff12 !important;
+    border-radius: 0 4px 4px 0 !important;
+    align-items: center !important;
+    gap: 12px !important;
+    flex-direction: inherit !important;
+    justify-content: center !important;
+}
+
+.discount_original_price {
+    position: relative !important;
+    width: fit-content !important;
+    font-family: "Segoe UI Variable Small" !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    color: rgba(255, 255, 255, 89.52%) !important;
+    
+}
+
+.discount_block.discount_block_spotlight.discount_block_large .discount_prices .discount_final_price {
+    line-height: 16px !important;
+    font-size: 12px !important;
+    font-family: "Segoe UI Variable Small" !important;
+}
+
+.discount_original_price:before {
+    content: '';
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    top: 43% !important;
+    border-bottom: 1.5px solid #ffffff9e !important;
+    transform: skewY(0deg) !important;
+    box-shadow: none !important;
+}
+
+.discount_block.discount_block_spotlight.discount_block_large .discount_prices {
+    line-height: normal !important;
+    padding: 9px 12px !important;
+    display: flex !important;
+    flex-direction: inherit !important;
+    align-items: center !important;
+    gap: 12px !important;
+    justify-content: center !important;
+    background: rgb(255 255 255 / 7%) !important;
+    border-radius: 0 4px 4px 0 !important;
+}
+
+.spotlight_body.spotlight_price.price .discount_block.discount_block_spotlight.discount_block_large .discount_pct {
+    border-radius: 4px !important;
+    padding: 9px 12px !important;
+}
+
+/*compact special cards*/
+.home_special_offers_group.focus .specials_target .store_capsule.responsive_scroll_snap_start.broadcast_capsule.app_impression_tracked {
+    background: #2e2e2ee5 !important;
+    backdrop-filter: blur(50px) saturate(4) !important;
+    box-shadow: 0 2px 4px #00000020 !important;
+    border-radius: 8px !important;
+}
+
+.home_special_offers_group.focus .specials_target .store_capsule .capsule>img {
+    border: 1px solid transparent !important;
+    box-sizing: border-box !important;
+    border-radius: 8px !important;
+
+}
+
+/*oferta del día tag*/
+a.gutter_giftcard.gutter_item::before {
+    content: "";
+    color: #fff;
+    font-size: 14px;
+    margin: 0px 0px 12px;
+    font-family: "Segoe Fluent Icons";
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.discount_block.daily_deal_discount.discount_block_large {
+    position: absolute !important;
+    bottom: 0px !important;
+    left: 0 !important;
+    right: 0 !important;
+    backdrop-filter: blur(50px) saturate(4) !important;
+    background: rgba(46, 46, 46, 0.643) !important;
+    border-radius: 0px 0px 8px 8px !important;
+    box-sizing: border-box !important;
+    box-shadow: 0 2px 4px #00000020 !important;
+    padding: 12px !important;
+
+
+}
+
+.discount_block.daily_deal_discount.discount_block_large .discount_pct {
+    border-radius: 4px 0 0 4px;
+
+}
+
+.discount_block.daily_deal_discount.discount_block_large .discount_pct::before {
+    content: "";
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 12px !important;
+    font-family: "Segoe Fluent Icons";
+    font-size: 14px;
+}
+
+.discount_block.daily_deal_discount.discount_block_large .discount_prices {
+    line-height: normal !important;
+    padding: 9px 12px !important;
+    display: flex !important;
+    flex-direction: inherit !important;
+    align-items: center !important;
+    gap: 12px !important;
+    justify-content: center !important;
+    background: rgb(255 255 255 / 7%) !important;
+    border-radius: 0 4px 4px 0 !important;
+}
+
+.discount_block.daily_deal_discount.discount_block_large .discount_prices .discount_final_price {
+    line-height: 16px !important;
+    font-size: 12px !important;
+    font-family: "Segoe UI Variable Small" !important;
+}
+
+/*special offerts tag special*/
+.dailydeal_ctn .daily_deal_discount {
+    margin-left: 0 !important;
+}
+
+a.store_capsule.responsive_scroll_snap_start.broadcast_capsule.app_impression_tracked {
+    height: 186px !important;
+}
+
+.daily_deal .dailydeal_desc {
+    font-family: "Segoe UI Variable Small" !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    color: rgba(255, 255, 255, 89.52%) !important;
+    margin-left: 8px !important;
+    font-family: "Segoe UI Variable Small" !important;
+
+
+    margin-left: 12px !important;
+    border-radius: 4px !important;
+
+}
+
+.carousel_container.spotlight .carousel_items>* .store_capsule {
+    background: none !important;
+    border-radius: 8px !important;
+}
+
+.carousel_container.spotlight .carousel_items>* .store_capsule.daily_deal {
+    display: flex !important;
+    flex-direction: column !important;
+    background: transparent !important;
+    border-radius: 8px !important;
+    border: 1px solid transparent !important;
+    box-sizing: border-box !important;
+    box-shadow: none !important;
+}
+
+.store_capsule .capsule>img {
+    border: 1px solid rgba(0, 0, 0, 26%) !important;
+    box-sizing: border-box !important;
+    border-radius: 8px 8px 0px 0 !important;
+}
+
+.home_special_offers_group.focus .specials_target .store_capsule.responsive_scroll_snap_start.broadcast_capsule.app_impression_tracked .discount_block.daily_deal_discount.discount_block_large .discount_prices .discount_final_price {
+    line-height: 16px !important;
+    font-size: 12px !important;
+    font-family: "Segoe UI Variable Small" !important;
+}
+
+.home_special_offers_group.focus .specials_target .store_capsule.responsive_scroll_snap_start.broadcast_capsule.app_impression_tracked .discount_block.daily_deal_discount.discount_block_large .discount_pct::before {
+    content: "";
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: "Segoe Fluent Icons";
+    font-size: 14px;
+    margin-right: 12px !important;
+}
+
+.home_special_offers_group.focus .specials_target .store_capsule.responsive_scroll_snap_start.broadcast_capsule.app_impression_tracked .discount_block.daily_deal_discount.discount_block_large .discount_pct {
+    border-radius: 4px !important;
+    padding: 9px 12px !important;
+    display: flex !important;
+    align-items: center !important;
+    line-height: 18px !important;
+    font-family: "Segoe UI Variable Text" !important;
+    font-size: 14px !important;
+}
+
+.home_special_offers_group.focus .specials_target .store_capsule.responsive_scroll_snap_start.broadcast_capsule.app_impression_tracked .discount_block.daily_deal_discount.discount_block_large .discount_prices {
+    line-height: normal !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 9px 12px !important;
+    gap: 12px !important;
+    background: rgba(255, 255, 255, 0.07) !important;
+    border-radius: 0px 4px 4px 0px !important;
+}
+
+/*title*/
+.spotlight_block .spotlight_content>h2,
+.spotlight_body {
+    font-family: "Segoe UI Variable Text", Sans-serif !important;
+    font-weight: 400 !important;
+    color: rgba(255, 255, 255, 89.52%) !important;
+}
+
+body.v6 h2 {
+    text-transform: none !important;
+    font-family: "Segoe UI Variable Text" !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: rgba(255, 255, 255, 0.894) !important;
+    text-transform: none !important;
+    letter-spacing: normal !important;
+    padding: 0px 0px 12px !important;
+    margin: 0 0 12px 0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.035) !important;
+}
+
+/*carrousel special offerts*/
+.store_capsule {
+    background: #272727 !important;
+    border-radius: 8px !important;
+    border: 1px solid rgba(0, 0, 0, 26%) !important;
+    box-shadow: 0 2px 4px #00000020 !important;
+}
+
+.home_page_content.special_offers .carousel_container.spotlight {
+    position: relative !important;
+    display: grid !important;
+    grid-template-columns: 1fr min-content 1fr !important;
+    grid-template-rows: 1fr 42px !important;
+}
+
+.home_page_content.special_offers .carousel_container.spotlight .carousel_items.responsive_scroll_snap_ctn {
+    grid-row: 1 !important;
+    grid-column: 1 / 4 !important;
+
+}
+
+.home_page_content.special_offers .carousel_container.spotlight .carousel_thumbs {
+    grid-row: 2 !important;
+}
+
+.home_page_content.special_offers .carousel_container.spotlight .arrow.left {
+    grid-row: 2;
+    grid-column: 1;
+    position: relative !important;
+    right: 0;
+    top: 0 !important;
+    justify-self: end !important;
+}
+
+.home_page_content.special_offers .carousel_container.spotlight .arrow.right {
+    grid-row: 2;
+    grid-column: 3;
+    position: relative !important;
+    left: 0;
+    top: 0 !important;
+    justify-self: start !important;
+}
+
+/*title special offers*/
+.home_ctn#module_special_offers .home_page_content.special_offers .home_page_content_title {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center !important;
+    font-family: "Segoe UI Variable Display";
+    color: rgba(255, 255, 255, 0.894) !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    text-transform: none !important;
+    letter-spacing: normal !important;
+    padding: 12px 0px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.035) !important;
+
+}
+
+body.v6 .home_page_content h2 span.right,
+body.v6 .recommendation_section h2 span.right,
+body.v6 .recommendation_mainsection h2 span.right,
+body.v6 .user_reviews_header span.right,
+body.v6 .bucket h2 span.right {
+    margin-left: auto !important;
+}
+
+.home_ctn#module_special_offers .home_page_content.special_offers .home_page_content_title::before {
+    content: "";
+    margin-top: 1px;
+    font-family: "Segoe Fluent Icons";
+    font-size: 18px;
+    display: flex;
+    font-weight: 500 !important;
+    align-items: center;
+    margin-right: 12px;
+}
+
+/*live icon flyout*/
+body.v6 .broadcast_live_stream_icon::before {
+    content: "";
+    font-family: "Segoe Fluent Icons";
+    font-size: 16px;
+    margin-right: 8px;
+    color: rgb(255, 255, 255);
+
+}
+
+body.v6 .broadcast_live_stream_icon,
+body.v6 .broadcast_live_stream_icon:hover {
+    backdrop-filter: blur(10px) !important;
+    height: auto !important;
+    border: 1px solid #00000020 !important;
+    padding: 8px !important;
+    display: flex !important;
+    font-family: "Segoe UI Variable Small" !important;
+    border-radius: 4px !important;
+    align-items: center !important;
+    padding: 8px !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 26%) !important;
+    background: #1919194d !important;
+}
+
+/*title nuevos y destacados*/
+.home_cluster_ctn.home_ctn .home_page_content .home_page_content_title {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center !important;
+    font-family: "Segoe UI Variable Display";
+    color: rgba(255, 255, 255, 0.894) !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    text-transform: none !important;
+    letter-spacing: normal !important;
+    padding: 12px 0px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.035) !important;
+
+}
+
+.home_cluster_ctn.home_ctn .home_page_content .home_page_content_title::before {
+    content: "";
+    font-family: "Segoe Fluent Icons";
+    font-size: 18px;
+    margin-right: 12px !important;
+    font-weight: 400;
+}
+
+/*carousel principal tag*/
+.info .discount_block.no_discount.discount_block_inline .discount_prices .discount_final_price::after {
+
+    content: "";
+    z-index: -2;
+    border-radius: 4px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(275deg,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 5%),
+            rgba(255, 255, 255, 25%),
+            rgba(255, 255, 255, 45%),
+            rgba(255, 255, 255, 60%),
+            rgba(255, 255, 255, 45%),
+            rgba(255, 255, 255, 25%),
+            rgba(255, 255, 255, 5%),
+            rgba(255, 255, 255, 0) 70%);
+    animation: flama 3s infinite ease-in-out;
+    background-size: 400% 400%;
+
+}
+
+@keyframes flama {
+    0% {
+
+        background-position: 140% 0%
+    }
+
+}
+
+.info .discount_block.no_discount.discount_block_inline .discount_prices .discount_final_price::before {
+    box-sizing: content-box !important;
+    content: "";
+    left: 0 !important;
+    top: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    position: absolute !important;
+    inset: -1px;
+
+    padding: 1px !important;
+    border-radius: 4px !important;
+    z-index: -2 !important;
+    bottom: 0 !important;
+    background: linear-gradient(250deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.06) 5%) !important;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0) !important;
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0) !important;
+    -webkit-mask-composite: xor !important;
+    mask-composite: exclude !important;
+}
+
+.info .discount_block.no_discount.discount_block_inline .discount_prices .discount_final_price {
+    border-radius: 4px !important;
+    height: 30px !important;
+    min-width: 120px !important;
+    line-height: 20px !important;
+    padding: 4px 11px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 2 !important;
+    text-transform: normal !important;
+    color: rgba(255, 255, 255, 89.56%) !important;
+    font-family: "Segoe UI Variable Text" !important;
+    font-size: 14px !important;
+    letter-spacing: normal !important;
+    position: relative !important;
+    background: rgba(255, 255, 255, 0.06) !important;
+    border: none !important;
+    text-shadow: 2px 1px 1px black !important;
+    box-sizing: content-box !important;
+
+}
+
+.info .discount_block.discount_block_inline .discount_prices .discount_final_price,
+{
+font-family: "Segoe UI Variable Small" !important;
+line-height: 16px !important;
+font-size: 12px !important;
+}
+
+.info .discount_block.discount_block_inline .discount_pct:before {
+    content: "";
+    font-family: "Segoe Fluent Icons";
+    font-size: 16px;
+    margin-right: 8px;
+
+}
+
+/* .info .discount_block.discount_block_inline .discount_prices, .info .discount_block.no_discount.discount_block_inline .discount_prices  {
+    padding: 0 12px!important;
+    display: flex!important;
+    border-radius: 4px!important;
+    align-items: center!important;
+    flex-direction: row!important;
+    gap: 12px!important;
+    background: rgba(255, 255, 255, 0.048) !important;
+    backdrop-filter: blur(15px) saturate(2)!important;
+   
+} */
+.info .discount_block.discount_block_inline .discount_pct {
+    padding: 9px 12px !important;
+    font-family: "Segoe UI Variable Small", Sans-serif !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    border-radius: 4px 0 0 4px !important;
+    display: flex !important;
+    align-items: center !important;
+
+}
+
+.info .discount_block.discount_block_inline,
+.info .discount_block.no_discount.discount_block_inline {
+    position: absolute !important;
+    bottom: auto;
+    top: 43% !important;
+    z-index: 2 !important;
+    left: 17px !important;
+}
+
+.info .discount_block.daily_deal_discount.discount_block_large .discount_pct {
+
+    border-radius: 4px !important;
+    padding: 9px 12px !important;
+    display: flex !important;
+    align-items: center !important;
+    line-height: 18px !important;
+    font-family: "Segoe UI Variable Text" !important;
+    font-size: 14px !important;
+}
+
+/*carousel principal home*/
+.carousel_container.maincap#home_maincap_v7 .carousel_items.responsive_scroll_snap_ctn .store_main_capsule.responsive_scroll_snap_start.broadcast_capsule.app_impression_tracked .info .discount_block.no_discount.discount_block_inline .discount_prices .discount_final_price,
+.carousel_container.maincap#home_maincap_v7 .carousel_items.responsive_scroll_snap_ctn .store_main_capsule.responsive_scroll_snap_start.broadcast_capsule.app_impression_tracked .info .discount_block.no_discount.discount_block_inline .discount_prices .discount_final_price {
+    font-family: "Segoe UI Variable Display" !important;
+    line-height: normal !important;
+    font-size: 20px !important;
+    font-weight: 400 !important;
+}
+
+.carousel_container.maincap#home_maincap_v7 .carousel_items.responsive_scroll_snap_ctn .store_main_capsule.responsive_scroll_snap_start.broadcast_capsule.app_impression_tracked .info .discount_block.no_discount.discount_block_inline .discount_prices,
+.carousel_container.maincap#home_maincap_v7 .carousel_items.responsive_scroll_snap_ctn .store_main_capsule.responsive_scroll_snap_start.broadcast_capsule.app_impression_tracked .info .discount_block.no_discount.discount_block_inline .discount_prices .discount_original_price {
+    position: absolute !important;
+    top: 12px !important;
+    left: none !important;
+    right: 12px !important;
+    z-index: 2 !important;
+    backdrop-filter: blur(50px) saturate(2) !important;
+    background: #19191997 !important;
+    border-radius: 4px !important;
+    border: 1px solid #00000020 !important;
+    padding: 0 8px !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 26%) !important;
+}
+
+.carousel_container.maincap#home_maincap_v7 .carousel_items.responsive_scroll_snap_ctn .store_main_capsule.responsive_scroll_snap_start.broadcast_capsule.app_impression_tracked .info .discount_block.no_discount.discount_block_inline {
+    position: absolute !important;
+    top: 12px !important;
+    left: none !important;
+    right: 12px !important;
+    z-index: 2 !important;
+}
+
+.carousel_container.maincap#home_maincap_v7 .carousel_items.responsive_scroll_snap_ctn .store_main_capsule.responsive_scroll_snap_start.broadcast_capsule.app_impression_tracked .info .screenshots>div,
+.carousel_container.maincap#home_maincap_v7 .carousel_items.responsive_scroll_snap_ctn .store_main_capsule.responsive_scroll_snap_start.broadcast_capsule .info .screenshots>div {
+    width: 75px !important;
+    height: 70px !important;
+    padding: 0px !important;
+    margin: 8px !important;
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.carousel_container.maincap#home_maincap_v7 .carousel_items.responsive_scroll_snap_ctn .store_main_capsule.responsive_scroll_snap_start.broadcast_capsule.app_impression_tracked .info .screenshots>div>div,
+.carousel_container.maincap#home_maincap_v7 .carousel_items.responsive_scroll_snap_ctn .store_main_capsule.responsive_scroll_snap_start.broadcast_capsule .info .screenshots>div>div {
+    border-radius: 4px !important;
+    width: 75px !important;
+    height: 70px !important;
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.carousel_container.maincap#home_maincap_v7 .carousel_items.responsive_scroll_snap_ctn .store_main_capsule.responsive_scroll_snap_start.broadcast_capsule.app_impression_tracked .info .screenshots,
+.carousel_container.maincap#home_maincap_v7 .carousel_items.responsive_scroll_snap_ctn .store_main_capsule.responsive_scroll_snap_start.broadcast_capsule .info .screenshots {
+    display: flex !important;
+    margin-left: 0 !important;
+    width: auto !important;
+}
+
+.carousel_container.maincap#home_maincap_v7 .carousel_items.responsive_scroll_snap_ctn .store_main_capsule.responsive_scroll_snap_start.broadcast_capsule.app_impression_tracked .info .reason,
+.carousel_container.maincap#home_maincap_v7 .carousel_items.responsive_scroll_snap_ctn .store_main_capsule.responsive_scroll_snap_start.broadcast_capsule .info .reason {
+    position: absolute !important;
+    z-index: 2 !important;
+    top: 60% !important;
+    left: 12px !important;
+    width: auto !important;
+
+}
+
+.carousel_container.maincap#home_maincap_v7 .carousel_items.responsive_scroll_snap_ctn .store_main_capsule.responsive_scroll_snap_start.broadcast_capsule.app_impression_tracked .info .app_name,
+.carousel_container.maincap#home_maincap_v7 .carousel_items.responsive_scroll_snap_ctn .store_main_capsule.responsive_scroll_snap_start.broadcast_capsule .info .app_name {
+    position: absolute !important;
+    top: 50% !important;
+    left: 12px !important;
+    font-family: "Segoe UI Variable Display" !important;
+    font-weight: 600 !important;
+    z-index: 2 !important;
+
+}
+
+
+.carousel_container.maincap#home_maincap_v7 .carousel_items.responsive_scroll_snap_ctn .store_main_capsule.responsive_scroll_snap_start.broadcast_capsule.app_impression_tracked .info,
+.carousel_container.maincap#home_maincap_v7 .carousel_items.responsive_scroll_snap_ctn .store_main_capsule.responsive_scroll_snap_start.broadcast_capsule .info {
+    display: flex !important;
+    justify-content: center;
+}
+
+.carousel_container.maincap#home_maincap_v7 .carousel_items.responsive_scroll_snap_ctn .store_main_capsule.responsive_scroll_snap_start.broadcast_capsule.app_impression_tracked .capsule.main_capsule::before,
+.carousel_container.maincap#home_maincap_v7 .carousel_items.responsive_scroll_snap_ctn .store_main_capsule.responsive_scroll_snap_start.broadcast_capsule .capsule.main_capsule::before {
+    position: absolute !important;
+    content: "" !important;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 88%);
+    border-radius: 8px;
+}
+
+.carousel_container.maincap#home_maincap_v7 .carousel_items.responsive_scroll_snap_ctn .store_main_capsule.responsive_scroll_snap_start.broadcast_capsule.app_impression_tracked .capsule.main_capsule,
+.carousel_container.maincap#home_maincap_v7 .carousel_items.responsive_scroll_snap_ctn .store_main_capsule.responsive_scroll_snap_start.broadcast_capsule .capsule.main_capsule {
+    width: 100% !important;
+    height: 420px !important;
+    box-shadow: 0 16px 8px #00000020 !important;
+
+    margin: 0 !important;
+
+
+}
+
+a.store_main_capsule.responsive_scroll_snap_start.broadcast_capsule.focus {
+    transform: translateX(0) !important;
+    animation: nasty .555s cubic-bezier(0.55, 0.55, 0, 1) !important;
+}
+
+@keyframes nasty {
+    0% {
+
+        transform: translateX(800px);
+    }
+
+    100% {
+
+        transform: translateX(0);
+    }
+}
+
+.carousel_container.maincap#home_maincap_v7 .carousel_items.responsive_scroll_snap_ctn .store_main_capsule.responsive_scroll_snap_start.broadcast_capsule.app_impression_tracked,
+.carousel_container.maincap#home_maincap_v7 .carousel_items.responsive_scroll_snap_ctn .store_main_capsule.responsive_scroll_snap_start.broadcast_capsule {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.carousel_container.maincap#home_maincap_v7 .carousel_items.responsive_scroll_snap_ctn {
+    height: auto !important;
+}
+
+.carousel_container.maincap#home_maincap_v7 {
+    height: auto !important;
+}
+
+.carousel_container.maincap .carousel_items {
+    border-radius: 8px !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.store_main_capsule,
+.store_main_capsule:hover {
+    background-image: none !important;
+}
+
+.store_main_capsule .capsule {
+    border-radius: 8px !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/* .carousel_container.maincap, .carousel_container.maincap .carousel_items {
+    height: auto!important;
+}
+.carousel_container .carousel_items > *.focus {
+    display: flex!important;
+    flex-direction: column!important;
+}
+.store_main_capsule .capsule {
+    border-radius: 8px!important;
+    width: 100%!important;
+}  */
+
+/*lista lateral*/
+.home_page_gutter_giftcard {
+    display: none !important;
+}
+
+.gutter_item .icon.tags::before {
+    content: "" !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Segoe Fluent Icons" !important;
+}
+
+.gutter_item .icon.tags {
+    background: none !important;
+}
+
+.gutter_item .icon.curators::before {
+    content: "" !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Segoe Fluent Icons" !important;
+}
+
+.gutter_item .icon.curators {
+    background: none !important;
+}
+
+.gutter_item .icon.friends::before {
+    content: "" !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Segoe Fluent Icons" !important;
+}
+
+.gutter_item .icon.friends {
+    background: none !important;
+}
+
+.gutter_item .icon.top_sellers::before {
+    content: "" !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Segoe Fluent Icons" !important;
+}
+
+.gutter_item .icon.top_sellers {
+    background: none !important;
+}
+
+.gutter_item .icon.queue::before {
+    content: "" !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Segoe Fluent Icons" !important;
+}
+
+.gutter_item .icon.queue {
+    background: none !important;
+}
+
+.gutter_item .icon.queue_new::before {
+    content: "" !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Segoe Fluent Icons" !important;
+}
+
+.gutter_item .icon.queue_new {
+    background: none !important;
+}
+
+.gutter_item .icon.recent::before {
+    content: "" !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Segoe Fluent Icons" !important;
+}
+
+.gutter_item .icon.recent {
+    background: none !important;
+}
+
+.gutter_item .icon.upcoming::before {
+    content: "" !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Segoe Fluent Icons" !important;
+}
+
+.gutter_item .icon.upcoming {
+    background: none !important;
+}
+
+.gutter_item .icon.upcoming::before {
+    content: "" !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Segoe Fluent Icons" !important;
+}
+
+.gutter_item .icon.upcoming {
+    background: none !important;
+}
+
+.gutter_item .icon.discounts::before {
+    content: "" !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Segoe Fluent Icons" !important;
+}
+
+.gutter_item .icon.discounts {
+    background: none !important;
+}
+
+.gutter_item .icon.discounts::before {
+    content: "" !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Segoe Fluent Icons" !important;
+}
+
+.gutter_item .icon.discounts {
+    background: none !important;
+}
+
+.gutter_item .icon.vr::before {
+    content: "" !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Segoe Fluent Icons" !important;
+}
+
+.gutter_item .icon.vr {
+    background: none !important;
+}
+
+.gutter_item .icon.controller::before {
+    content: "" !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Segoe Fluent Icons" !important;
+}
+
+.gutter_item .icon.controller {
+    background: none !important;
+}
+
+/* .flat_page.migrated_profile_page.inventory_page.responsive_page::-webkit-scrollbar {
+    background: #191919 !important;
+    width: 4px !important;
+}
+
+.flat_page.migrated_profile_page.inventory_page.responsive_page::-webkit-scrollbar-thumb {
+    background: #ffffff82 !important;
+    width: 5px !important;
+    border-radius: 8px !important;
+
+}
+
+.responsive_page_content::-webkit-scrollbar-thumb {
+    background: #ffffff82 !important;
+    width: 5px !important;
+    border-radius: 8px !important;
+}
+
+.responsive_page_content::-webkit-scrollbar {
+    background: #191919 !important;
+    width: 4px !important;
+}
+
+body.v6.infinite_scrolling.responsive_page::-webkit-scrollbar {
+    background: #191919 !important;
+    width: 4px !important;
+}
+
+body.v6.infinite_scrolling.responsive_page::-webkit-scrollbar-thumb {
+    background: #ffffff82 !important;
+    width: 5px !important;
+    border-radius: 8px !important;
+
+} */
+
+/*removed styles comunitty page*/
+.community_home_search_ctn.left .community_home_search_content .community_home_search_title::before {
+    content: "" !important;
+    position: absolute !important;
+    width: 24px !important;
+    color: #fff !important;
+    height: 24px !important;
+
+    z-index: 2 !important;
+    font-size: 18px !important;
+    opacity: 1 !important;
+    font-family: "Segoe Fluent Icons" !important;
+
+}
+
+.community_home_search_ctn.left .community_home_search_content .community_home_search_title:hover:before {
+    content: "" !important;
+    opacity: 0 !important;
+    position: absolute !important;
+    width: 24px !important;
+    color: transparent !important;
+    height: 24px !important;
+    pointer-events: visible !important;
+    z-index: 2 !important;
+    font-family: "Segoe Fluent Icons" !important;
+
+}
+
+.community_home_search_ctn.left .community_home_search_content .community_home_search_title {
+    position: absolute !important;
+    width: 24px !important;
+    color: transparent !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 24px !important;
+    pointer-events: none !important;
+    z-index: 2 !important;
+
+}
+
+.community_home_search_title:hover~.community_home_search_apps {
+    opacity: 1 !important;
+    height: 32px;
+    width: 240px !important;
+
+
+}
+
+input.community_home_search_app_input {
+    width: 0 !important;
+    top: 4px !important;
+    height: 32px !important;
+    right: 0 !important;
+    left: -6px !important;
+    padding: 0 12px !important;
+}
+
+.community_home_search_apps {
+    top: 0 !important;
+    height: 32px !important;
+    width: auto !important;
+    transition: .555s Cubic-bezier(0.55, 0.55, 0, 1) !important;
+    position: relative !important;
+    margin-top: 0px !important;
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    color: #ffffff !important;
+    padding: 0 !important;
+}
+
+/*community page*/
+.community_home_title {
+    z-index: 6 !important;
+    color: rgba(255, 255, 255, 89.52%) !important;
+    background: linear-gradient(180deg, #191919 0%, rgba(25, 25, 25, 0) 260%) !important;
+    backdrop-filter: blur(60px) saturate(3) !important;
+    font-family: "Segoe UI Variable Small", Sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    text-align: left;
+    padding-left: 18px !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 42px !important;
+    position: fixed !important;
+    line-height: 20px !important;
+    display: flex;
+    flex-direction: row !important;
+    gap: 12px !important;
+    align-items: center !important;
+}
+
+.community_home_title::after {
+    position: relative;
+    content: "";
+    width: 1px;
+    height: 25px;
+    border-radius: 4px;
+    background: #ffffff26;
+}
+
+.community_home_title::before {
+    content: "";
+    font-family: "Segoe Fluent Icons";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.community_home_subtitle {
+    z-index: 20 !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    color: #7d7d7d !important;
+    font-family: "Segoe UI Variable Text" !important;
+    padding-top: 0 !important;
+    position: fixed !important;
+    left: 184px !important;
+    top: -1px !important;
+    height: 42px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+@media (min-width: 1224px) {
+    body:not(.no_home_gutter) .home_page_gutter {
+        display: block;
+        width: 210px;
+        left: -110px !important;
+        margin-top: 100px !important;
+    }
+}
+
+/*
+body {
+  background-color:#272727;
+  color: white;
+}
+
+button {
+  color: rgba(255, 255, 255, 89.56%);
+   font-size:12px;
+}
+
+.gradient-border {
+  border-radius: 3px;
+  padding: 4px 11px 6px;
+  display: inline-block;
+ 
+  font-family:"Segoe UI Variable Small";
+  letter-spacing:normal;
+  position: relative;
+  background:linear-gradient(180deg, rgba(0, 95, 184, 1), rgba(0, 95, 184, 1)72%);
+  border: none;
+  box-sizing:content-box;
+}
+
+
+.gradient-border:hover {
+  border-radius: 3px;
+  padding: 4px 11px 6px;
+  display: inline-block;
+  cursor:pointer;
+  font-family:"Segoe UI Variable Small";
+  letter-spacing:normal;
+  position: relative;
+  background:linear-gradient(180deg, rgba(0, 95, 184, 1), rgba(0, 95, 184, 1)72%);
+  border: none;
+  box-sizing:content-box;
+  animation: Gradient infinite ease-in-out;
+}
+
+@keyframes gradient {
+
+  0% { 
+    background-position: 0%, 50%,
+  }
+  100% {
+    background-position: 100% 
+  }
+}*/
+
+/*close button modal container*/
+.modalContentDismissImage img {
+    display: none;
+}
+
+.modalContentDismissImage::after {
+    content: "";
+    font-size: 10px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 12px);
+    display: flex;
+    position: absolute;
+    font-family: "Segoe Fluent Icons";
+}
+
+.modalContentDismissImage {
+    position: absolute !important;
+    top: 0 !important;
+    background: red !important;
+    right: 0 !important;
+    cursor: pointer !important;
+    width: 42px !important;
+    height: 32px !important;
+    border-top-right-radius: 8px !important;
+}
+
+
+
+/*
+
+
+        PROFILE AREA
+
+
+*/
+.recent_game .game_info .game_info_cap img {
+    border-radius: 4px !important;
+}
+
+.profile_comment_area .commentthread_header,
+.profile_leftcol_header {
+    background: transparent !important;
+    border-bottom: 1px solid #ffffff26 !important;
+    padding: 12px 0px !important;
+    border-radius: 0px !important;
+}
+
+.profile_leftcol_header h2 {
+    font-family: "Segoe UI Variable Text", Sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    color: var(--text-normal) !important;
+
+}
+
+/*chevron*/
+img#getnamehistory_arrow {
+    opacity: 0;
+}
+
+.persona_name .namehistory_link::after {
+    content: "";
+    margin: 12px;
+    font-size: 12px;
+    font-family: "Segoe Fluent Icons";
+    position: relative;
+    right: 24px;
+    top: 0;
+    bottom: 0;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+}
+
+.persona_name .namehistory_link.focus::after {
+    content: "";
+    margin: 12px;
+    font-size: 12px;
+    font-family: "Segoe Fluent Icons";
+    position: relative;
+    right: 24px;
+    top: 0;
+    bottom: 0;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+}
+
+.profile_header_bg_texture {
+    background-color: transparent !important;
+    backdrop-filter: blur(50px) saturate(1.5) !important;
+}
+
+.profile_content.has_profile_background {
+    background-color: transparent !important;
+    backdrop-filter: blur(50px) saturate(1.5) !important;
+}
+
+.btn_profile_action {
+    background: none !important;
+    font-size: 14px !important;
+}
+
+.profile_header_actions .btn_profile_action>span {
+    background: rgba(255, 255, 255, 0.07) !important;
+    border-radius: 4px !important;
+    font-size: 14px !important;
+    font-family: "Segoe UI Variable Text" !important;
+}
+
+/* .profile_header_actions .btn_profile_action::after {
+    box-sizing:content-box!important;
+    content: "";
+    left: 0!important;
+    top: 0!important;
+    right: 0!important;
+    left: 0!important;
+    position: absolute!important;
+    inset: -1px;
+    
+    padding: 1px!important;
+    border-radius: 4px!important;
+    z-index: -2!important;
+    bottom: 0!important;
+    background: linear-gradient(90deg,rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02) 50%) !important;
+    -webkit-mask: 
+       linear-gradient(#fff 0 0) content-box, 
+       linear-gradient(#fff 0 0)!important;
+            mask: 
+       linear-gradient(#fff 0 0) content-box, 
+       linear-gradient(#fff 0 0)!important;
+       -webkit-mask-composite: xor!important;
+            mask-composite: exclude!important;
+  } */
+span.published_file_icon.workshop_item::before {
+    content: "";
+    font-family: "Segoe Fluent Icons";
+    font-size: 16px;
+    color: var(--icon-disabled);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+
+span.published_file_icon.workshop_item {
+    background-image: none !important;
+}
+
+span.published_file_icon.recommendation {
+    background-image: none !important;
+}
+
+span.published_file_icon.recommendation::before {
+    content: "";
+    font-family: "Segoe Fluent Icons";
+    color: var(--icon-disabled);
+    font-size: 16px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+
+span.published_file_icon.screenshot {
+    background-image: none !important;
+}
+
+span.published_file_icon.screenshot::before {
+    content: "";
+    font-family: "Segoe Fluent Icons";
+    color: var(--icon-disabled);
+    font-size: 16px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+
+/*
+  
+  profile name
+  
+  */
+.profile_header .persona_name {
+    font-size: 24px !important;
+    font-family: "Segoe UI Variable Display" !important;
+    font-weight: 600 !important;
+    color: var(--text-normal) !important;
+}
+
+/*
+  
+  nav lateral
+  
+  */
+.header_real_name.ellipsis {
+    font-size: 14px !important;
+    font-family: "Segoe UI Variable Text" !important;
+    font-weight: 400 !important;
+    line-height: 20px !important;
+    color: var(--text-normal) !important;
+}
+
+.profile_count_link_total {
+    font-size: 14px !important;
+    font-family: "Segoe UI Variable Text" !important;
+    font-weight: 600 !important;
+    color: var(--text-normal) !important;
+}
+
+/* .profile_count_link_total::after {
+    content: "";
+    position: absolute;
+    right: 24px;
+    font-family: "Segoe Fluent Icons";
+    font-size: 12px;
+    color: var(--icon-disabled);
+  } */
+.profile_count_link.ellipsis span.count_link_label {
+    font-size: 14px !important;
+    font-family: "Segoe UI Variable Text" !important;
+    font-weight: 400 !important;
+    color: var(--text-normal) !important;
+}
+
+.profile_rightcol {
+    padding: 12px !important;
+    border-radius: var(--border8) !important;
+    border: 1px solid #ffffff10 !important;
+    box-shadow: 0 2px 4px #00000020 !important;
+}
+
+/*
+  
+  screenshot expositor
+  
+  */
+.profile_customization {
+    border-radius: var(--border8) !important;
+    border: 1px solid #ffffff10 !important;
+    box-shadow: 0 2px 4px #00000020 !important;
+}
+
+.screenshot_showcase_screenshot {
+    border: 1px rgba(0, 0, 0, 26%) !important;
+    background-color: transparent !important;
+    background: transparent !important;
+    border-radius: var(--border8) !important;
+    transition: .555s ease-in-out !important;
+
+
+}
+
+.screenshot_showcase_screenshot:hover {
+    transform: scale(1.02) !important;
+    transition: .555s ease-in-out !important;
+}
+
+.screenshot_showcase_primary .screenshot_showcase_screenshot img {
+    border-radius: var(--border8) !important;
+
+}
+
+.myart .profile_customization_block {
+    border: 1px solid #ffffff05 !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 26%) !important;
+}
+
+.recent_game {
+    background-color: #2727272a !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 26%) !important;
+    padding: 4px !important;
+    border-radius: var(--border8) !important;
+}
+
+.recent_game .game_info_stats,
+.favoritegame_showcase .game_info_stats {
+    background-color: transparent !important;
+}
+
+.recent_game::after {
+    box-sizing: content-box !important;
+    content: "";
+    left: 0 !important;
+    top: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    position: absolute !important;
+    inset: 1px;
+
+    padding: 1px !important;
+    border-radius: 8px !important;
+    z-index: -2 !important;
+    bottom: 0 !important;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02) 75%) !important;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0) !important;
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0) !important;
+    -webkit-mask-composite: xor !important;
+    mask-composite: exclude !important;
+
+}
+
+.game_info_stats_rule {
+    position: absolute !important;
+    border-top: none !important;
+    background-color: rgb(0 0 0 / 18%) !important;
+    box-sizing: border-box !important;
+    margin: 1px !important;
+    height: 64px !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    border-radius: 0px 0px 8px 8px !important;
+    right: 0 !important;
+}
+
+.game_info_stats_publishedfilecounts {
+    margin-top: 34px !important;
+}
+
+/*
+  
+  barra logros
+  
+  */
+.achievement_progress_bar_ctn .progress_bar {
+    background: var(--accent-color) !important;
+    );
+    background-color: none !important;
+}
+
+/*
+
+animated background fix
+
+*/
+.profile_animated_background>video {
+    position: fixed !important;
+}
+
+
+
+/*
+
+
+
+
+
+
+MEDIA - video reproduccion
+
+
+
+
+
+
+*/
+
+.html5_video_overlay .volume_icon::after {
+    content: "";
+    position: absolute;
+    color: var(--text-normal) !important);
+    font-family: "Segoe Fluent Icons";
+    font-size: 14px;
+
+
+}
+
+.html5_video_overlay .volume_icon.muted::after {
+    content: "";
+    position: absolute;
+    color: var(--text-normal) !important);
+    font-family: "Segoe Fluent Icons";
+    font-size: 14px;
+
+}
+
+.html5_video_overlay .volume_icon {
+    background-image: none !important;
+}
+
+.html5_video_overlay .fullscreen_button {
+    background-image: none !important;
+    position: absolute !important;
+    right: 12px !important;
+}
+
+.html5_video_overlay .fullscreen_button::after {
+    content: "";
+    position: absolute;
+    color: var(--text-normal) !important);
+    font-family: "Segoe Fluent Icons";
+    font-size: 14px;
+
+}
+
+.html5_video_overlay .play_button.play {
+    background-image: none !important;
+    width: 28px !important;
+    position: absolute;
+    left: calc(50% - 28px);
+    height: 28px !important;
+
+
+}
+
+.html5_video_overlay .play_button.play::after {
+    content: "";
+    position: absolute;
+    left: calc(70% - 15px) !important;
+    top: calc(70% - 15px) !important;
+    color: var(--text-normal) !important);
+    font-family: "Segoe Fluent Icons";
+    font-size: 14px;
+
+}
+
+.html5_video_overlay .play_button.play:hover {
+    background: rgb(255 255 255 / 4.19%) !important;
+    border-radius: 4px !important;
+
+}
+
+.html5_video_overlay .play_button.pause {
+    background-image: none !important;
+    position: absolute;
+    width: 28px !important;
+    height: 28px !important;
+    left: calc(50% - 28px);
+}
+
+.html5_video_overlay .play_button.pause::after {
+    content: "";
+    position: absolute;
+    left: calc(70% - 15px) !important;
+    top: calc(70% - 15px) !important;
+    color: var(--text-normal) !important);
+    font-family: "Segoe Fluent Icons";
+    font-size: 14px;
+
+}
+
+.html5_video_overlay .progress_bar_wrapper {
+    position: absolute !important;
+    bottom: 46px !important;
+    top: -18px !important;
+    left: 0px !important;
+    right: 0px !important;
+    background-color: transparent !important;
+    backdrop-filter: blur(50px) !important;
+}
+
+/*layout*/
+.html5_video_overlay .control_container {
+    height: 38px !important;
+    margin: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    background: none !important;
+    margin: 0 12px !important;
+}
+
+.html5_video_overlay {
+    height: 38px !important;
+    display: flex !important;
+    margin: 4px !important;
+    align-items: center !important;
+
+    border-radius: 8px !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: initial !important;
+    background-color: #23232340 !important;
+    backdrop-filter: blur(50px) saturate(2) !important;
+    border: 1px solid #ffffff20 !important;
+    box-shadow: 0 2px 4px #00000020 !important;
+}
+
+.html5_video_overlay .volume_slider .volume_handle {
+    position: absolute !important;
+    top: -7px !important;
+    width: 18px !important;
+    border-radius: 54px !important;
+    height: 18px !important;
+    background-image: none !important;
+    background: #135ef2 !important;
+    border: 5px solid #101010 !important;
+    box-sizing: border-box !important;
+}
+
+.html5_video_overlay .volume_slider {
+    width: 86px !important;
+    top: 0px !important;
+    height: 4px !important;
+    border-radius: 8px !important;
+    display: inline-block !important;
+    margin-left: 5px !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    background-image: none !important;
+    position: relative !important;
+}
+
+.html5_video_overlay .time {
+    position: absolute !important;
+    bottom: 80px !important;
+}
+
+.html5_video_overlay .progress_bar_container {
+    top: -6px !important;
+    left: 2px !important;
+    right: 2px !important;
+    bottom: 9px !important;
+}
+
+.html5_video_overlay .progress_bar_background {
+    top: 12px !important;
+    left: 0px !important;
+    border-radius: 8px !important;
+    bottom: 0px !important;
+}
+
+.html5_video_overlay .progress_bar {
+    top: 12px !important;
+    left: 0px !important;
+    border-radius: 8px !important;
+    bottom: 0px !important;
+}
+
+
+#highlight_player_area {
+    border-radius: 8px !important;
+    margin: 0px !important;
+    border: 1px solid rgba(255, 255, 255, 26%) !important;
+}
+
+
+/*scrolling*/
+.slider_ctn .slider_left,
+.slider_ctn .slider_right,
+.slider .handle {
+    background: transparent !important;
+    border-radius: 12px !important;
+}
+
+.slider_ctn .slider_left:hover,
+.slider_ctn .slider_right:hover,
+.slider .handle:hover {}
+
+.slider_ctn .slider_left,
+.slider_ctn .slider_right {
+    height: 14px !important;
+    width: 16px !important;
+    top: 2px !important;
+}
+
+.slider_ctn .slider_right span {
+    background-image: none !important;
+    background: transparent !important;
+}
+
+.slider_right span::after {
+    content: "";
+    font-size: 8px;
+    font-family: "Segoe Fluent Icons";
+    position: absolute;
+    right: 0;
+    top: 3px !important;
+    left: 2px !important;
+    bottom: 0;
+    color: var(--text-disabled) !important;
+}
+
+.slider_ctn .slider_left span {
+    background-image: none !important;
+    background: transparent !important;
+}
+
+.slider_left span::after {
+    content: "";
+    font-size: 8px;
+    font-family: "Segoe Fluent Icons";
+    position: absolute;
+    right: 0;
+    top: 3px !important;
+    left: 5px !important;
+    bottom: 0;
+    color: var(--text-disabled) !important;
+}
+
+.slider {
+    background: transparent !important;
+    height: 12px !important;
+    left: 16px !important;
+    right: 16px !important;
+    top: 3px !important;
+}
+
+.slider_bg {
+    background: transparent !important;
+    height: 12px !important;
+}
+
+.slider_ctn .handle {
+    background: var(--text-disabled) !important;
+    height: 6px !important;
+    border-radius: 8px !important;
+    top: 3px !important;
+}
+
+.slider_ctn {
+    border-radius: 12px !important;
+}
+
+.highlight_strip_item img {
+    border-radius: 4px !important;
+}
+
+/* .html5_video_overlay .progress_bar {
+    border-radius: 6px!important;
+    margin: 3px!important;
+    left: -1px!important;
+    background-color: var(--accent-color)!important;
+}
+.html5_video_overlay .progress_bar_background{
+    border-radius: 6px!important;
+    margin: 3px!important;
+    background-color: var(--accent-color)!important;
+} */
+/* .html5_video_overlay .control_container {
+    margin: 0!important;g
+    height: 42px!important;
+    margin-left: 0!important;
+    background-color: transparent!important;
+    backdrop-filter: blur(50px)!important;
+} */
+
+/*
+
+
+SHOP GAME PAGE BG
+
+
+*/
+.game_background_glow {
+    background: none !important;
+}
+
+img.game_header_image_full {
+    border-radius: 8px !important;
+}
+
+.page_content_ctn {
+    backdrop-filter: blur(20px) grayscale(1) !important;
+
+}
+
+.game_page_background.game {
+    background-color: #272727 !important;
+    width: 100% !important;
+
+}
+
+span.responsive_hidden {
+    display: flex !important;
+    align-items: center !important;
+}
+
+span.responsive_hidden::after {
+    content: "";
+    font-family: "Segoe Fluent ICons";
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 12px;
+}
+
+.highlight_selector {
+    background-image: none !important;
+    position: absolute !important;
+    width: 118px !important;
+    height: 66px !important;
+    z-index: 50 !important;
+    top: 0px !important;
+    border-radius: 4px !important;
+    box-sizing: border-box !important;
+    border: 2px solid !important;
+}
+
+div#game_highlights {
+    background: #00000045 !important;
+    border: 12px solid transparent !important;
+    box-sizing: border-box !important;
+    border-radius: 8px 8px 0px 0px !important;
+    padding: 0px !important;
+}
+
+.block_content.page_content div.leftcol {
+    width: 590px !important;
+}
+
+/*queue*/
+.queue_ctn {
+    border-radius: 0 0 8px 8px !important;
+}
+
+/*shop add to whitelist*/
+.queue_actions_ctn .btn_medium {
+    margin-bottom: 0px !important;
+}
+
+.highlight_player_item::before {
+    box-sizing: content-box !important;
+    content: "";
+    left: 0 !important;
+    top: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    position: absolute !important;
+    inset: 1px;
+
+    padding: 1px !important;
+    border-radius: 4px !important;
+    z-index: -2 !important;
+    bottom: 0 !important;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02) 75%) !important;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0) !important;
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0) !important;
+    -webkit-mask-composite: xor !important;
+    mask-composite: exclude !important;
+
+}
+
+.btnv6_blue_hoverfade {
+    background: rgb(255 255 255 / 4.19%) !important;
+    font-family: "Segoe UI Variable Text" !important;
+    font-size: 14px !important;
+    color: rgba(255, 255, 255, 89.52%) !important;
+    border-radius: 4px !important;
+}
+
+a.btnv6_blue_hoverfade.btn_medium.add_to_wishlist {
+    border-radius: 4px !important;
+    color: var(--text-normal) !important;
+    transition: .333s ease-in-out !important;
+    align-items: center !important;
+
+}
+
+a.btnv6_blue_hoverfade.btn_medium.add_to_wishlist:hover {
+    transition: .333s ease-in-out !important;
+    background: #ffffff15 !important;
+
+
+}
+
+a.btnv6_blue_hoverfade.btn_medium.add_to_wishlist::before {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: calc(50% - 8px);
+    font-family: "Segoe Fluent Icons" !important;
+    color: var(--text-normal) !important;
+    font-weight: 400 !important;
+    margin: 0px 12px !important;
+    font-size: 16px !important;
+}
+
+a.btnv6_blue_hoverfade.btn_medium.add_to_wishlist>span {
+    padding: 0 12px 0 32px !important;
+    color: var(--text-normal) !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}
+
+/*follow*/
+.queue_control_button.queue_btn_follow .btnv6_blue_hoverfade.btn_medium.queue_btn_inactive {
+    border-radius: 4px !important;
+    color: var(--text-normal) !important;
+
+    align-items: center !important;
+    transition: .333s ease-in-out !important;
+
+}
+
+.queue_control_button.queue_btn_follow .btnv6_blue_hoverfade.btn_medium.queue_btn_inactive:hover {
+    border-radius: 4px !important;
+    color: var(--text-normal) !important;
+
+    align-items: center !important;
+    transition: .333s ease-in-out !important;
+    background: #ffffff15 !important;
+
+}
+
+.queue_control_button.queue_btn_follow .btnv6_blue_hoverfade.btn_medium.queue_btn_inactive>span {
+    padding: 0 12px 0 12px !important;
+    color: var(--text-normal) !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}
+
+/*ignore*/
+.queue_control_button.queue_btn_ignore .btnv6_blue_hoverfade.btn_medium.queue_btn_inactive {
+    border-radius: 4px 0px 0 4px !important;
+    color: var(--text-normal) !important;
+
+
+}
+
+.queue_control_button.queue_btn_ignore .btnv6_blue_hoverfade.btn_medium.queue_btn_inactive:hover {
+    transition: .333s ease-in-out !important;
+    background: #ffffff15 !important;
+}
+
+.queue_btn_menu>.queue_menu_arrow {
+    border-top-right-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+    background: rgba(255, 255, 255, 4.19%) !important;
+}
+
+.queue_btn_menu>.queue_menu_arrow::after {
+    content: "";
+    position: absolute;
+    font-size: 12px !important;
+    right: 5px !important;
+    top: 10px !important;
+    font-family: "Segoe Fluent Icons";
+    color: var(--text-normal);
+    font-weight: 400;
+
+}
+
+.queue_btn_menu>.queue_menu_arrow>span {
+    opacity: 0 !important;
+}
+
+.queue_control_button.queue_btn_ignore .btnv6_blue_hoverfade.btn_medium.queue_btn_inactive::before {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: calc(50% - 8px);
+    font-family: "Segoe Fluent Icons" !important;
+    color: var(--text-normal) !important;
+    font-weight: 400 !important;
+    margin: 0px 12px !important;
+    font-size: 16px !important;
+}
+
+.queue_control_button.queue_btn_ignore .btnv6_blue_hoverfade.btn_medium.queue_btn_inactive>span {
+    padding: 0 12px 0 32px !important;
+    color: var(--text-normal) !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}
+
+/*title shop games*/
+.apphub_HomeHeaderContent .apphub_HeaderStandardTop {
+    background-image: none !important;
+    padding-top: 34px !important;
+    border-bottom: 1px solid #ffffff1f !important;
+    margin: 12px 0px !important;
+}
+
+.apphub_HomeHeaderContent .apphub_AppName {
+    font-size: 24px !important;
+    font-family: "Segoe UI Variable Text" !important;
+    color: var(--text-normal) !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+/*etiquetas de generos*/
+body.v6 .deep_dive_tag {
+    line-height: 16px !important;
+    padding: 1px 12px 2px 12px !important;
+    color: var(--text-normal) !important;
+    font-family: "Segoe UI Variable Small" !important;
+    background: #ffffff12 !important;
+    border-radius: 12px !important;
+}
+
+.app_tag::after {
+    box-sizing: content-box !important;
+    content: "";
+    left: 0 !important;
+    top: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    position: absolute !important;
+    inset: 1px !important;
+    padding: 1px !important;
+    border-radius: 4px !important;
+    z-index: -2 !important;
+    bottom: 0 !important;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02) 50%) !important;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0) !important;
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0) !important;
+    -webkit-mask-composite: xor !important;
+    mask-composite: exclude !important;
+}
+
+.app_tag {
+    line-height: 16px !important;
+    padding: 1px 12px 2px 12px !important;
+    color: var(--text-normal) !important;
+    font-family: "Segoe UI Variable Small" !important;
+    background: hsla(0, 0%, 100%, 0.04) !important;
+    transition: .5s ease-in-out !important;
+    border-radius: 4px !important;
+}
+
+.app_tag:hover {
+    line-height: 16px !important;
+    padding: 1px 12px 2px 12px !important;
+    color: var(--text-normal) !important;
+    font-family: "Segoe UI Variable Small" !important;
+    background: #ffffff2c !important;
+    transition: .5s ease-in-out !important;
+    border-radius: 4px !important;
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+INVENTARIO empieza aca
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+/*bg*/
+
+/*grid*/
+.trade_item_box {
+    background-color: #191919 !important;
+    border-radius: 8px !important;
+    border: none !important;
+    padding: 12px !important;
+}
+
+.inventory_page .itemHolder {
+    background-color: transparent !important;
+    background-image: none !important;
+    margin-bottom: 6px !important;
+    margin-bottom: 6px !important;
+    border: none !important;
+}
+
+.trade_item_box .item,
+.market_dialog_contents .item {
+    border-radius: 4px !important;
+    background-color: #272727 !important;
+    border: none !important;
+}
+
+.view_inventory_page {
+    background: transparent !important;
+}
+
+.view_inventory_page .item.activeInfo::before {
+
+    box-sizing: content-box !important;
+    content: "";
+    left: 0 !important;
+    top: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    position: absolute !important;
+    inset: 1px !important;
+    padding: 1px !important;
+    border-radius: 4px !important;
+    z-index: -2 !important;
+    bottom: 0 !important;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02) 50%) !important;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0) !important;
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0) !important;
+    -webkit-mask-composite: xor !important;
+    mask-composite: exclude !important;
+
+}
+
+.view_inventory_page .item.activeInfo::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    transform: translateX(0%) rotate(45deg);
+    animation: slide 2s infinite .8s;
+    background: linear-gradient(90deg,
+            rgba(255, 255, 255, 0),
+
+            rgba(255, 255, 255, 40%),
+
+            rgba(255, 255, 255, 0) 70%) !important;
+
+}
+
+.view_inventory_page .item.activeInfo,
+.view_inventory_page .item:hover {
+    background-color: #ffffff07 !important;
+    box-shadow: 0 4px 8px #00000020 !important;
+    background-image: none !important;
+    border: none !important;
+    position: relative !important;
+    overflow: hidden !important;
+    transform: scale(1.069) !important;
+    transition: .333s ease-in-out !important;
+
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.flat_page.migrated_profile_page.inventory_page.responsive_page .responsive_page_template_content .pagecontent.no_header.no_footerpad .profile_small_header_bg .profile_small_header_texture a .profile_small_header_avatar {
+    display: none !important;
+}
+
+.flat_page.migrated_profile_page.inventory_page.responsive_page .responsive_page_template_content .pagecontent.no_header.no_footerpad .profile_small_header_bg .profile_small_header_texture {
+    background: none !important;
+    max-width: none !important;
+    height: 58px !important;
+    display: flex !important;
+    gap: 12px !important;
+    margin-left: 4px !important;
+    align-items: center !important;
+}
+
+.flat_page.migrated_profile_page.inventory_page.responsive_page .responsive_page_template_content .pagecontent.no_header.no_footerpad .profile_small_header_bg .profile_small_header_texture .profile_small_header_arrow {
+    background: transparent !important;
+    height: 24px !important;
+    width: 6px !important;
+    margin: 0 12px !important;
+    color: transparent !important;
+    position: relative;
+
+}
+
+.flat_page.migrated_profile_page.inventory_page.responsive_page .responsive_page_template_content .pagecontent.no_header.no_footerpad .profile_small_header_bg .profile_small_header_texture .profile_small_header_arrow::after {
+    content: "/";
+    font-family: "Segoe UI Variable Small";
+    left: -1px;
+    color: #FFF;
+    position: absolute;
+}
+
+.flat_page.migrated_profile_page.inventory_page.responsive_page .responsive_page_template_content .pagecontent.no_header.no_footerpad .profile_small_header_bg .profile_small_header_texture .profile_small_header_text {
+    display: flex !important;
+    position: relative !important;
+    flex-direction: row !important;
+    left: 0 !important;
+    right: inherit !important;
+    bottom: inherit !important;
+    top: 0 !important;
+    align-items: center !important;
+}
+
+.flat_page.migrated_profile_page.inventory_page.responsive_page .responsive_page_template_content .pagecontent.no_header.no_footerpad .profile_small_header_bg .profile_small_header_texture .profile_small_header_text a.whiteLink {
+    height: 26px !important;
+    display: flex !important;
+    border-radius: 28px !important;
+
+    background: transparent !important;
+    padding: 0 12px !important;
+    align-items: center !important;
+}
+
+.flat_page.migrated_profile_page.inventory_page.responsive_page .responsive_page_template_content .pagecontent.no_header.no_footerpad .profile_small_header_bg .profile_small_header_texture .profile_small_header_text a.whiteLink:hover {
+    height: 26px !important;
+    display: flex !important;
+    border-radius: 28px !important;
+    background: var(--hover) !important;
+    padding: 0 12px !important;
+    align-items: center !important;
+    transition: .111s ease-in-out !important;
+}
+
+.flat_page.migrated_profile_page.inventory_page.responsive_page .responsive_page_template_content .pagecontent.no_header.no_footerpad .profile_small_header_bg .profile_small_header_texture .profile_small_header_text a.whiteLink span.profile_small_header_location::before {
+    content: "";
+    font-size: 16px;
+    margin: 0 10px 0 0;
+    font-family: "Segoe Fluent Icons";
+    font-weight: 400 !important;
+    color: var(--text-normal) !important;
+
+}
+
+.flat_page.migrated_profile_page.inventory_page.responsive_page .responsive_page_template_content .pagecontent.no_header.no_footerpad .profile_small_header_bg .profile_small_header_texture .profile_small_header_text .profile_small_header_name {
+    font-family: "Segoe UI Variable Small" !important;
+    font-weight: 600 !important;
+    font-size: 12px !important;
+    white-space: nowrap !important;
+}
+
+.flat_page.migrated_profile_page.inventory_page.responsive_page .responsive_page_template_content .pagecontent.no_header.no_footerpad .profile_small_header_bg .profile_small_header_texture .profile_small_header_text a.whiteLink {
+    width: min-content !important;
+    background: var(--normal) !important;
+}
+
+.flat_page.migrated_profile_page.inventory_page.responsive_page .responsive_page_template_content .pagecontent.no_header.no_footerpad .profile_small_header_bg .profile_small_header_texture .profile_small_header_text a.whiteLink span.profile_small_header_location {
+    display: flex !important;
+    align-items: center !important;
+    font-size: 12px !important;
+    width: min-content !important;
+    white-space: nowrap !important;
+    font-weight: 600 !important;
+    font-family: "Segoe UI Variable Small" !important;
+    color: var(--text-normal) !important;
+}
+
+
+/*
+
+
+topbar nav
+
+
+
+*/
+/*bg*/
+#tabcontent_inventory {
+    border: none !important;
+    background: transparent !important;
+}
+
+body.flat_page.migrated_profile_page.inventory_page.responsive_page {
+    background: #272727 !important;
+}
+
+.view_inventory_logo {
+    display: none !important;
+}
+
+body.flat_page #footer {
+    display: none !important;
+}
+
+/*button trade*/
+
+body.migrated_profile_page .inventory_rightnav {
+    position: absolute;
+    top: 14px !important;
+    right: 12px !important;
+    margin-right: 0 !important;
+}
+
+/*////////////////////////////////////////////*/
+.flat_page.migrated_profile_page.inventory_page.responsive_page .responsive_page_template_content .pagecontent.no_header.no_footerpad .profile_small_header_bg {
+    max-width: none !important;
+    height: 58px !important;
+    margin: 0 !important;
+    background: #191919 !important;
+}
+
+.flat_page.migrated_profile_page.inventory_page.responsive_page .responsive_page_template_content .pagecontent.no_header.no_footerpad .profile_small_header_bg .profile_small_header_texture a .profile_small_header_avatar {
+    position: relative !important;
+    top: 0px !important;
+    left: 0px !important;
+}
+
+.flat_page.migrated_profile_page.inventory_page.responsive_page .responsive_page_template_content .pagecontent.no_header.no_footerpad .profile_small_header_bg .profile_small_header_texture a .profile_small_header_avatar .playerAvatar.medium {
+    width: 28px !important;
+    height: 28px !important;
+}
+
+.games_list_tab.first_tab.active::after,
+.games_list_tab.first_tab::after {
+    content: "";
+    position: absolute;
+    font-family: "Segoe Fluent Icons";
+    font-size: 18px;
+    color: var(--text-normal) !important;
+    left: 13px !important;
+}
+
+.games_list_tab.first_tab::after {
+    left: 27px !important;
+}
+
+.games_list_tab.first_tab.active .games_list_tab_icon.item_desc_game_icon,
+.games_list_tab.first_tab .games_list_tab_icon.item_desc_game_icon {
+    opacity: 0 !important;
+}
+
+/* search topbar*/
+.filter_ctn.inventory_filters {
+    position: absolute !important;
+    top: 13px !important;
+    gap: 12px !important;
+    left: calc(50% - 245px) !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.filter_ctn.inventory_filters .filter_tag_button_ctn:hover {
+    background: var(--hover) !important;
+    transition: .2s ease-in-out !important;
+    color: var(--text-normal) !important;
+    opacity: 1 !important;
+}
+
+.filter_ctn.inventory_filters .filter_tag_button_ctn {
+    position: relative !important;
+    width: 32px !important;
+    height: 32px !important;
+    padding: 0 !important;
+    border-radius: 4px !important;
+    padding-top: 0px !important;
+    color: var(--text-normal) !important;
+    opacity: .45 !important;
+}
+
+div#filter_tag_show {
+    padding: 0 !important;
+    background: transparent !important;
+    width: 32px !important;
+    height: 32px !important;
+}
+
+div#filter_tag_show>span {
+    padding: 0 !important;
+    color: transparent !important;
+    display: flex !important;
+    align-items: center !important;
+    width: 32px !important;
+    height: 32px !important;
+    position: relative !important;
+    overflow: hidden !important;
+    background: transparent !important;
+}
+
+div#filter_tag_show>span::after {
+    content: "";
+    font-family: "Segoe Fluent Icons";
+    position: absolute;
+    left: calc(50% - 9px);
+    color: var(--text-normal) !important;
+    top: calc(50% - 9px);
+
+
+    font-size: 18px;
+}
+
+/**/
+input.filter_search_box {
+    font-family: "segoe ui variable text" !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}
+
+.filter_control_ctn {
+    margin-right: 0 !important;
+    height: 32px !important;
+    top: 0 !important;
+    left: 0 !important;
+    position: relative !important;
+}
+
+.filter_label {
+    display: none ! important;
+}
+
+.filter_control_ctn::before {
+    content: "";
+    font-family: "Segoe Fluent Icons";
+    font-size: 16px;
+    color: var(--text-normal) !important;
+    position: absolute;
+    left: 12px;
+    top: -1px;
+}
+
+.filter_ctn.inventory_filters #filter_control {
+    position: relative !important;
+    background-image: none !important;
+    background-color: #1919194d !important;
+    border-radius: 4px !important;
+    border: 1px solid rgb(255 255 255 / 6%) !important;
+    border-bottom: 2px solid gray !important;
+    box-shadow: none !important;
+    color: #fff !important;
+    margin-bottom: 0px !important;
+    outline: none !important;
+    height: 32px !important;
+    box-sizing: border-box !important;
+    padding: 0px 24px !important;
+    padding-left: 36px !important;
+}
+
+.filter_ctn.inventory_filters #filter_control:focus-within {
+    animation: selector .2s ease !important;
+    border-bottom: 2px solid var(--accent-color) !important;
+}
+
+.selectableText.filter_search_box::placeholder {
+
+    color: rgba(255, 255, 255, 34.42%) !important;
+    font-size: 14px !important;
+    margin-top: 1px !important;
+    font-weight: 400 !important;
+    text-shadow: none !important;
+    font-style: normal !important;
+    padding-left: 4px !important;
+    font-family: "Segoe UI Variable Text" !important;
+}
+
+/*nav*/
+
+.games_list_tab_row_separator {
+    display: none !important;
+}
+
+.tabitems_ctn {
+    position: relative !important;
+    left: 0px !important;
+    top: -10px !important;
+}
+
+.games_list_tabs {
+    display: flex !important;
+    flex-direction: column !important;
+    min-width: min-content !important;
+}
+
+.games_list_tab_separator {
+    display: none !important;
+}
+
+.games_list_tabs_ctn {
+    margin-bottom: 0px !important;
+    background: transparent !important;
+    padding: 12px !important;
+}
+
+.games_list_tab,
+a.games_list_tab {
+    box-sizing: border-box !important;
+    display: flex !important;
+    border-radius: 4px !important;
+    height: 36px !important;
+    margin: 2px 2px !important;
+    align-items: center !important;
+    color: var(--text-normal) !important;
+    background-color: transparent !important;
+    line-height: 20px !important;
+    width: 100% !important;
+    padding: 0px 12px !important;
+    font-size: 14px !important;
+    font-family: "Segoe UI Variable Text" !important;
+    border: 1px solid transparent !important;
+}
+
+.games_list_tab,
+a.games_list_tab:hover {
+
+    transition: .5s !important;
+    background: var(--hover) !important;
+
+}
+
+.games_list_tab_icon {
+    width: fit-content !important;
+    line-height: 20px !important;
+    padding-right: 12px !important;
+    display: flex !important;
+    align-items: center !important;
+    white-space: nowrap !important;
+}
+
+.games_list_tab_icon img {
+    width: 18px !important;
+    border-radius: 4px !important;
+}
+
+.games_list_tab_name {
+    display: flex !important;
+    max-width: none !important;
+}
+
+.games_list_tab.active {
+    overflow: hidden !important;
+    position: relative !important;
+    background: var(--selected) !important;
+    box-shadow: none !important;
+}
+
+.games_list_tab.active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 3px;
+    transform: scaley(1);
+    border-radius: 12px;
+    height: 16px;
+    background: #135ef2;
+    animation: selector .2s ease;
+
+
+}
+
+/*trade buttton*/
+body.migrated_profile_page .inventory_rightnav {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.btn_darkblue_white_innerfade.btn_medium.new_trade_offer_btn {
+    background: transparent !important;
+    height: 28px !important;
+    display: flex !important;
+    align-items: center !important;
+    color: var(--text-normal) !important;
+}
+
+.btn_darkblue_white_innerfade>span {
+    background: transparent !important;
+    border-radius: 4px !important;
+    font-family: "Segoe UI Variable Small" !important;
+    height: 28px !important;
+    font-size: 12px !important;
+    line-height: 18px !important;
+    display: flex !important;
+    text-shadow: transparent !important;
+    flex-direction: row !important;
+    gap: 12px !important;
+    font-weight: 400 !important;
+    align-items: center !important;
+}
+
+.btn_darkblue_white_innerfade>span::before {
+    content: "";
+    font-family: "Segoe Fluent Icons";
+    font-size: 16px;
+    font-weight: 400;
+
+
+}
+
+div#inventory_more_link {
+    display: flex !important;
+    align-items: center !important;
+    height: 28px !important;
+    width: 28px !important;
+    position: relative !important;
+    overflow: hidden !important;
+    background: transparent !important;
+}
+
+div#inventory_more_link>span {
+    height: 28px !important;
+    background: transparent !important;
+    width: 28px !important;
+    color: transparent !important;
+    display: flex !important;
+    align-items: center !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+div#inventory_more_link>span::after {
+    content: "";
+    font-family: "Segoe Fluent Icons";
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    color: var(--text-normal) !important;
+    font-size: 18px;
+}
+
+div#inventory_more_link span span.popup_menu_pulldown_indicator {
+    display: none;
+}
+
+
+/*////////////*/
+@keyframes selector {
+    0% {
+        transform: scaley(0);
+    }
+
+    100% {
+        transform: scaley(1);
+    }
+}
+
+@media screen {}
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+Badge pages
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+/*bg*/
+html.responsive body {
+    background: #272727 !important;
+
+
+}
+
+/*  */
+.profile_xp_block {
+    height: 58px !important;
+    background: transparent !important;
+    border: none !important;
+
+}
+
+.profile_small_header_bg {
+    max-width: none !important;
+    height: 58px !important;
+    margin: 0 !important;
+    background: #191919 !important;
+}
+
+.profile_small_header_texture {
+    background: none !important;
+    max-width: none !important;
+    height: 58px !important;
+    display: flex !important;
+    gap: 12px !important;
+    margin-left: 4px !important;
+    align-items: center !important;
+}
+
+.profile_small_header_bg .profile_small_header_texture .profile_small_header_text {
+    display: flex !important;
+    position: relative !important;
+    flex-direction: row !important;
+    left: 0 !important;
+    right: inherit !important;
+    bottom: inherit !important;
+    top: 0 !important;
+    align-items: center !important;
+}
+
+.profile_small_header_bg .profile_small_header_texture .profile_small_header_text .profile_small_header_name {
+    font-family: "Segoe UI Variable Small" !important;
+    font-weight: 600 !important;
+    font-size: 12px !important;
+    white-space: nowrap !important;
+}
+
+.profile_small_header_bg .profile_small_header_texture .profile_small_header_text a.whiteLink {
+    height: 26px !important;
+    display: flex !important;
+    border-radius: 28px !important;
+
+    background: transparent !important;
+    padding: 0 12px !important;
+    align-items: center !important;
+}
+
+.profile_small_header_bg .profile_small_header_texture .profile_small_header_text a.whiteLink:hover {
+    height: 26px !important;
+    display: flex !important;
+    border-radius: 28px !important;
+    background: var(--hover) !important;
+    padding: 0 12px !important;
+    align-items: center !important;
+    transition: .111s ease-in-out !important;
+}
+
+.pagecontent .profile_small_header_bg .profile_small_header_texture .profile_small_header_text a.whiteLink span.profile_small_header_location::before {
+    content: "";
+    font-size: 16px;
+    margin: 0 10px 0 0;
+    font-family: "Segoe Fluent Icons";
+    font-weight: 400 !important;
+    color: var(--text-normal) !important;
+
+}
+
+.pagecontent.no_header.no_footerpad .profile_small_header_bg .profile_small_header_texture .profile_small_header_text .profile_small_header_name {
+    font-family: "Segoe UI Variable Small" !important;
+    font-weight: 600 !important;
+    font-size: 12px !important;
+    white-space: nowrap !important;
+}
+
+.profile_small_header_bg .profile_small_header_texture .profile_small_header_text a.whiteLink {
+    width: min-content !important;
+    background: var(--normal) !important;
+}
+
+.profile_small_header_bg .profile_small_header_texture .profile_small_header_text a.whiteLink span.profile_small_header_location {
+    display: flex !important;
+    align-items: center !important;
+    font-size: 12px !important;
+    width: min-content !important;
+    white-space: nowrap !important;
+    font-weight: 600 !important;
+    font-family: "Segoe UI Variable Small" !important;
+    color: var(--text-normal) !important;
+}
+
+.profile_small_header_bg .profile_small_header_texture .profile_small_header_arrow {
+    background: transparent !important;
+    height: 24px !important;
+    width: 6px !important;
+    margin: 0 12px !important;
+    color: transparent !important;
+    position: relative;
+
+}
+
+.profile_small_header_bg .profile_small_header_texture .profile_small_header_arrow::after {
+    content: "/";
+    font-family: "Segoe UI Variable Small";
+    left: -1px;
+    color: #FFF;
+    position: absolute;
+}
+
+/*title & sort*/
+.profile_badges_sortoptions {
+    display: flex !important;
+    gap: 12px !important;
+    align-items: center;
+
+}
+
+.badge_sort_option:hover {
+    background: var(--hover) !important;
+    transition: .333s ease-in-out !important;
+}
+
+.badge_sort_option {
+
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 0 12px !important;
+    height: 26px !important;
+    border-radius: 30px !important;
+    border: 1px solid rgba(255, 255, 255, 6.98%) !important;
+    font-size: 12px !important;
+    line-height: center !important;
+    font-family: "Segoe UI Variable Small" !important;
+    color: var(--text-normal) !important;
+    background: var(--selected) !important;
+    transition: .333s ease-in-out !important;
+}
+
+.badge_sort_option.active {
+    transition: .333s ease-in-out !important;
+    display: flex !important;
+    align-items: center !important;
+    background: var(--accent-color) !important;
+    text-decoration: none !important;
+}
+
+.badge_row {
+
+    border: none !important;
+    border-radius: 8px !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: transparent !important;
+    transition: .333s ease-in-out !important;
+    box-shadow: 0 2px 4px #00000020 !important;
+    transform: scale(1) !important;
+    background: #2c2c2c !important;
+
+    border: 1px solid #00000020 !important;
+}
+
+.badge_row:hover {
+
+    transform: scale(1.02) !important;
+    box-shadow: 0 4px 8px #00000020 !important;
+    transition: .333s ease-in-out !important;
+
+}
+
+.badge_row_inner {
+
+    border-radius: 8px !important;
+
+    background: transparent !important;
+
+
+}
+
+.badge_title_row {
+    border-radius: 8px 8px 0px 0px !important;
+    padding: 12px !important;
+    background: #00000020 !important;
+    height: auto !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.badge_title_row .badge_title {
+    line-height: 20px;
+    order: 1 !important;
+
+    font-size: 18px !important;
+    font-family: "Segoe UI Variable Text" !important;
+    font-weight: 600 !important;
+    color: var(--text-normal) !important;
+}
+
+.badge_title_stats {
+    order: 2 !important;
+    margin-left: auto !important;
+}
+
+.badge_title_rule {
+    background: transparent !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+    border: transparent !important;
+
+}
+
+.badge_content {
+
+    padding: 12px !important;
+
+}
+
+.profile_badges_header_title {
+    font-size: 24px !important;
+    font-family: "Segoe UI Variable Display" !important;
+    font-weight: 600 !important;
+    padding-bottom: 12px !important;
+    border-bottom: 1px solid #ffffff10 !important;
+    color: var(--text-normal) !important;
+}
+
+.profile_xp_block {
+    border-radius: 58px !important;
+    padding: 12px !important;
+    box-sizing: border-box !important;
+    margin-top: 50px !important;
+    height: 58px !important;
+    background: #191919 !important;
+    display: flex !important;
+    left: calc(50% - 25%) !important;
+    width: 50% !important;
+    right: 0 !important;
+    top: 58px !important;
+    position: absolute !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 12px !important;
+}
+
+.profile_xp_block_left {
+    display: flex !important;
+    white-space: nowrap !important;
+    align-items: center !important;
+}
+
+.profile_xp_block_level,
+.profile_xp_block_xp {
+    font-size: 14px !important;
+    font-family: "Segoe UI Variable Text" !important;
+    font-weight: 400 !important;
+    color: var(--text-normal) !important;
+    margin-left: 12px !important;
+    gap: 12px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.profile_xp_block_right {
+    order: 3 !important;
+}
+
+.profile_xp_block_mid {
+    padding: 0 12px !important;
+    display: flex !important;
+    width: 100% !important;
+    flex-direction: row !important;
+    align-items: center !important;
+}
+
+.profile_xp_block_remaining {
+    font-size: 14px !important;
+    font-family: "Segoe UI Variable Text" !important;
+    font-weight: 400 !important;
+    color: var(--text-normal) !important;
+    margin-left: 12px !important;
+    gap: 12px !important;
+    display: flex !important;
+    align-items: center !important;
+    order: 1;
+}
+
+/*level progress bar*/
+.profile_xp_block_remaining_bar {
+    border-radius: 28px !important;
+    height: 8px !important;
+    width: 100% !important;
+    background: rgba(255, 255, 255, 0.06) !important;
+    margin-top: 0 !important;
+
+}
+
+
+.profile_xp_block_remaining_bar_progress {
+    height: 8px !important;
+    background-image: none !important;
+    background-color: var(--accent-color) !important;
+}
+
+.badge_details_set_favorite {
+    margin-top: 150px !important;
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+CONTENT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+.imgWallItem {
+    box-shadow: 0 4px 8px #00000020 !important;
+    box-sizing: border-box !important;
+    border-radius: 7px !important;
+    border: transparent !important;
+}
+
+.imgWallItem:hover {
+    box-sizing: content-box !important;
+    border-radius: 7px !important;
+    box-shadow: 0 4px 8px #00000020 !important;
+    border: 2px solid #ffffff !important;
+    transition: .333s ease-in-out !important;
+
+    z-index: 2 !important;
+}
+
+#BG_top_sharedfiles {
+    display: flex !important;
+    align-items: center !important;
+    z-index: 255 !important;
+    background: linear-gradient(180deg, #191919 0%, rgba(25, 25, 25, 0)270%) !important;
+    backdrop-filter: blur(15px) saturate(2) !important;
+    margin: 0 !important;
+    position: relative !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+    min-height: auto !important;
+    height: 56px !important;
+}
+
+#HeaderUserBreadcrumbs {
+    display: flex !important;
+    flex-direction: row !important;
+    padding: 0 12px !important;
+    border-bottom: 0 transparent !important;
+}
+
+span#HeaderUserInfoName {
+
+    height: 26px !important;
+    display: flex !important;
+    align-items: center !important;
+    border-radius: 28px !important;
+    background: var(--normal) !important;
+    padding: 0px 12px !important;
+    font-size: 12px !important;
+    width: min-content !important;
+    white-space: nowrap !important;
+    font-weight: 400 !important;
+    font-family: "Segoe UI Variable Small" !important;
+    color: rgba(255, 255, 255, 89.56%) !important;
+
+}
+
+#HeaderUserInfo {
+    align-items: center !important;
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.HeaderUserInfoSection {
+    height: 26px !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 0px 12px !important;
+    border-radius: 28px !important;
+    background: var(--normal) !important;
+    font-size: 12px !important;
+    width: min-content !important;
+    white-space: nowrap !important;
+    font-weight: 400 !important;
+    font-family: "Segoe UI Variable Small" !important;
+    color: rgba(255, 255, 255, 89.56%) !important;
+}
+
+.separatorArrows {
+
+    position: relative !important;
+    height: 24px !important;
+    width: 6px !important;
+    color: transparent !important;
+    background: transparent !important;
+    margin: 0px 12px !important;
+
+}
+
+.separatorArrows::after {
+
+    content: "/";
+    font-family: "Segoe UI Variable Small";
+    left: -1px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+
+}
+
+input.favoritesRadio {
+    background: red !important;
+}
+
+background: linear-gradient(rgb(25, 25, 25) 0%, rgba(25, 25, 25, 0) 260%);
+backdrop-filter: blur(60px) saturate(3);
+
+.sharedfiles_usercontrol_ctn.ellipsis {
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: row !important;
+}
+
+#FilterContainer {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 12px !important;
+}
+
+.sharedfiles_usercontrol_ctn {
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: row !important;
+}
+
+.favoritesRadioText {
+    . display: flex !important;
+    align-items: center !important;
+}
+
+label.favoritesRadioText {
+    font-family: "Segoe UI Variable Text" !important;
+    font-size: 14px !important;
+    color: var(--text-normal) !important;
+    display: flex !important;
+    align-items: center !important;
+    height: 32px !important;
+    margin-right: 12px !important;
+}
+
+/*Radio Button*/
+input#byuser {
+    margin: 6px 8px 6px 4px !important;
+    position: relative !important;
+    -webkit-appearance: none !important;
+    background-color: transparent !important;
+    background: transparent !important;
+    border: none !important;
+    fill: transparent !important;
+    width: 20px !important;
+    height: 20px !important;
+}
+
+input#byuser::after {
+    content: "";
+    border-radius: 40px;
+    background: transparent !important;
+    border: 1px solid rgb(255 255 255 / 60.47%) !important;
+    width: 18px !important;
+    height: 18px !important;
+    color: var(--accent-color);
+    position: absolute;
+    left: calc(50% - 10px);
+    top: calc(50% - 10px);
+}
+
+input#byuser:hover:after {
+    content: "";
+    border-radius: 40px;
+    background: var(--hover) !important;
+    border: 1px solid rgb(255 255 255 / 60.47%) !important;
+    width: 18px !important;
+    height: 18px !important;
+    color: var(--accent-color);
+    position: absolute;
+    left: calc(50% - 10px);
+    top: calc(50% - 10px);
+    animation: inputradiohover .333s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+input#byuser:active:after {
+    content: "";
+    border-radius: 40px;
+    background: var(--selected) !important;
+    border: 1px solid rgb(255 255 255 / 60.47%) !important;
+    width: 18px !important;
+    height: 18px !important;
+    color: var(--accent-color);
+    position: absolute;
+    left: calc(50% - 10px);
+    top: calc(50% - 10px);
+}
+
+input#byuser:active:before {
+    content: "";
+    border-radius: 40px;
+    background: black !important;
+    border: 1px solid var(--normal) !important;
+    width: 10px !important;
+    height: 10px !important;
+    position: absolute;
+    left: calc(50% - 6px);
+    top: calc(50% - 6px);
+    z-index: 2;
+    transform: scale(1);
+    animation: inputradioactive2 .333s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+/*checked*/
+input#byuser:checked {
+    position: relative !important;
+    -webkit-appearance: none !important;
+    background-color: transparent !important;
+    background: transparent !important;
+    border: none !important;
+    fill: transparent !important;
+    width: 20px !important;
+    height: 20px !important;
+    margin: 6px 8px 6px 4px !important;
+}
+
+input#byuser:checked:after {
+    content: "";
+    border-radius: 40px;
+    background: var(--accent-color) !important;
+    border: 1px solid var(--accent-color) !important;
+    width: 18px !important;
+    height: 18px !important;
+    color: var(--accent-color);
+    position: absolute;
+    left: calc(50% - 10px);
+    top: calc(50% - 10px);
+}
+
+input#byuser:checked:before {
+    content: "";
+    border-radius: 40px;
+    background: black !important;
+    border: 1px solid var(--normal) !important;
+    width: 8px !important;
+    height: 8px !important;
+    position: absolute;
+    left: calc(50% - 5px);
+    top: calc(50% - 5px);
+    z-index: 2;
+}
+
+input#byuser:checked:hover:before {
+    content: "";
+    border-radius: 40px;
+    background: black !important;
+    border: 1px solid var(--normal) !important;
+    width: 10px !important;
+    height: 10px !important;
+    position: absolute;
+    left: calc(50% - 6px);
+    top: calc(50% - 6px);
+    z-index: 2;
+    transform: scale(1);
+    animation: inputradioactive2 .333s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+input#byuser:checked:active:before {
+    content: "";
+    border-radius: 40px;
+    background: black !important;
+    border: 1px solid var(--normal) !important;
+    width: 10px !important;
+    height: 10px !important;
+    position: absolute;
+    left: calc(50% - 6px);
+    top: calc(50% - 6px);
+    z-index: 2;
+    transform: scale(0.7);
+    animation: inputradioactive .333s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes inputradiohover {
+    0% {
+        background: var(--normal) !important;
+        border: 1px solid rgb(255 255 255 / 60.47%) !important;
+    }
+
+    100% {
+        background: var(--hover) !important;
+        border: 1px solid rgb(255 255 255 / 60.47%) !important;
+    }
+}
+
+
+@keyframes inputradioactive2 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.7);
+    }
+}
+
+@keyframes inputradioactive2 {
+    0% {
+        transform: scale(0.7);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*Radio Button*/
+input.favoritesRadio {
+    margin: 6px 8px 6px 4px !important;
+    position: relative !important;
+    -webkit-appearance: none !important;
+    background-color: transparent !important;
+    background: transparent !important;
+    border: none !important;
+    fill: transparent !important;
+    width: 20px !important;
+    height: 20px !important;
+}
+
+input.favoritesRadio::after {
+    content: "";
+    border-radius: 40px;
+    background: transparent !important;
+    border: 1px solid rgb(255 255 255 / 60.47%) !important;
+    width: 18px !important;
+    height: 18px !important;
+    color: var(--accent-color);
+    position: absolute;
+    left: calc(50% - 10px);
+    top: calc(50% - 10px);
+}
+
+input.favoritesRadio:hover:after {
+    content: "";
+    border-radius: 40px;
+    background: var(--hover) !important;
+    border: 1px solid rgb(255 255 255 / 60.47%) !important;
+    width: 18px !important;
+    height: 18px !important;
+    color: var(--accent-color);
+    position: absolute;
+    left: calc(50% - 10px);
+    top: calc(50% - 10px);
+    animation: inputradiohover .333s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+input.favoritesRadio:active:after {
+    content: "";
+    border-radius: 40px;
+    background: var(--selected) !important;
+    border: 1px solid rgb(255 255 255 / 60.47%) !important;
+    width: 18px !important;
+    height: 18px !important;
+    color: var(--accent-color);
+    position: absolute;
+    left: calc(50% - 10px);
+    top: calc(50% - 10px);
+}
+
+input.favoritesRadio:active:before {
+    content: "";
+    border-radius: 40px;
+    background: black !important;
+    border: 1px solid var(--normal) !important;
+    width: 10px !important;
+    height: 10px !important;
+    position: absolute;
+    left: calc(50% - 6px);
+    top: calc(50% - 6px);
+    z-index: 2;
+    transform: scale(1);
+    animation: inputradioactive2 .333s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+/*checked*/
+input.favoritesRadio:checked {
+    position: relative !important;
+    -webkit-appearance: none !important;
+    background-color: transparent !important;
+    background: transparent !important;
+    border: none !important;
+    fill: transparent !important;
+    width: 20px !important;
+    height: 20px !important;
+    margin: 6px 8px 6px 4px !important;
+}
+
+input.favoritesRadio:checked:after {
+    content: "";
+    border-radius: 40px;
+    background: var(--accent-color) !important;
+    border: 1px solid var(--accent-color) !important;
+    width: 18px !important;
+    height: 18px !important;
+    color: var(--accent-color);
+    position: absolute;
+    left: calc(50% - 10px);
+    top: calc(50% - 10px);
+}
+
+input.favoritesRadio:checked:before {
+    content: "";
+    border-radius: 40px;
+    background: black !important;
+    border: 1px solid var(--normal) !important;
+    width: 8px !important;
+    height: 8px !important;
+    position: absolute;
+    left: calc(50% - 5px);
+    top: calc(50% - 5px);
+    z-index: 2;
+}
+
+input.favoritesRadio:checked:hover:before {
+    content: "";
+    border-radius: 40px;
+    background: black !important;
+    border: 1px solid var(--normal) !important;
+    width: 10px !important;
+    height: 10px !important;
+    position: absolute;
+    left: calc(50% - 6px);
+    top: calc(50% - 6px);
+    z-index: 2;
+    transform: scale(1);
+    animation: inputradioactive2 .333s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+input.favoritesRadio:checked:active:before {
+    content: "";
+    border-radius: 40px;
+    background: black !important;
+    border: 1px solid var(--normal) !important;
+    width: 10px !important;
+    height: 10px !important;
+    position: absolute;
+    left: calc(50% - 6px);
+    top: calc(50% - 6px);
+    z-index: 2;
+    transform: scale(0.7);
+    animation: inputradioactive .333s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/* content: "";
+font-size: 18px;
+font-family: "Segoe Fluent Icons";
+background: red; */
+
+/*GRID & LAYOUT*/
+.tabs_basebg_workshop .profileBlock #leftContents {
+    width: auto !important;
+}
+
+.responsive_tab_baseline {}
+
+#BG_bottom_sharedfiles {
+    max-width: none !important;
+}
+
+#mainContents_sharedfiles {
+    padding-top: 0 !important;
+    display: grid !important;
+    grid-template-rows: auto 1fr !important;
+    grid-template-columns: 40vh 1fr !important;
+    grid-template-areas:
+        "topbar topbar"
+        "sidebar content" !important;
+}
+
+.sharedfiles_header_ctn {
+    top: 0 !important;
+    position: sticky !important;
+    grid-area: topbar !important;
+    z-index: 999 !important;
+}
+
+#mainContents_sharedfiles .sectionTabs {
+    position: sticky !important;
+    top: 56px !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    height: 100vh !important;
+    background: transparent !important;
+    flex-direction: column !important;
+    display: flex !important;
+    grid-area: sidebar !important;
+    padding-top: 12px !important;
+    border-right: 1px solid #ffffff14 !important;
+
+}
+
+#tabs_basebg,
+#tabs_basebg_workshop {
+    grid-area: content !important;
+    max-width: none !important;
+
+    padding: 12px 24px !important;
+    width: auto !important;
+
+}
+
+.sectionTab.active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 3px;
+    transform: scaley(1);
+    border-radius: 12px;
+    height: 16px;
+    background: #135ef2;
+    animation: selector .2s ease;
+
+
+}
+
+.sectionTab,
+a.sectionTab {
+    box-sizing: border-box !important;
+    display: flex !important;
+    border-radius: 4px !important;
+    height: 36px !important;
+    margin: 2px 2px !important;
+    align-items: center !important;
+    color: var(--text-normal) !important;
+    background-color: transparent !important;
+    line-height: 20px !important;
+    width: auto !important;
+    margin: 4px 12px !important;
+    padding: 0px 8px !important;
+    font-size: 14px !important;
+    font-family: "Segoe UI Variable Text" !important;
+    border: 1px solid transparent !important;
+}
+
+.sectionTab:hover {
+    background: var(--hover) !important;
+}
+
+.sectionTab.active {
+    position: relative !important;
+    color: var(--text-normal) !important;
+    background: var(--hover) !important;
+    margin: 2px 12px !important;
+}
+
+.sectionTab.active>span {
+    color: var(--text-normal) !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    background: transparent !important;
+}
+
+/*ICONS*/
+a.sectionTab.screenshots span::before {
+    content: "";
+    font-size: 18px;
+    position: relative;
+    margin-left: 12px;
+    font-family: "Segoe Fluent Icons";
+}
+
+a.sectionTab.screenshots span {
+    display: flex !important;
+    gap: 12px;
+    align-items: center !important;
+    font-family: "Segoe UI Variable Text" !important;
+}
+
+a.sectionTab.images span::before {
+    content: "";
+    font-size: 18px;
+    position: relative;
+    margin-left: 12px;
+    font-family: "Segoe Fluent Icons";
+}
+
+a.sectionTab.images span {
+    display: flex !important;
+    gap: 12px;
+    align-items: center !important;
+    font-family: "Segoe UI Variable Text" !important;
+}
+
+a.sectionTab.videos span::before {
+    content: "";
+    font-size: 18px;
+    position: relative;
+    margin-left: 12px;
+    font-family: "Segoe Fluent Icons";
+}
+
+a.sectionTab.videos span {
+    display: flex !important;
+    gap: 12px;
+    align-items: center !important;
+    font-family: "Segoe UI Variable Text" !important;
+}
+
+a.sectionTab.items span::before {
+    content: "";
+    font-size: 18px;
+    position: relative;
+    margin-left: 12px;
+    font-family: "Segoe Fluent Icons";
+}
+
+a.sectionTab.items span {
+    display: flex !important;
+    gap: 12px;
+    align-items: center !important;
+    font-family: "Segoe UI Variable Text" !important;
+}
+
+a.sectionTab.merchandise span::before {
+    content: "";
+    font-size: 18px;
+    position: relative;
+    margin-left: 12px;
+    font-family: "Segoe Fluent Icons";
+}
+
+a.sectionTab.merchandise span {
+    display: flex !important;
+    gap: 12px;
+    align-items: center !important;
+    font-family: "Segoe UI Variable Text" !important;
+
+}
+
+a.sectionTab.collections span {
+    display: flex !important;
+    gap: 12px;
+    align-items: center !important;
+    font-family: "Segoe UI Variable Text" !important;
+}
+
+a.sectionTab.collections span::before {
+    content: "";
+    font-size: 18px;
+    position: relative;
+    margin-left: 12px;
+    font-family: "Segoe Fluent Icons";
+}
+
+a.sectionTab.guides span {
+    display: flex !important;
+    gap: 12px;
+    align-items: center !important;
+    font-family: "Segoe UI Variable Text" !important;
+
+}
+
+a.sectionTab.guides span::before {
+    content: "";
+    font-size: 18px;
+    position: relative;
+    margin-left: 12px;
+    font-family: "Segoe Fluent Icons";
+}
+
+/*back to the top*/
+.imgWall_BackToTop {
+
+    border-radius: 8px 8px 0 0 !important;
+    width: 48px !important;
+    height: 54px !important;
+    left: auto !important;
+    backdrop-filter: blur(26px) !important;
+    background: rgba(25, 25, 25, 62%) !important;
+    box-shadow: 0 8px 18px 0 #00000020 !important;
+    transition: .222s cubic-bezier(0.13, 1.62, 0, 0.92) !important;
+    transform: translateY(0px) !important;
+    animation: invoke .667s cubic-bezier(0.13, 1.62, 0, 0.92) !important;
+
+
+}
+
+.imgWall_BackToTop:hover {
+    transition: .667s cubic-bezier(0.13, 1.62, 0, 0.92) !important;
+    height: 58px !important;
+    background-color: #1e1e1e95 !important;
+}
+
+@keyframes invoke {
+    0% {
+        transform: translateY(-54px);
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+.imgWall_BackToTopButton {
+    background-image: none !important;
+}
+
+.imgWall_BackToTopButton.middle {
+    width: 48px !important;
+    height: 54px !important;
+    margin: 0 !important;
+    border-radius: 20px !important;
+    color: transparent !important;
+    box-sizing: border-box !important;
+    border: transparent !important;
+
+}
+
+.imgWall_BackToTop>a {
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 48px !important;
+    height: 48px !important;
+}
+
+.imgWall_BackToTop>a::after {
+
+    content: "";
+    position: absolute !important;
+    font-size: 14px !important;
+    font-family: "Segoe Fluent Icons" !important;
+    color: var(--accent-color) !important;
+    top: calc(50% - 8px) !important;
+    left: calc(50% - 7.4px) !important;
+    font-weight: 600 !important;
+    transform: rotate(0deg) !important;
+
+}
+
+.imgWall_BackToTopButton.leftcap {
+
+    top: calc(50% - 10px) !important;
+    left: calc(50% - 10px) !important;
+    width: 20px !important;
+    height: 20px !important;
+    margin: 0 !important;
+    border-radius: 20px !important;
+    color: transparent !important;
+    box-sizing: border-box !important;
+    border: 2px solid var(--accent-color) !important;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translateY(0deg);
+    }
+
+    100% {
+        transform: translateY(360deg)
+    }
+}
+
+#HeaderUserAvatar {
+    display: none !important;
+}
+
+.imgWallHoverDescription {
+    font-size: 14px !important;
+    font-family: "Segoe UI Variable Text" !important;
+    padding: 4px 12px 12px 12px !important;
+    line-height: normal !important;
+    background-color: #00000020 !important;
+    backdrop-filter: blur(25px) !important;
+    color: #ffffff !important;
+    border-radius: 6px 6px 0px 0px !important;
+}
+
+.sharedfiles_usercontrols_label {
+    display: none !important;
+}
+
+div#sharedfiles_filterselect_app {
+    width: 68px !important;
+    height: 40px !important;
+    border-radius: 4px !important;
+    background: transparent !important;
+    color: transparent !important;
+    margin: 0 !important;
+    border: none !important;
+}
+
+div#sharedfiles_filterselect_app:hover {
+    border: none !important;
+    background: var(--hover) !important;
+}
+
+div#sharedfiles_filterselect_app::before {
+    content: "";
+    font-family: "Segoe Fluent Icons";
+    font-size: 18px;
+    position: absolute;
+    top: calc(50% - 13px);
+    left: calc(50% - 20px);
+    color: var(--text-normal);
+}
+
+div#sharedfiles_filterselect_app::after {
+    content: "";
+    font-family: "Segoe Fluent Icons";
+    font-size: 12px;
+    position: absolute;
+    top: calc(50% - 12px);
+    right: calc(50% - 24px);
+    color: var(--text-normal);
+    transform: rotate(0);
+    animation: rotateinvertout .333s cubic-bezier(0, 0, 0, 1);
+}
+
+@keyframes rotateinvertout {
+    0% {
+        transform: rotate(180deg)
+    }
+
+    100% {
+        transform: rotate(0deg)
+    }
+}
+
+div#sharedfiles_filterselect_app.focus::after {
+    content: "";
+    font-family: "Segoe Fluent Icons";
+    font-size: 12px;
+    position: absolute;
+    top: calc(50% - 12px);
+    right: calc(50% - 24px);
+    color: var(--text-normal);
+    transform: rotate(180deg);
+    animation: rotateinvert .333s cubic-bezier(0, 0, 0, 1);
+}
+
+@keyframes rotateinvert {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(180deg)
+    }
+}
+
+
+div#sharedfiles_filterselect_app.focus {
+    border: none !important;
+    background: var(--selected) !important;
+}
+
+div#sharedfiles_filterselect_app_activeoption {
+    color: transparent !important;
+    background: none !important;
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+generic nav
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+.homeTabSpacer>div .sectionTabs.item.responsive_hidden {
+    height: auto !important;
+    margin: 12px 0 !important;
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FRIENDS 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+.friends_header_bg {
+    height: 58px !important;
+    margin: 0 !important;
+    background: #191919 !important;
+}
+
+.friends_header_container {
+    height: 58px !important;
+    margin: 0 !important;
+}
+
+.friends_nav .hr {
+    margin: 0 !important;
+    border: transparent !important;
+}
+
+.friends_nav h4 {
+    font-family: "Segoe UI Variable Text" !important;
+    letter-spacing: 0px !important;
+    font-weight: 600 !important;
+    text-transform: none !important;
+    padding: 0 !important;
+    font-size: 16px !important;
+    color: var(--text-normal) !important;
+    margin: 12px 12px;
+    border-bottom: 1px solid #ffffff14 !important;
+    padding: 12px 24px !important;
+}
+
+.count {
+    float: right !important;
+    margin: 0 !important;
+    font-family: "Segoe UI Variable Small" !important;
+    color: #ffffff !important;
+    background: var(--accent-color-1) !important;
+    font-size: 12px !important;
+    margin-left: auto !important;
+    margin-right: -19px !important;
+    width: auto !important;
+    height: 16px !important;
+    padding: 0 5px !important;
+    text-align: center !important;
+    line-height: 14px !important;
+    border-radius: 24px !important;
+    color: black !important;
+}
+
+.em_count {
+    font-family: "Segoe UI Variable Small" !important;
+    background-color: var(--accent-color) !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    border-radius: 2px !important;
+    margin-left: auto;
+    margin-right: -19px !important;
+    font-size: 12px !important;
+    color: black !important;
+    width: auto !important;
+    padding: 0 5px !important;
+    height: 16px !important;
+    border-radius: 16px !important;
+    text-align: center !important;
+    line-height: 15px !important;
+}
+
+
+.friends_nav a {
+    box-sizing: border-box !important;
+    display: flex !important;
+    border-radius: 4px !important;
+    height: 36px !important;
+    margin: 2px 2px !important;
+    align-items: center !important;
+    color: var(--text-normal) !important;
+    background-color: transparent !important;
+    line-height: 20px !important;
+    width: auto !important;
+    margin: 4px 12px !important;
+    padding: 0px 8px !important;
+    font-size: 14px !important;
+    font-family: "Segoe UI Variable Text" !important;
+    border: 1px solid transparent !important;
+}
+
+.friends_nav a:hover {
+    background: var(--hover) !important;
+}
+
+.friends_nav a.active {
+    position: relative !important;
+    color: var(--text-normal) !important;
+    background: var(--hover) !important;
+    margin: 2px 12px !important;
+}
+
+.friends_nav a.active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 3px;
+    transform: scaley(1);
+    border-radius: 12px;
+    height: 16px;
+    background: #135ef2;
+    animation: selector .2s ease;
+
+
+}
+
+.friends_nav a.icon_item .title {
+    background-image: none !important;
+    line-height: 20px !important;
+    padding-left: 0 !important;
+    font-weight: 400 !important;
+}
+
+a.icon_item.icon_all_groups span.title::before {
+    content: "";
+    font-size: 18px;
+    position: relative;
+    margin-left: 12px;
+    font-family: "Segoe Fluent Icons";
+}
+
+a.icon_item.icon_all_groups span.title {
+    display: flex !important;
+    gap: 12px;
+    align-items: center !important;
+    font-family: "Segoe UI Variable Text" !important;
+}
+
+a.icon_item.icon_blocked_friends span.title::before {
+    content: "";
+    font-size: 18px;
+    position: relative;
+    margin-left: 12px;
+    font-family: "Segoe Fluent Icons";
+}
+
+a.icon_item.icon_blocked_friends span.title {
+    display: flex !important;
+    gap: 12px;
+    align-items: center !important;
+    font-family: "Segoe UI Variable Text" !important;
+}
+
+a.icon_item.icon_pending_friends span.title::before {
+    content: "";
+    font-size: 18px;
+    position: relative;
+    margin-left: 12px;
+    font-family: "Segoe Fluent Icons";
+}
+
+a.icon_item.icon_pending_friends span.title {
+    display: flex !important;
+    gap: 12px;
+    align-items: center !important;
+    font-family: "Segoe UI Variable Text" !important;
+}
+
+a.icon_item.icon_pending_friends span.title::before {
+    content: "";
+    font-size: 18px;
+    position: relative;
+    margin-left: 12px;
+    font-family: "Segoe Fluent Icons";
+}
+
+a.icon_item.icon_pending_friends span.title {
+    display: flex !important;
+    gap: 12px;
+    align-items: center !important;
+    font-family: "Segoe UI Variable Text" !important;
+}
+
+a.icon_item.icon_all_friends span.title::before {
+    content: "";
+    font-size: 18px;
+    position: relative;
+    margin-left: 12px;
+    font-family: "Segoe Fluent Icons";
+}
+
+a.icon_item.icon_all_friends span.title {
+    display: flex !important;
+    gap: 12px;
+    align-items: center !important;
+    font-family: "Segoe UI Variable Text" !important;
+}
+
+a.icon_item.icon_add_friends span.title::before {
+    content: "";
+    font-size: 18px;
+    position: relative;
+    margin-left: 12px;
+    font-family: "Segoe Fluent Icons";
+}
+
+a.icon_item.icon_add_friends span.title {
+    display: flex !important;
+    gap: 12px;
+    align-items: center !important;
+    font-family: "Segoe UI Variable Text" !important;
+}
+
+a.icon_item.icon_recent_friends span.title::before {
+    content: "";
+    font-size: 18px;
+    position: relative;
+    margin-left: 12px;
+    font-family: "Segoe Fluent Icons";
+}
+
+a.icon_item.icon_recent_friends span.title {
+    display: flex !important;
+    gap: 12px;
+    align-items: center !important;
+    font-family: "Segoe UI Variable Text" !important;
+}
+
+a.icon_item.icon_all_following span.title::before {
+    content: "";
+    font-size: 18px;
+    position: relative;
+    margin-left: 12px;
+    font-family: "Segoe Fluent Icons";
+}
+
+a.icon_item.icon_all_following span.title {
+    display: flex !important;
+    gap: 12px;
+    align-items: center !important;
+    font-family: "Segoe UI Variable Text" !important;
+}
+
+a.icon_item.icon_games_following span.title::before {
+    content: "";
+    font-size: 18px;
+    position: relative;
+    margin-left: 12px;
+    font-family: "Segoe Fluent Icons";
+}
+
+a.icon_item.icon_games_following span.title {
+    display: flex !important;
+    gap: 12px;
+    align-items: center !important;
+    font-family: "Segoe UI Variable Text" !important;
+}
+
+a.icon_item.icon_pending_groups span.title::before {
+    content: "";
+    font-size: 18px;
+    position: relative;
+    margin-left: 12px;
+    font-family: "Segoe Fluent Icons";
+}
+
+a.icon_item.icon_pending_groups span.title {
+    display: flex !important;
+    gap: 12px;
+    align-items: center !important;
+    font-family: "Segoe UI Variable Text" !important;
+}
+
+a.icon_item.icon_find_group span.title::before {
+    content: "";
+    font-size: 18px;
+    position: relative;
+    margin-left: 12px;
+    font-family: "Segoe Fluent Icons";
+}
+
+a.icon_item.icon_find_group span.title {
+    display: flex !important;
+    gap: 12px;
+    align-items: center !important;
+    font-family: "Segoe UI Variable Text" !important;
+}
+
+a.icon_item.icon_create_group span.title::before {
+    content: "";
+    font-size: 18px;
+    position: relative;
+    margin-left: 12px;
+    font-family: "Segoe Fluent Icons";
+
+}
+
+a.icon_item.icon_create_group span.title {
+    display: flex !important;
+    gap: 12px;
+    align-items: center !important;
+    font-family: "Segoe UI Variable Text" !important;
+}
+
+/* GRID & CONTAINER */
+.pagecontent.no_header.friends {
+    overflow: hidden !important;
+    max-width: none !important;
+    margin: 0 !important;
+}
+
+.friends_container {
+    font-family: "Segoe UI Variable Text", Sans-serif !important;
+    font-weight: 400 !important;
+    margin: 0 !important;
+    display: grid !important;
+    grid-template-rows: 1fr !important;
+    grid-template-columns: 40vh 1fr !important;
+    grid-template-areas: "sidebar content" !important;
+}
+
+.friends_container .friends_nav {
+    min-width: max-content !important;
+    display: flex !important;
+    flex-direction: column !important;
+    grid-area: sidebar !important;
+    position: sticky !important;
+    top: 46px !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    height: 100vh !important;
+    padding-top: 12px !important;
+    border-right: 1px solid #ffffff14 !important;
+}
+
+.friends_container .friends_content {
+    grid-area: content !important;
+}
+
+position: fixed;
+content: "s";
+top: 0;
+left: 0;
+height: 11px;
+width: 11px;
+border-top-left-radius: 12px;
+background: transparent;
+box-shadow: -5px -7px 0px 0px #191919;
+}
+
+
+/* Fixes By Royal Guard */
+
+	/* Discounted price fix */
+	
+	.game_purchase_discount .discount_original_price{
+		right: 0 !important;
+	}
+	
+	.discount_prices .discount_final_price{
+		padding-top:0 !important;
+	}
+	
+	/* Random grey spot in homepage */
+	.home_page_body_ctn{
+		background: #232323;
+	}
+	
+	/* Steam Footer being blue */
+	body.v6 #footer{
+		background: #121212;
+	}

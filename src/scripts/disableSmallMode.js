@@ -1,6 +1,6 @@
 import { waitForElement } from "./waitForElement.js";
 
-const removeSmallMode = async () => {
+(async () => {
     if(document.title !== 'View Root Menu') return;
 
     try {
@@ -20,6 +20,4 @@ const removeSmallMode = async () => {
     catch(error) {
         console.error(error, 'took too long to find the requested element');
     }
-}
-
-removeSmallMode()
+})()

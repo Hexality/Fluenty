@@ -1,13 +1,12 @@
+@import url(./titlebar/steamMainBar.css);
 [class*="steamdesktop_Wrapper_"] {
   background: var(--background-fill-color-mica-background-base);
 }
-
 [class*="steamdesktop_Wrapper_"] [class*="steamdesktop_OuterFrame_"] {
   width: unset !important;
   transition: width 0.25s ease;
   flex: 1;
 }
-
 /* ---------------- Removed ---------------- */
 [class*="steamdesktop_Wrapper_"] [class*="steamdesktop_FocusBar_"],
 [class*="steamdesktop_Wrapper_"] [class*="steamdesktop_SuperNavBar_"],
@@ -16,13 +15,11 @@
 [class*="steamdesktop_BrowserWrapper_"] [class*="bottombar_FriendsButton_"] {
   display: none;
 }
-
 /* ---------------- Sidebar ---------------- */
 @font-face {
   font-family: FluentSystemIcons;
   src: url("../fonts/FluentSystemIcons-Resizable.woff2");
 }
-
 :root {
   --text-font-family: "Segoe UI Variable Text", "Segoe UI";
   --background-fill-color-acrylic-background-default: url("../media/noise.jpeg");
@@ -31,13 +28,11 @@
   --background-fill-color-mica-background-base: rgb(32 32 32);
   --stroke-color-card-stroke-default: rgba(0, 0, 0, 0.1);
   --background-fill-color-layer-default: rgba(58, 58, 58, 0.3);
-  --main-accent-default: var(--fill-color-accent-secondary);
+  --main-accent-default: var(--SystemAccentColor, --fill-color-accent-secondary);
   --fill-color-subtle-secondary: rgba(255, 255, 255, 0.06);
   --fill-color-text-primary: rgba(255, 255, 255, 1);
-
   --fill-color-acrylic-background-default: rgba(44, 44, 44, 0.96);
 }
-
 /* @media (prefer-color-scheme: dark) {
   :root {
     --background-fill-color-mica-background-base: rgb(32 32 32);
@@ -46,11 +41,9 @@
     --main-accent-default: var(--fill-color-accent-secondary);
     --fill-color-subtle-secondary: rgba(255, 255, 255, 0.06);
     --fill-color-text-primary: rgba(255, 255, 255, 1);
-
     --fill-color-acrylic-background-default: rgba(44, 44, 44, 0.96);
   }
 }
-
 @media (prefer-color-scheme: light) {
   :root {
     --background-fill-color-mica-background-base: rgb(243, 243, 243);
@@ -61,12 +54,10 @@
     --fill-color-text-primary: rgba(0, 0, 0, 0.9);
   }
 } */
-
 body {
   font-family: var(--text-font-family);
   font-size: 14px;
 }
-
 #sidebar {
   display: flex;
   min-width: 48px;
@@ -76,12 +67,10 @@ body {
   padding: 8px 0;
   color: var(--fill-color-text-primary) !important;
 }
-
 #sidebar.active {
   min-width: 232px;
   transition: min-width 0.25s ease-in;
 }
-
 .activeIndicator {
   position: absolute;
   display: flex;
@@ -91,7 +80,6 @@ body {
   height: 34px;
   transition: top 0.15s cubic-bezier(1, 0, 0, 1);
 }
-
 .activeIndicator::before {
   content: "";
   width: 3px;
@@ -99,23 +87,19 @@ body {
   border-radius: 1.5px;
   background: var(--main-accent-default);
 }
-
 .section {
   display: flex;
   flex-direction: column;
   gap: 4px;
   margin: 0 4px;
 }
-
 .section:nth-child(1) {
   flex: 1 1 auto;
   align-items: flex-start;
 }
-
 .section:nth-child(2) {
   align-items: flex-end;
 }
-
 .section .button {
   display: flex;
   width: 100%;
@@ -126,16 +110,13 @@ body {
   color: var(--fill-color-text-primary);
   transition: background 0.1s ease-out;
 }
-
 .section .button.active {
   background: var(--fill-color-subtle-secondary);
 }
-
 .section .button:hover {
   background: var(--fill-color-subtle-secondary);
   transition: background 0.1s ease-in;
 }
-
 .section .button .icon {
   display: grid;
   place-items: center;
@@ -147,86 +128,68 @@ body {
   margin-left: 3px;
   overflow: hidden;
 }
-
 .section #back.button .icon::before {
   content: "";
 }
-
 .section #back.button.active .icon::before,
 .section #back.button:active .icon::before {
   content: "";
 }
-
 .section #library.button .icon::before {
   content: "";
 }
-
 .section #library.button.active .icon::before,
 .section #library.button:active .icon::before {
   content: "";
 }
-
 .section #collections.button .icon::before {
   content: "";
 }
-
 .section #collections.button.active .icon::before,
 .section #collections.button:active .icon::before {
   content: "";
 }
-
 .section #community.button .icon::before {
   content: "";
 }
-
 .section #community.button.active .icon::before,
 .section #community.button:active .icon::before {
   content: "";
 }
-
 .section #store.button .icon::before {
   content: "";
 }
-
 .section #store.button.active .icon::before,
 .section #store.button:active .icon::before {
   content: "";
 }
-
 .section #downloads.button .icon::before {
   content: "";
 }
-
 .section #downloads.button.active .icon::before,
 .section #downloads.button:active .icon::before {
   content: "";
 }
-
 .section #settings.button .icon::before {
   content: "";
 }
-
 .section #settings.button:active .icon::before,
 .section #settings.button:active .icon::before {
   content: "";
 }
-
 .section .button .text {
   width: 0;
   margin-block: 6px 8px;
   transition: width 0.25s ease-out;
   overflow: hidden;
 }
-
 #sidebar.active .button .text {
   width: 100%;
   transition: width 0.25s ease-in;
 }
-
 .section #back.button {
   margin-bottom: 3px;
 }
-
 /* ---------------- Menubar ---------------- */
 [class*="steamdesktop_Wrapper_"]
   .titlebarcontrols_TitleBarControls_3cykd
@@ -246,12 +209,10 @@ body {
   .titlebarcontrols_SoundtrackControls_Utdt7 {
   margin-right: unset !important;
 }
-
 [class*="steamdesktop_Wrapper_"] [class*="steamdesktop_TopBar_"] {
   background: transparent !important;
   box-shadow: none !important;
 }
-
 [class*="steamdesktop_Wrapper_"] [class*="steamdesktop_TitleBar_"] {
   width: 100%;
   height: 48px !important;
@@ -260,27 +221,23 @@ body {
   -webkit-app-region: drag;
   gap: 8px;
 }
-
 [class*="steamdesktop_Wrapper_"]
   [class*="steamdesktop_TitleBar_"]
   [class*="steamdesktop_RootMenuBar_"] {
   flex: 1 !important;
   margin-top: unset !important;
 }
-
 [class*="steamdesktop_Wrapper_"]
   [class*="steamdesktop_TitleBar_"]
   [class*="steamdesktop_DragArea_"] {
   display: none !important;
 }
-
 [class*="steamdesktop_Wrapper_"]
   [class*="steamdesktop_TitleBar_"]
   [class*="steamdesktop_RootMenuBar_"]
   [class*="menu_MenuWrapper_"][class*="rootmenu_RootMenuButton_"] {
   color: var(--fill-color-text-primary) !important;
 }
-
 [class*="steamdesktop_Wrapper_"] [class*="titlebarcontrols_TitleBarControls_"] {
   display: flex;
   flex-direction: row;
@@ -288,7 +245,6 @@ body {
   margin: unset !important;
   gap: 8px;
 }
-
 [class*="steamdesktop_Wrapper_"] [class*="titlebarcontrols_Button_"] {
   min-width: 30px !important;
   min-height: 30px !important;
@@ -299,11 +255,9 @@ body {
   background: transparent !important;
   color: var(--fill-color-text-primary) !important;
 }
-
 [class*="steamdesktop_Wrapper_"] [class*="titlebarcontrols_Button_"]:hover {
   background: var(--fill-color-subtle-secondary) !important;
 }
-
 [class*="steamdesktop_Wrapper_"]
   [class*="titlebarcontrols_GamepadUIToggle_"]
   [class*="titlebarcontrols_Icon_"] {
@@ -312,13 +266,11 @@ body {
   position: unset !important;
   top: unset !important;
 }
-
 [class*="steamdesktop_Wrapper_"] [class*="titlebarcontrols_Icon_"],
 [class*="steamdesktop_Wrapper_"]
   [class*="titlebarcontrols_AnnouncementWaveSVG_"] {
   display: none;
 }
-
 [class*="steamdesktop_Wrapper_"]
   [class*="titlebarcontrols_TitleBarControls_"]
   [class*="titlebarcontrols_Button_"]::before,
@@ -337,78 +289,75 @@ body {
   line-height: 16px;
   text-align: center;
 }
-
+[class*="steamdesktop_Wrapper_"]
+  [class*="menu_MenuWrapper_"][class*="rootmenu_RootMenuButton_"]:first-child:after {
+  content: "" !important;
+  font-size: 5px !important;
+  margin-left: 13px;
+  color: #323232 !important;
+}
 [class*="steamdesktop_Wrapper_"]
   [class*="menu_MenuWrapper_"][class*="rootmenu_RootMenuButton_"]::after {
   content: "";
-  font-size: 16px;
+  font-size: 13px;
   margin-left: 4px;
 }
-
 [class*="steamdesktop_Wrapper_"]
-  [class*="titlebarcontrols_NotificationsButton_"][class*="titlebarcontrols_NoNew_"] {
-  display: none !important;
+[class*="titlebarcontrols_NotificationsButton_"][class*="titlebarcontrols_NoNew_"]::before {
+  content: "";
 }
-
+[class*="steamdesktop_Wrapper_"]
+[class*="titlebarcontrols_NotificationsButton_"][class*="titlebarcontrols_NoNew_"]:active::before {
+  content: "";
+}
 [class*="steamdesktop_Wrapper_"]
   [class*="titlebarcontrols_NotificationsButton_"]::before {
   content: "";
 }
-
 [class*="steamdesktop_Wrapper_"]
   [class*="titlebarcontrols_NotificationsButton_"]:active::before {
   content: "";
 }
-
 [class*="steamdesktop_Wrapper_"]
   [class*="titlebarcontrols_AnnouncementsButton_"] {
   display: none;
 }
-
 [class*="steamdesktop_Wrapper_"]
   [class*="titlebarcontrols_AnnouncementsButton_"][class*="titlebarcontrols_Active_"]::before {
   content: "";
 }
-
 [class*="steamdesktop_Wrapper_"]
   [class*="titlebarcontrols_AnnouncementsButton_"][class*="titlebarcontrols_Active_"]:active::before {
   content: "";
 }
-
 [class*="steamdesktop_Wrapper_"]
   [class*="titlebarcontrols_GamepadUIToggle_"]::before {
   content: "";
 }
-
 [class*="steamdesktop_Wrapper_"]
   [class*="titlebarcontrols_GamepadUIToggle_"]:active::before {
   content: "";
 }
-
 [class*="steamdesktop_Wrapper_"]
   [class*="titlebarcontrols_TitleBarControls_"]
   :nth-child(1) {
   order: 0;
 }
-
 [class*="steamdesktop_Wrapper_"]
   [class*="titlebarcontrols_TitleBarControls_"]
   :nth-child(2) {
   order: 1;
 }
-
 [class*="steamdesktop_Wrapper_"]
   [class*="titlebarcontrols_TitleBarControls_"]
   :nth-child(3) {
   order: 3;
 }
-
 [class*="steamdesktop_Wrapper_"]
   [class*="titlebarcontrols_TitleBarControls_"]
   :nth-child(4) {
   order: 2;
 }
-
 [class*="steamdesktop_Wrapper_"] [class*="titlebarcontrols_AccountMenu_"] {
   max-width: unset !important;
   max-height: 30px !important;
@@ -425,7 +374,6 @@ body {
   overflow: hidden;
   margin: unset !important;
 }
-
 [class*="steamdesktop_Wrapper_"]
   [class*="titlebarcontrols_AccountMenu_"]
   [class*="steamavatar_avatarHolder_"] {
@@ -437,13 +385,11 @@ body {
   border-radius: 50%;
   overflow: hidden;
 }
-
 [class*="steamdesktop_Wrapper_"]
   [class*="titlebarcontrols_AccountMenu_"]
   [class*="titlebarcontrols_WalletBalance_"] {
   display: none !important;
 }
-
 [class*="steamdesktop_Wrapper_"]
   [class*="steamdesktop_TitleBar_"]
   [class*="steamdesktop_WindowControls_"] {
@@ -453,15 +399,12 @@ body {
   cursor: pointer;
   align-items: center;
 }
-
 [class*="steamdesktop_Wrapper_"] .title-area {
   position: unset !important;
 }
-
 [class*="steamdesktop_Wrapper_"] .title-area-highlight {
   display: none !important;
 }
-
 [class*="steamdesktop_Wrapper_"] .title-area-children {
   position: absolute !important;
   top: 0;
@@ -470,35 +413,13 @@ body {
   text-align: left !important;
   flex-grow: 1;
 }
-
-[class*="steamdesktop_Wrapper_"]
-  .friendsui-container
-  .title-area
-  .title-bar-actions,
-.DesktopUI .title-area .title-bar-actions {
-  margin-right: 0px;
-  gap: 4px;
-}
 [class*="steamdesktop_Wrapper_"] .title-bar-actions,
 .friendsui-container .title-bar-actions {
-  max-height: 30px !important;
+  max-height: none !important;
   right: unset !important;
   cursor: default;
 }
-
-[class*="steamdesktop_Wrapper_"] .title-area-icon,
-.friendsui-container .title-area-icon {
-  width: 30px !important;
-  height: 30px !important;
-  display: grid !important;
-  align-items: unset !important;
-  justify-content: unset !important;
-  place-items: center;
-  border-radius: 4px;
-  margin: 0;
-}
-
-[class*="steamdesktop_Wrapper_"] [class*="steamavatar_avatarStatus_"] {
+[class*="titlebarcontrols_AccountMenu_"] [class*="steamavatar_avatarStatus_"] {
   position: absolute;
   top: unset !important;
   bottom: unset !important;
@@ -510,22 +431,19 @@ body {
   margin-top: 19px;
   margin-left: 19px;
 }
-
 [class*="steamdesktop_Wrapper_"]
   [class*="titlebarcontrols_AccountMenu_"].online
   [class*="steamavatar_avatarStatus_"] {
   border: 2px solid var(--background-fill-color-mica-background-base) !important;
 }
-
-[class*="steamdesktop_Wrapper_"] [class*="steamavatar_avatar_"] {
+[class*="titlebarcontrols_AccountMenu_"] [class*="steamavatar_avatar_"] {
   border: none !important;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
+  height: 28px;
+  width: 28px;
+  border-radius: 25px !important;
   box-shadow: none !important;
   transition: filter 0.24s ease-in-out;
 }
-
 [class*="rootmenu_RootMenuBar_"] {
   height: 100%;
   display: flex;
@@ -537,8 +455,10 @@ body {
   overflow: hidden;
   box-sizing: border-box;
 }
-
-[class*="rootmenu_RootMenuButton_"] {
+[class*="rootmenu_RootMenuButton_"]:first-child {
+  padding: 9px 0px !important;
+}
+[class*="rootmenu_RootMenuButton_"]:not(:first-child) {
   font-size: 12px;
   padding: 9px 12px !important;
   transition: color 0.15s ease-out;
@@ -547,21 +467,18 @@ body {
   box-sizing: border-box;
   height: 100%;
 }
-
 /* --------------- ContFrame --------------- */
 [class*="steamdesktop_Wrapper_"] [class*="steamdesktop_ContentFrame_"] {
   overflow: hidden;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-
   border-left: 1px solid;
   border-top: 1px solid;
   border-color: var(--stroke-color-card-stroke-default);
   border-top-left-radius: 6px;
   background: var(--background-fill-color-layer-default);
 }
-
 /* ----------- ContFrameBrowser ------------ */
 [class*="steamdesktop_BrowserWrapper_"] [class*="steamdesktop_URLBar_"] {
   display: flex !important;
@@ -572,11 +489,9 @@ body {
   box-shadow: none !important;
   border-bottom: 1px solid var(--stroke-color-card-stroke-default);
 }
-
 [class*="steamdesktop_BrowserWrapper_"] [class*="steamdesktop_URLBar_"] svg {
   display: none !important;
 }
-
 [class*="steamdesktop_BrowserWrapper_"]
   [class*="steamdesktop_URLBar_"]
   [class*="steamdesktop_ReloadButton_"] {
@@ -589,7 +504,6 @@ body {
   transition: background 0.15s ease-out, color 0.15s ease-out,
     border-radius 0.15s ease-out;
 }
-
 [class*="steamdesktop_BrowserWrapper_"]
   [class*="steamdesktop_URLBar_"]
   [class*="steamdesktop_ReloadButton_"]:hover {
@@ -598,19 +512,16 @@ body {
   border-radius: 4px !important;
   color: var(--fill-color-text-primary) !important;
 }
-
 [class*="steamdesktop_BrowserWrapper_"]
   [class*="steamdesktop_URLBar_"]
   [class*="steamdesktop_ReloadButton_"]::before {
   content: "";
 }
-
 [class*="steamdesktop_BrowserWrapper_"]
   [class*="steamdesktop_URLBar_"]
   [class*="steamdesktop_ReloadButton_"]:active:before {
   content: "";
 }
-
 [class*="steamdesktop_BrowserWrapper_"]
   [class*="steamdesktop_URLBar_"]
   [class*="steamdesktop_URLBarText_"] {
@@ -625,7 +536,6 @@ body {
     border-radius 0.15s ease-out, padding 0.15s ease, gap 0.15s ease;
   margin-left: 2px;
 }
-
 [class*="steamdesktop_BrowserWrapper_"]
   [class*="steamdesktop_URLBar_"]
   [class*="steamdesktop_URLBarText_"]:hover {
@@ -636,7 +546,6 @@ body {
   transition: padding 0.15s ease, gap 0.15s ease;
   border-radius: 16px;
 }
-
 [class*="steamdesktop_BrowserWrapper_"]
   [class*="steamdesktop_URLBar_"]
   [class*="steamdesktop_URLBarText_"]:focus {
@@ -645,7 +554,6 @@ body {
   transition: padding 0.15s ease, gap 0.15s ease;
   box-shadow: inset 0 0 0 2px var(--fill-color-accent-secondary);
 }
-
 [class*="steamdesktop_BrowserWrapper_"]
   [class*="steamdesktop_URLBar_"]
   [class*="steamdesktop_URLBarText_"]
@@ -661,7 +569,6 @@ body {
   overflow: scroll !important;
   text-overflow: ellipsis;
 }
-
 [class*="steamdesktop_BrowserWrapper_"]
   [class*="steamdesktop_URLBar_"]
   [class*="steamdesktop_LockIcon_"] {
@@ -671,29 +578,28 @@ body {
   color: var(--fill-color-text-primary) !important;
   padding-bottom: unset !important;
 }
-
 [class*="steamdesktop_BrowserWrapper_"]
   [class*="steamdesktop_URLBar_"]
   [class*="steamdesktop_URLBarText_"]
   [class*="steamdesktop_URL_"]::-webkit-scrollbar {
   display: none !important;
 }
-
 [class*="steamdesktop_BrowserWrapper_"]
   [class*="steamdesktop_URLBar_"]
   [class*="steamdesktop_LockIcon_"]::before {
   content: "";
 }
-
 /* ---------------- Menubar ----------------- */
 html[class*="contextmenu_ContextMenuPopup_"] body {
   background: transparent !important;
 }
-
+/* 
 [class*="contextmenu_contextMenu_"].visible[class*="contextmenu_ContextMenuFocusContainer_"] {
   min-width: 250px !important;
+} */
+svg.SVGIcon_Button.SVGIcon_DownArrowContextMenu {
+  fill: white !important;
 }
-
 html[class*="contextmenu_ContextMenuPopup_"]
   [class*="contextmenu_contextMenu_"] {
   position: static;
@@ -703,9 +609,7 @@ html[class*="contextmenu_ContextMenuPopup_"]
   overflow: hidden !important;
   border-radius: 8px !important;
 }
-
 /* ---------------- Bottom ----------------- */
-
 /* [class*="steamdesktop_BrowserWrapper_"] [class*="bottombar_BottomBar_"] {
   flex: 0 !important;
   max-height: 0 !important;
@@ -717,9 +621,65 @@ html[class*="contextmenu_ContextMenuPopup_"]
   align-items: center;
   -webkit-app-region: no-drag !important;
 }
-
 [class*="steamdesktop_BrowserWrapper_"] .window_resize_grip {
   background-image: none !important;
 } */
-
 /* ----------------------------------------- */
+/* Overridden */
+/* [class*="steamdesktop_Wrapper_"] .title-area-icon,
+.friendsui-container .title-area-icon {
+  width: 30px !important;
+  height: 30px !important;
+  display: grid !important;
+  align-items: unset !important;
+  justify-content: unset !important;
+  place-items: center;
+  border-radius: 4px;
+  margin: 0;
+} */
+/* Overridden */
+/* [class*="steamdesktop_Wrapper_"]
+  .friendsui-container
+  .title-area
+  .title-bar-actions,
+.DesktopUI .title-area .title-bar-actions {
+  margin-right: 0px;
+  gap: 4px;
+} */
+.section #downloads.button .icon::after {
+  content: "";
+  height: 4px;
+  width: 4px;
+  border-radius: 6px;
+  position: absolute;
+  margin: 6px 0px 0px 24px;
+}
+.section #downloads.button.pending .icon::after {
+  background: #fff;
+}
+.section #downloads.button.downloading .icon::after {
+  background: #5BBDEA;
+}
+.DialogBody a {
+  color: var(--SystemAccentColorLight1);
+}
+.DialogBody a:hover {
+  color: var(--SystemAccentColorLight2);
+}
+/* Edit sidebar */
+/* div#sidebar {
+  min-width: 74px;
+}
+.section .button {
+  height: 50px;
+  justify-content: center; 
+  align-items: center;
+  flex-direction: column;
+}
+
+.section .button .text {
+  width: auto;
+  font-size: 10px;
+  margin-top: -10px;
+}
+div#store {} */

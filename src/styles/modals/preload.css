@@ -1,0 +1,591 @@
+@import url(../titlebar/frameBar.css);
+/* Set the font */
+* {
+    font-family: "Segoe UI Variable Text", "Segoe UI" !important;
+    font-weight: normal !important;
+}
+/* stop the resize grip from displaying */
+.window_resize_grip {
+    height: 0 !important;
+}
+/* remove blur on settings header */
+.settings_SettingsDialogBodyFade_aFxOa.DesktopUI, .DesktopUI .settings_SettingsDialogBodyFade_aFxOa {
+    -webkit-mask-image: none !important;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  margin: 0;
+  background-color: transparent;
+  overflow: overlay;
+}
+/* Change the width of the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  width: 10px !important;
+  background-color: #9F9F9F !important;
+  border-radius: 16px !important;
+}
+.activeIndicator {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 7px;
+  height: 34px;
+  transition: top 0.15s cubic-bezier(1, 0, 0, 1);
+}
+.activeIndicator::before {
+  content: "";
+  width: 3px;
+  height: 16px;
+  border-radius: 1.5px;
+  background: var(--SystemAccentColor, rgba(96, 205, 255, 0.9));
+}
+.DialogHeader {
+    padding-top: 30px;
+    padding-bottom: 5px;
+    font-weight: 500 !important;
+    font-size: 26px !important;
+}
+.launchoptionsdialog_LaunchOptionDialog_LclHw, .DialogContent,
+.pagedsettings_PagedSettingsDialog_PageListColumn_RTicB,
+.contextmenu_contextMenuContents_2y2tU,
+.pagedsettings_PagedSettingsDialog_PageContent_1I3Ni.DesktopUI, .DesktopUI .pagedsettings_PagedSettingsDialog_PageContent_1I3Ni {
+    background: #202020;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.launchoptionsdialog_LaunchOptionDialog_LclHw::before, .DialogContent::before,
+.pagedsettings_PagedSettingsDialog_PageListColumn_RTicB::before,
+/* .contextmenu_contextMenuContents_2y2tU, */
+.pagedsettings_PagedSettingsDialog_PageContent_1I3Ni.DesktopUI, .DesktopUI .pagedsettings_PagedSettingsDialog_PageContent_1I3Ni::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../media/noise_1.png);
+    opacity: 0.2;
+    pointer-events: none;
+}
+.launchoptionsdialog_ListContainer_134yW {
+    background: #2B2B2B !important;
+    box-shadow: none !important;
+    border: 0.5px solid #3A3A3A !important;
+    border-radius: 4px !important;
+}
+.launchoptionsdialog_ListItem_3DEhf {
+    border: 0.5px solid #3A3A3A !important;
+    border-radius: 4px !important;
+    background: #373737 !important;
+}
+.launchoptionsdialog_CancelButton_1d8Cb {
+    border: 0.5px solid #3A3A3A !important;
+    box-sizing: border-box;
+    background: #2B2B2B !important;
+    margin: 10px 10px 10px 0px !important;
+}
+.hardwaresurveydialog_HardwareSurveySections_3f3VJ {
+    background: #2B2B2B !important;
+    box-shadow: none !important;
+    border-radius: 4px !important;
+    border: 0.5px solid #3A3A3A !important;
+}
+.dropdown_DialogDropDownMenu_1tiuY._DialogInputContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../media/noise_1.png);
+    opacity: 0.5;
+    pointer-events: none;
+}
+.pagedsettings_PagedSettingsDialog_PageList__EebF .pagedsettings_PagedSettingsDialog_PageListItem_bkfjn .pagedsettings_PageListItem_Icon_U6HcK svg {
+    display: none !important;
+}
+.pagedsettings_PagedSettingsDialog_PageList__EebF .pagedsettings_PagedSettingsDialog_PageListItem_bkfjn .pagedsettings_PageListItem_Icon_U6HcK::before{
+    border-radius: 4px !important;
+    text-align: center;
+    color: #fff;
+    font-size: 20px !important;
+    line-height: 18px !important;
+    margin-right: 15px !important;
+    font-family: FluentSystemIcons !important;
+}
+[class*="pagedsettings_PageListSeparator_"] {
+    background: #313131 !important;
+}
+.pagedsettings_PagedSettingsDialog_PageListItem_bkfjn {
+    border-radius: 4px !important;
+    margin: 5px 5px 0px 5px !important;
+    padding: 8px 16px 8px 10px !important;
+    margin-left: 16px !important;
+    /* margin-right: 16px !important; */
+    /* width: 100% !important; */
+    scrollbar-width: none;
+}
+.pagedsettings_PagedSettingsDialog_PageListItem_bkfjn:hover {
+    background: #3232326c !important;
+    color: #fff !important;
+}
+.pagedsettings_PagedSettingsDialog_PageListItem_bkfjn.pagedsettings_Active_Myra7 {
+    background: #2D2D2D !important;
+}
+.pagedsettings_PagedSettingsDialog_PageListItem_bkfjn.pagedsettings_Active_Myra7:hover {
+    background: #292929 !important;
+}
+.pagedsettings_PagedSettingsDialog_PageListItem_bkfjn.pagedsettings_Active_Myra7 {
+    background: #2D2D2D !important;
+}
+.pagedsettings_PagedSettingsDialog_PageListItem_bkfjn.pagedsettings_Active_Myra7:hover {
+    background: #292929 !important;
+}
+.gamepaddialog_Field_S-_La.gamepaddialog_StandardPadding_XRBFu:not(.notificationssettings_ToggleHeader_33Q-M) {
+    padding: 25px;
+    border-radius: 4px !important;
+    background: #2B2B2B !important;
+    margin-bottom: 3px !important;
+    border: 0.5px solid #1D1D1D !important;
+}
+.gamepaddialog_Field_S-_La.gamepaddialog_WithBottomSeparatorStandard_3s1Rk::after {
+    height: 0px !important;
+}
+/* .gamepaddialog_ControlsListChild_XvRso {
+    border: 0.5px solid #3A3A3A;
+    border-radius: 6px;
+    background: #373737;
+} */
+.notificationssettings_NotificationSection_BRmrC .notificationssettings_NotificationFeedToggle_W4h3b {
+    position: absolute;
+    right: 35px;
+    top: 5px;
+}
+button.notificationssettings_PrefDetailsToggle_3aB-C {
+    padding-right: 20px !important;
+}
+p.notificationssettings_NotificationDescription_1ifM6 {
+    padding-left: 15px !important;
+}
+button.settings_SettingsDialogFatButton_UqEiV.accountpanel_FatButton_TEWms.DialogButton._DialogLayout.Secondary.Focusable {
+    background: #373737 !important;
+    border-radius: 6px !important;
+    border: 0.5px solid #3A3A3A !important;
+}
+button.settings_SettingsDialogFatButton_UqEiV.accountpanel_FatButton_TEWms.DialogButton._DialogLayout.Secondary.Focusable:hover {
+    background: #3C3C3C !important;
+}
+button.settings_SettingsDialogButton_3epr8.DialogButton._DialogLayout.Secondary.Focusable {
+    border: 0.5px solid #3A3A3A;
+    border-radius: 6px;
+    background: #373737;
+    height: 14px !important;
+    padding: 6px 14px 10px 14px;
+}
+button.settings_SettingsDialogButton_3epr8.DialogButton._DialogLayout.Secondary.Focusable:hover {
+    background: #3C3C3C !important;
+    /* box-shadow: none !important; */
+}
+.gamepaddialog_ToggleRail_2JtC3 {
+    background: #272727 !important;
+    border: 1px solid #9E9E9E;
+    height: 18px !important;
+}
+.gamepaddialog_ToggleSwitch_3__OD {
+    width: 12px !important;
+    top: 4px !important;
+    height: 12px !important;
+    left: 4px !important;
+    background: #CECECE !important;
+}
+.gamepaddialog_ToggleRail_2JtC3::before {
+    transform: translateX(-36px);
+    transition: none !important;
+    background: var(--SystemAccentColorLight2) !important;
+    /* border: none !important; */
+}
+.gamepaddialog_Toggle_24G4g.gamepaddialog_On_3ld7T .gamepaddialog_ToggleRail_2JtC3::before {
+    transform: translateX(0px) !important;
+}
+.gamepaddialog_On_3ld7T .gamepaddialog_ToggleRail_2JtC3 {
+    /* border: 1px solid var(--SystemAccentColorLight2); */
+    border: none;
+    height: 20px !important;
+}
+.gamepaddialog_On_3ld7T .gamepaddialog_ToggleSwitch_3__OD {
+    background: #000 !important;
+    transform: translateX(18px) !important;
+    transition: width 0.2s, height 0.2s, top 0.2s, left 0.2s;
+}
+.gamepaddialog_Toggle_24G4g:not(.gamepaddialog_Disabled_1pmyx):hover {box-shadow: none !important;}
+.gamepaddialog_Toggle_24G4g:hover > .gamepaddialog_ToggleSwitch_3__OD {
+    width: 23px !important;
+    width: 14px !important;
+    top: 3px !important;
+    height: 14px !important;
+    border-radius: 15px !important;
+    left: 3px !important;
+    /* background: #CECECE !important; */
+}
+/* Transition checkmark on and off */
+.gamepaddialog_ToggleSwitch_3__OD {
+    transition: transform .2s !important;
+}
+/* remove box shadow from button hover */
+button.DialogButton::before {
+    box-shadow: none !important;
+}
+.maximizeButton .title-area-icon-inner:hover,
+.minimizeButton .title-area-icon-inner:hover,
+.restoreButton .title-area-icon-inner:hover
+ {
+    background: #4A4A4A;
+}
+.pagedsettings_PagedSettingsDialog_Title_3qEgQ {
+    margin-top: 10px;
+}
+.pagedsettings_PagedSettingsDialog_PageListItem_bkfjn {
+    max-width: none !important;
+}
+.DialogDropDown {
+    padding: 6px 6px 6px 12px !important;
+    border: .5px solid #3F3F3F !important;
+    background: #373737 !important;
+    border-radius: 6px;
+}
+.DialogDropDown:hover {
+    background: #3C3C3C !important;
+    box-shadow: none !important;
+}
+.DialogDropDown_Arrow::before {
+    content: "";
+    font-family: FluentSystemIcons;
+    margin-right: -5px;
+}
+.DialogDropDown_Arrow svg {
+    display: none;
+}
+.radio_Button_3lwcR.RadioButton.Focusable {
+    border-radius: 6px !important;
+}
+.dropdown_DialogDropDownMenu_1tiuY._DialogInputContainer {
+    padding: 5px;
+    border-radius: 7px;
+    border: 0.5px solid #202020;
+    box-shadow: none !important;
+    margin-bottom: 0px !important;
+    background: #2C2C2C!important;
+}
+.DialogMenuPosition.visible.contextmenu_ContextMenuFocusContainer_2qyBZ {
+    background: none !important;
+    box-shadow: 0px 5px 12px 0px rgba(0,0,0,.2);
+    border-radius: 7px;
+}
+.dropdown_DialogDropDownMenu_Item_1R-DV {
+    border-radius: 4px;
+    height: 12px;
+    padding: 8px 15px 12px 15px;
+    /* background: #383838; */
+}
+.dropdown_DialogDropDownMenu_Item_1R-DV:hover {
+    background: #383838 !important;
+}
+.gamepaddialog_FieldDescription_2OJfk {
+    color: #929292 !important;
+}
+.radio_Group_2qYC3.Shared_Radio_Group.Panel {
+    margin-bottom: 3px;
+    border-radius: 4px;
+    background: #2B2B2B !important;
+    box-shadow: none !important;
+    border: 0.5px solid #1D1D1D !important;
+}
+.radio_Button_3lwcR.RadioButton.Focusable:not(.radio_Active_3ZBFo) {
+    border: .5px solid #3F3F3F !important;
+    background: #373737 !important;
+}
+.radio_Button_3lwcR.RadioButton.Focusable:hover:not(.radio_Active_3ZBFo) {
+    background: #3C3C3C !important;
+}
+.radio_Button_3lwcR.RadioButton.radio_Active_3ZBFo.Focusable {
+    background: var(--SystemAccentColorLight2) !important;
+    border: 0.5px solid #666666 !important;
+    color: #000 !important;
+    font-weight: 400;
+}
+.radio_Button_3lwcR.RadioButton.radio_Active_3ZBFo.Focusable:hover {
+    background: var(--SystemAccentColorLight3) !important;
+}
+.gamepaddialog_Toggle_24G4g.gamepaddialog_On_3ld7T.Focusable::before {
+    content: "On";
+    margin-left: -30px;
+    font-size: 14px;
+    color: white;
+}
+.gamepaddialog_Toggle_24G4g.Focusable::before {
+    content: "Off";
+    margin-left: -30px;
+    font-size: 14px;
+    color: white;
+}
+.notificationssettings_NotificationGroup_2KFeE {
+    border-radius: 4px !important;
+    background: #2B2B2B !important;
+    margin-bottom: 3px !important;
+    border: 0.5px solid #1D1D1D !important;
+}
+.notificationssettings_NotificationPrefDetails_1u5y7.Panel {
+    /* border-radius: 4px !important; */
+    background: #2B2B2B !important;
+    /* margin-bottom: 3px !important; */
+    border-top: 0.5px solid #1D1D1D !important;
+    box-shadow: none !important;
+    display: block !important;
+}
+.DialogCheckbox.Active {border-radius: 4px;box-shadow: none !important;background: var(--SystemAccentColorLight2);}
+.DialogCheckbox.Active:hover {
+    background: var(--SystemAccentColorLight3) !important;
+}
+/* .DialogCheckbox_Container:hover .DialogCheckbox:not(.Disabled), .DialogCheckbox:hover:not(.Disabled), .DialogCheckbox_Container:focus .DialogCheckbox:not(.Disabled), .DialogCheckbox:focus:not(.Disabled) {
+    background: var(--SystemAccentColorLight3) !important;
+} */
+.DialogCheckbox {
+    height: 20px;
+    width: 20px;
+}
+.DialogCheckbox.Active::before {
+    content: "";
+    font-family: FluentSystemIcons;
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 6px;
+    margin-left: 2px;
+}
+.DialogCheckbox svg {
+    display: none !important
+}
+.DialogCheckbox:not(.Active) {
+    background: #1D1D1D !important;
+    border: 0.5px solid #999999;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.DialogCheckbox:not(.Active) {
+    background: #2A2A2A !important;
+}
+button.notificationssettings_PrefDetailsToggle_3aB-C.DialogButton._DialogLayout.Small.Focusable {
+    background: none !important;
+    box-shadow: none !important;
+}
+button.notificationssettings_PrefDetailsToggle_3aB-C {
+    width: 16px !important;
+    height: 16px !important;
+    /* padding-right: 10px; */
+}
+button.notificationssettings_PrefDetailsToggle_3aB-C:not(.notificationssettings_Selected_WCaU2)::before {
+    content: "";
+    font-family: FluentSystemIcons;
+    color: white !important;
+    opacity: 1 !important;
+    font-size: 18px !important;
+    padding-top: px !important;
+    margin-top: -5px;
+}
+button.notificationssettings_PrefDetailsToggle_3aB-C.notificationssettings_Selected_WCaU2::before {
+    content: "";
+    font-family: FluentSystemIcons;
+    color: white !important;
+    opacity: 1 !important;
+    font-size: 18px !important;
+    transform: rotate(180deg);
+    padding-bottom: 15px;
+}
+.DialogCheckbox_Container:hover .DialogCheckbox:not(.Disabled), .DialogCheckbox:hover:not(.Disabled), .DialogCheckbox_Container:focus .DialogCheckbox:not(.Disabled), .DialogCheckbox:focus:not(.Disabled) {
+    background: var(--SystemAccentColorLight3);
+}
+.DialogBodyText.notificationssettings_FriendsDescription_3fPiC {
+    margin-bottom: 0px !important;
+    display: none !important;
+}
+.DialogSubHeader.settings_SettingsDialogSubHeader_2rK4Y {
+    text-transform: none;
+    color: white;
+    font-size: 14px;
+}
+button.notificationssettings_PrefDetailsToggle_3aB-C svg {
+    display: none !important;
+}
+.notificationssettings_ToggleHeader_33Q-M {
+    background: none !important;
+    padding-right: 35px;
+    margin-top: -40px;
+    padding-bottom: 10px !important;
+    text-transform: none !important;
+    font-size: 11px !important;
+}
+input.DialogInput.DialogInputPlaceholder.DialogTextInputBase.Focusable {
+    border: 0.5px solid #3A3A3A;
+    border-radius: 6px;
+    background: #373737;
+    height: 14px !important;
+    padding: 8px 14px 8px 14px;
+}
+.DesktopUI .DialogTextInputBase:focus, .DialogTextInputBase:focus-within {
+    box-shadow: none !important;
+    border: 0.5px solid #66666685 !important;
+}
+button.settings_BuiltInLayoutButton_30Og7.DialogButton._DialogLayout.Secondary.Focusable {
+    border: 0.5px solid #3A3A3A !important;
+    border-radius: 6px;
+    background: #373737 !important;
+    height: 32px !important;
+    min-height: unset !important;
+    width: 32px !important;
+    box-sizing: border-box !important;
+}
+button.settings_BuiltInLayoutButton_30Og7.DialogButton._DialogLayout.Secondary.Focusable svg {
+    height: 14px !important;
+    width: 14px !important;
+}
+.DialogSubHeader {
+    font-size: 14px;
+    text-transform: none !important;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+button.DialogButton._DialogLayout.Secondary.Focusable:not(.accountpanel_FatButton_TEWms) {
+    border: 0.5px solid #3A3A3A !important;
+    border-radius: 6px;
+    background: #373737 !important;
+    /* height: 30px !important; */
+}
+.progressbar_ProgressBar_1-nHj.voicesettings_VolumeBar_Qeg4q {
+    background: #373737;
+}
+.progressbar_Percent_2_0Jo {
+    background: #4C4C4C !important;
+}
+.gamepadslider_SliderTrack_Mq25N {
+    background: #9F9F9F !important;
+    --left-track-color: var(--SystemAccentColorLight2) !important;
+    height: 4px !important;
+}
+.gamepadslider_SliderHandle_2yVKj {
+    border: 5px solid #454545 !important;
+    box-sizing: border-box;
+    height: 22px !important;
+    width: 22px !important;
+    background: var(--SystemAccentColorLight2) !important;
+    top: 1px !important;
+    right: 1px !important;
+    box-shadow: none !important;
+    transition: border 0.1s;
+}
+.gamepadslider_SliderControl_3o137:hover > .gamepadslider_SliderHandleContainer_1pQZi > .gamepadslider_SliderHandle_2yVKj {
+    border: 3px solid #454545 !important;
+}
+.contentmanagement_AppBody_2RCSU.Panel:hover {
+    /* padding: 6px 6px 6px 12px !important; */
+    border: .5px solid #3F3F3F !important;
+    background: #373737 !important;
+    box-sizing: border-box !important;
+    border-radius: 6px;
+}
+.contentmanagement_AppBody_2RCSU.Panel {
+    border: .5px solid transparent !important;
+}
+.contentmanagement_LibraryHeader_3rGEU {
+    border: .5px solid #3F3F3F !important;
+    background: #373737 !important;
+    box-sizing: border-box !important;
+    border-radius: 4px;
+    padding: 16px !important;
+}
+.contentmanagement_LibraryContent_ybEU2 {
+    padding-top: 8px !important;
+}
+.contentmanagement_DriveSettingsButton_1WKUO.Focusable {
+    background: #4a4a4a !important;
+    border: 0.5px solid #6666664a;
+}
+.contentmanagement_DriveName_1rihl {
+    color: #fff !important;
+}
+/* .contextmenu_contextMenuContents_2y2tU {
+    background: #202020 !important;
+} */
+html.contextmenu_ContextMenuPopup_2GpKT .contextmenu_contextMenu_LQkrb {
+    border: 0.5px solid #3A3A3A !important;
+    display: block !important;
+}
+.contextmenu_contextMenuItem_pFo3k.contextMenuItem:hover {
+    background: #3232326c !important;
+    color: #fff !important;
+    border-radius: 4px !important;
+}
+.contextmenu_ContextMenuSeparator_1F2Ec:not(:last-child) {
+    height: 1px;
+    background: #2b2b2b;
+    width: calc(100% - 8px) !important;
+    margin-left: 4px;
+}
+.contextmenu_contextMenuItem_pFo3k.contextMenuItem {
+    border-top: none !important;
+}
+.contextmenu_contextMenuItem_pFo3k.contextMenuItem:hover,
+.contextmenu_contextMenuItem_pFo3k.contextMenuItem:hover {
+    border: 0.5px solid #3A3A3A !important;
+    box-sizing: border-box !important;
+    background: #3A3A3A !important;
+    border-radius: 6px !important;
+}
+.contextmenu_contextMenuItem_pFo3k.contextMenuItem,
+.contextmenu_contextMenuItem_pFo3k.contextMenuItem {
+    border: 0.5px solid transparent !important;
+}
+.contextmenu_SubMenu_jVo8T.contextmenu_active_1KPWU.contextmenu_contextMenuItem_pFo3k.contextMenuItem {
+    border: 0.5px solid #3A3A3A !important;
+    box-sizing: border-box !important;
+    background: #373737 !important;
+    border-radius: 6px !important;
+    color: white !important;
+}
+.contextmenu_contextMenu_LQkrb.visible.contextmenu_ContextMenuFocusContainer_2qyBZ {
+    background: #2E2E2E !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    border-radius: 8px !important;
+    border: .5px solid #202020 !important;
+}
+.contextmenu_contextMenu_LQkrb.visible.contextmenu_ContextMenuFocusContainer_2qyBZ::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../media/noise_1.png);
+    opacity: 0.4;
+    pointer-events: none;
+}
+.contextmenu_contextMenuContents_2y2tU {
+    background: #2e2e2e !important;
+}
+.contextmenu_contextMenu_LQkrb.visible.contextmenu_ContextMenuFocusContainer_2qyBZ {
+    box-shadow: 0 7px 8px 0px #0000002b !important;
+}
+.remoteplaysettings_TableHeader_1HL6K {
+    text-transform: none !important;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: normal !important;
+    font-size: 14px !important;
+}
+.gamepaddialog_Field_S-_La.gamepaddialog_Disabled_1pmyx .gamepaddialog_FieldLabel_3b0U- {
+    color: #7b7b7b;
+}
+.pagedsettings_PageListSeparator_1UEEm {
+    margin-left: 16px !important;
+    margin-right: 5px !important;
+}

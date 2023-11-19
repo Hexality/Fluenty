@@ -1,0 +1,14 @@
+@import url(rootMenu.css);
+/* Library */
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:first-child::before {
+    content: "";
+}
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:first-child:hover::before {
+    content: "";
+}
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(4),
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(6),
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(8),
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(10) {
+    padding-left: 50px !important;
+}

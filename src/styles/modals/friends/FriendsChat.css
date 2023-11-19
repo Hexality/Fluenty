@@ -1,0 +1,445 @@
+@import url(../../titlebar/frameBar.css);
+@import url(../../library.css);
+:root {
+    --active-chat-border: 0.5px solid #292929;
+}
+.chatWindow .chatHeader {
+    background: #292929 !important;
+    min-height: 1px !important;
+}
+@font-face {
+    font-family: FluentSystemIcons;
+    src: url("../../../fonts/FluentSystemIcons-Resizable.woff2");
+}
+  
+.chatTabSetContainer.inclient {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.chattabs_ChatTab_2Vrcp.no-drag.chattabs_Active_Lrqoj.Panel.Focusable {
+    border-top-left-radius: 6px !important;
+    border-top-right-radius: 6px !important;
+}
+.chattabs_ChatTab_2Vrcp.no-drag.chattabs_Active_Lrqoj.Panel.Focusable {
+    background: #1B1B1B !important;
+}
+.titleBarContainer.ChatTabs {
+    background: #131313 !important;
+}
+.title-area-highlight {
+    background: none !important;
+}
+.chattabs_ChatTab_2Vrcp.no-drag.Panel.Focusable {
+    border-top-left-radius: 6px !important;
+    border-top-right-radius: 6px !important;
+}
+.chattabs_ChatTab_2Vrcp:hover:not(.chattabs_Active_Lrqoj) {
+    background: #3232323b !important;
+}
+.DesktopUI .title-area-icon:hover, .friendsui-container .title-area-icon:hover,
+.chatTabSelector:hover {
+    background: var(--SystemAccentColor) !important;
+}
+.displayRow.minHeightZero.Panel.Focusable {
+    background: #1B1B1B !important;
+}
+.timeDivision .preHorizDivider {
+    background: #ffffff59 !important;
+    width: 0px !important;
+}
+.msg.timeDivision {
+    color: #ffffffc2;
+}
+.horizDivider {
+    background: #ffffff59 !important;
+}
+* {
+    text-shadow: none !important;
+    font-family: "Segoe UI Variable Text", "Segoe UI";
+}
+.window_resize_grip {
+    height: 0px !important;
+}
+html.client_chat_frame .chatWindow .chatEntry {
+    padding-right: 6px !important;
+}
+form.chatentry_chatEntryControls_2gP0D {
+    box-shadow: none !important;
+    border-radius: 6px !important;
+    border-right: 0.5px solid #303030 !important;
+    border-top: 0.5px solid #303030 !important;
+    border-left: 0.5px solid #303030 !important;
+    border-bottom: 1px solid #9A9A9A !important;
+    background: #2D2D2D94 !important;
+    height: 30px;
+}
+.chatentry_chatEntryControls_2gP0D .chatentry_chatSubmitButton_1IEiK {
+    background: none !important;
+    border: none !important;
+    min-height: 0 !important;
+    height: 32px;
+    width: 32px !important;
+    min-width: 0px !important;
+}
+.chatentry_chatEntryActionsGroup_3grea {
+    box-shadow: none !important;
+    background: none !important;
+    padding: 0 !important;
+}
+.chatentry_chatSubmitButton_1IEiK.chatentry_EmbedButton_24xNx, .chatentry_chatSubmitButton_1IEiK.chatentry_EmoticonPickerButton_K-lPM {
+    max-height: 32px !important;
+    min-width: 32px !important;
+    border-radius: 6px !important;
+    background: transparent !important;
+    border: none !important;
+}
+button.chatentry_chatSubmitButton_1IEiK.chatentry_EmoticonPickerButton_K-lPM.Focusable {
+    margin-right: 7px;
+}
+.ChatMessageEntryVoice.Inactive {
+    max-width: 32px !important;
+    max-height: 32px !important;
+    min-width: 32px !important;
+    border: none !important;
+    outline: none !important;
+    padding: 0;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+.buttonsContainer {
+    /* border-radius: 6px !important; */
+}
+.VoiceToggle {
+    border-radius: 6px !important;
+    min-width: 32px !important;
+    min-height: 32px !important;
+    max-height: 32px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent !important;
+    border: none!important;
+}
+.VoiceToggleIconCtn {display: none !important;}
+.VoiceToggle {
+}
+.buttonsContainer {
+    background: transparent !important;
+    border: none !important;
+}
+.chatentry_chatEntryActionsContainer_1X1-n.compactableHeight {
+    /* background: #202020 !important; */
+}
+.chatEntry.Panel.Focusable {
+    background: rgba( 27, 27, 27, 0.45 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+}
+.VoiceToggle::before {
+    /* background: white !important; */
+    content: "";
+    font-family: FluentSystemIcons;
+    font-size: 20px;
+    color: white;
+}
+button.chatentry_chatSubmitButton_1IEiK.chatentry_EmbedButton_24xNx.Focusable svg,
+button.chatentry_chatSubmitButton_1IEiK.chatentry_EmoticonPickerButton_K-lPM.Focusable svg {
+    display: none !important;
+}
+button.chatentry_chatSubmitButton_1IEiK.chatentry_EmbedButton_24xNx.Focusable::before {
+    content: "";
+    font-family: FluentSystemIcons;
+    font-size: 20px;
+    color: white;
+}
+button.chatentry_chatSubmitButton_1IEiK.chatentry_EmoticonPickerButton_K-lPM.Focusable::before {
+    content: "";
+    font-family: FluentSystemIcons;
+    font-size: 20px;
+    color: white;
+}
+.chatentry_chatEntryControls_2gP0D .chatentry_chatSubmitButton_1IEiK svg {
+    display: none !important;
+}
+button.chatentry_chatSubmitButton_1IEiK.chatentry_disabled_2GM2k.Focusable::before {
+    content: "";
+    font-family: FluentSystemIcons;
+    font-size: 20px;
+    color: white;
+}
+.chatentry_chatEntryControls_2gP0D button.chatentry_chatSubmitButton_1IEiK.Focusable {
+    margin: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chatentry_chatEntryControls_2gP0D .chatentry_chatSubmitButton_1IEiK::before {
+    content: "";
+    font-family: FluentSystemIcons;
+    font-size: 20px;
+    color: white;
+}
+.chatEntry.Panel.Focusable {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+html.client_chat_frame .chatWindow .chatEntry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.chatentry_chatEntryActionsContainer_1X1-n.compactableHeight {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+textarea.chatentry_chatTextarea_pewyB.Focusable {
+    height: unset !important;
+}
+.chatentry_chatEntryControls_2gP0D:focus-within {
+    background: #1F1F1F !important;
+    border-bottom: 1px solid var(--SystemAccentColorLight2) !important;
+}
+.ScrollToBottomButton {
+    position: absolute !important;
+    bottom: 100px;
+    left: unset !important;
+    right: 15px !important;
+}
+.ScrollToBottomButton>span {
+    padding: 0 !important;
+    height: 35px;
+    border: 0.5px solid #6666662b;
+    width: 35px;
+    transition: all 0.2s;
+    font-size: 0 !important;
+    background: #2b2b2b;
+    border-radius: 25px !important;
+    box-shadow: 0 0 0px #00000088;
+    box-shadow: none !important;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.ScrollToBottomButton>span::before {content: "";font-size: 20px;color: white;font-family: FluentSystemIcons;}
+.ScrollToBottomButton>span:hover {background: #66666652;}
+.FriendChatTypingNotification {
+    position: absolute;
+    /* z-index: 9999999; */
+    bottom: 90px;
+    text-align: right !important;
+    box-shadow: none !important;
+    background: none !important;
+    color: white !important;
+    font-weight: normal !important;
+    font-size: 14px;
+}
+.LastMessageBlock {
+    padding-bottom: 70px !important;
+}
+.messages_MsgWithAddons_32Uri:hover {
+    background: #212121;
+    border-radius: 6px;
+}
+.messages_MsgWithAddons_32Uri .messages_Addons_1pGgX {
+    background: #2B2B2B !important;
+    border: .5px solid #1D1D1D !important;
+}
+svg.messages_Emoticon_3uwQM.reactions_AddReactionIcon_ynET7::after {
+    content: "";   
+    font-family: FluentSystemIcons;
+    font-size: 25px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 25px !important;
+    width: 25px !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+svg.messages_Emoticon_3uwQM.reactions_AddReactionIcon_ynET7:hover::before {
+    color: white;
+}
+.inviteAnotherFriendButton {
+    background: #2b2b2b !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inviteAnotherFriendButton svg {
+    display: none !important;
+}
+.inviteAnotherFriendButton::before {
+    content: "";
+    font-family: FluentSystemIcons;
+    font-size: 23px !important;
+    transition: all 0.2s;
+}
+.inviteAnotherFriendButton:hover::before {
+    color: white !important;
+}
+.chatFileUploadPreviewContainer {
+    margin-bottom: 18px !important;
+    border-radius: 6px !important;
+    background: #2b2b2b !important;
+}
+.chatFileUploadPreviewContainer {
+    margin-bottom: 18px !important;
+    border-radius: 6px !important;
+    background: #2b2b2b !important;
+}
+.miniprofile_miniProfile_1AMAp {
+    box-shadow: 0 7px 18px 0px #000000ad;
+    border-radius: 6px !important;
+    margin: unset !important;
+    border: 0.5px solid #232323;
+}
+.miniprofile_miniProfileContent_3QoRR {
+    border-radius: 6px !important;
+}
+.miniprofile_miniProfileBackground_108IP {
+    border-radius: 6px !important;
+    background: #21212108;
+    backdrop-filter: blur(15px);
+    transition: none !important;
+}
+.hoverposition_HoverPosition_3XUAN.hoverposition_Ready_qEo88.friendHover.miniProfileHover {
+    margin: 11px !important;
+}
+.miniprofile_miniProfileBottom_2MwqO {
+    background: #2525256b !important;
+}
+/* .miniprofile_miniProfile_1AMAp::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../../media/noise_1.png);
+    opacity: 1;
+    pointer-events: none;
+} */
+.chatHistory {
+    margin: 0 0 0 17px !important;
+}
+form.chatentry_chatEntryControls_2gP0D {
+    width: 98%;
+    /* justify-content: center; */
+    /* display: flex; */
+    /* align-items: center; */
+}
+.HorizontalMiniSliderScroll.chatTabList {
+    overflow-x: visible !important;
+}
+.chattabs_ChatTab_2Vrcp.no-drag.chattabs_Active_Lrqoj.Panel.Focusable::before {
+    content: "";
+    position: absolute;
+    background: transparent;
+    width: 6px;
+    left: -7px;
+    bottom: 0;
+    border-bottom-right-radius: 6px;
+    box-shadow: 0 14px 0 0 #1B1B1B;
+    border-right: var(--active-chat-border);
+    border-bottom: var(--active-chat-border);
+}
+.chattabs_ChatTab_2Vrcp.no-drag.chattabs_Active_Lrqoj.Panel.Focusable::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    background: transparent;
+    height: 26px;
+    right: -7px;
+    bottom: 0px;
+    box-shadow: -2px 24px 0 0 #1B1B1B;
+    border-bottom-left-radius: 6px;
+    border-bottom: var(--active-chat-border);
+    border-left: var(--active-chat-border);
+}
+.chattabs_ChatTab_2Vrcp.no-drag.chattabs_Active_Lrqoj.Panel.Focusable {
+    border-top: var(--active-chat-border);
+    border-left: var(--active-chat-border);
+    border-right: var(--active-chat-border);
+}
+.HorizontalMiniSlider {
+    padding-left: 6px;
+}
+.chattabs_ChatTab_2Vrcp:before, .chattabs_ChatTab_2Vrcp:last-of-type:after {
+    background: transparent !important;
+}
+.chatTabSetContainer.inclient {
+    margin-bottom: -1px;
+}
+.timeDivision {
+    padding-left: 0px !important;
+    font-size: 10px;
+    display: flex;
+    color: #ababab;
+    justify-content: center;
+}
+.timeDivision .horizDivider {
+    width: 0 !important;
+    flex-grow: unset !important;
+}
+.timeDivision .preHorizDivider {
+    width: 0 !important;
+}
+.steamavatar_avatar_1p_Qr {
+    border-radius: 25px !important;
+    box-shadow: none !important;
+}
+.steamavatar_avatarStatus_1yIzy.avatarStatus {
+    top: unset !important;
+    height: 6px;
+    width: 6px !important;
+    border-radius: 6px !important;
+}
+.ingame .personanameandstatus_gameName_2wpap.personanameandstatus_richPresenceLabel_1k82N {
+    font-size: 10px;
+    margin-top: -4px;
+}
+.personanameandstatus_playerName_r62qz {
+    font-size: 12px !important;
+}
+.chattabs_ChatTab_2Vrcp.no-drag.Panel.Focusable {
+    border-left: .5px solid transparent;
+    border-right: .5px solid transparent;
+    border-top: .5px solid transparent;
+}
+.chatTabSelector {
+    background: transparent !important;
+    box-shadow: none !important;
+    margin-top: -18px !important;
+    margin-right: 35px !important;
+    height: 32px !important;
+    width: 46px !important;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    border-radius: 0px !important;
+}
+svg.SVGIcon_Button.SVGIcon_DownArrowContextMenu {
+    /* margin: 0 !important; */
+    margin-left: 17px !important;
+    margin-top: 10px !important;
+}
+.speakerStatus {
+    height: 6px !important;
+    width: 6px !important;
+    border-radius: 6px !important;
+    bottom: 0px !important;
+    align-self: unset !important;
+    position: relative;
+    right: 6px;
+    bottom: -17px !important;
+}
+* {
+    text-shadow: none !important;
+    font-family: "Segoe UI Variable Text", "Segoe UI" !important;
+}

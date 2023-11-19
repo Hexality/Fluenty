@@ -1,0 +1,84 @@
+.downloads_SectionItem_1VNuY {
+    height: 70px !important;
+    background: #323232;
+    border: 0.5px solid #232323;
+    border-radius: 6px;
+}
+
+.downloads_ItemListScrollWrapper_Z6wLC {
+    background: #272727;
+}
+
+.downloads_Rule_1CTr1 {
+    visibility: hidden;
+}
+
+.downloads_SectionTitle_qq2xI {
+    font-family: "Segoe UI Variable Text", "Segoe UI" !important;
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: none !important;
+    letter-spacing: normal !important;
+}
+
+span.downloads_Count_1CGnw {
+    display: none;
+}
+
+span.downloads_Name_35eOQ {
+    font-family: "Segoe UI Variable Text", "Segoe UI" !important;
+    font-weight: normal !important;
+    font-size: 14px !important;
+}
+
+.downloads_DetailsAndType_Bku7J {
+    font-family: "Segoe UI Variable Text", "Segoe UI" !important;
+}
+
+span.downloads_Value_1dHjj.downloads_InProgress_3Wavc {
+    color: #fff9 !important;
+    margin-right: 0 !important;
+}
+
+.downloads_ProgressDetails_sv3ZH {
+    color: #fff9 !important;
+    font-weight: normal !important;
+}
+
+span.downloads_Value_1dHjj.downloads_Denominator_2ckIr {
+    color: #fff9 !important;
+    margin-left: 0px !important;
+}
+
+.appportrait_LibraryItemBox_WYgDg.appportrait_Landscape_3VOR2.appportrait_InDownloads_3J3TT.appportrait_FeaturedCapsule_xp7A-.Panel {
+    height: 50px !important;
+    box-shadow: none !important;
+    width: 50px !important;
+}
+
+.downloads_SectionItem_1VNuY:hover {
+    background: #393939 !important;
+    border: 0.5px solid #393939 !important;
+    border-radius: 6px !important;
+}
+
+button.downloads_Button_3oavR.DialogButton._DialogLayout.Secondary.Focusable {
+    background: #454545 !important;
+    border-radius: 6px !important;
+    border: 0.5px solid #4C4C4C !important;
+    width: 100% !important;
+}
+
+button.downloads_Button_3oavR.DialogButton._DialogLayout.Secondary.Focusable svg {
+    display: none !important;
+}
+
+button.downloads_Button_3oavR.DialogButton._DialogLayout.Secondary.Focusable::after {content: "Resume" !important;}
+
+.downloads_ButtonWrapper_2Zfas.Focusable {
+    width: 120px;
+}
+
+button.downloads_Button_3oavR.DialogButton._DialogLayout.Secondary.Focusable::before {
+    box-shadow: none !important;
+}

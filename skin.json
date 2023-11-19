@@ -1,14 +1,16 @@
 {
+    "author": "ShadowMonster, Hexality",
+    "description": "A fluent, spacious design for Steam, inspired by the Microsft Fluent Design template launched with Windows 11",
+
+    "Steam-WebKit": "src/styles/webkit/webkit.css",
     "Patches": [
         {
             "MatchRegexString": "https://store.steampowered.com",
-            "TargetCss": "styles/webkit.css",
-            "TargetJs": "webkit.js"
+            "TargetCss": "src/styles/webkit/webkit.css"
         },
         {
             "MatchRegexString": "https://steamcommunity.com",
-            "TargetCss": "styles/webkit.css",
-            "TargetJs": "webkit.js"
+            "TargetCss": "src/styles/webkit/webkit.css"
         },
         {
             "MatchRegexString": "^Steam$",
@@ -16,22 +18,42 @@
             "TargetJs": "libraryroot.custom.js"
         },
         {
-            "MatchRegexString": "^OverlayBrowser_Browser$",
-            "TargetCss": "libraryroot.custom.css",
-            "TargetJs": "friends.custom.js"
+            "MatchRegexString": ".ModalDialogPopup",
+            "TargetJs": "src/styles/modals/modalHandler.js",
+            "TargetCss": "src/styles/modals/preload.css"
         },
         {
-            "MatchRegexString": "^SP Overlay:",
-            "TargetCss": "libraryroot.custom.css",
-            "TargetJs": "libraryroot.custom.js"
+            "MatchRegexString": "^Menu$",
+            "TargetCss": "src/styles/menus/trayMenu.css"
         },
         {
-            "MatchRegexString": "Menu$",
-            "TargetCss": "libraryroot.custom.css",
-            "TargetJs": "libraryroot.custom.js"
+            "MatchRegexString": "^Friends Root Menu$",
+            "TargetCss": "src/styles/menus/friendsRootMenu.css"
         },
         {
-            "MatchRegexString": "Supernav$",
+            "MatchRegexString": "^View Root Menu$",
+            "TargetCss": "src/styles/menus/viewRootMenu.css",
+            "TargetJs": "src/styles/menus/viewRootMenu.js"
+        },
+        {
+            "MatchRegexString": "^Steam Root Menu$",
+            "TargetCss": "src/styles/menus/steamRootMenu.css",
+            "TargetJs": "src/styles/menus/steamRootMenu.js"
+        },
+        {
+            "MatchRegexString": "^Games Root Menu$",
+            "TargetCss": "src/styles/menus/gamesRootMenu.css"
+        },
+        {
+            "MatchRegexString": "^Help Root Menu$",
+            "TargetCss": "src/styles/menus/helpRootMenu.css"
+        },
+        {
+            "MatchRegexString": "^Account Menu$",
+            "TargetCss": "src/styles/menus/accountMenu.css"
+        },
+        {
+            "MatchRegexString": ".*Supernav$",
             "TargetCss": "libraryroot.custom.css",
             "TargetJs": "libraryroot.custom.js"
         },
@@ -67,28 +89,13 @@
         },
         {
             "MatchRegexString": ".friendsui-container",
-            "TargetCss": "styles/friends.custom.css",
+            "TargetCss": "src/styles/modals/friends/FriendsChat.css",
             "TargetJs": "friends.custom.js"
-        },
-        {
-            "MatchRegexString": ".ModalDialogPopup",
-            "TargetCss": "libraryroot.custom.css",
-            "TargetJs": "libraryroot.custom.js"
         },
         {
             "MatchRegexString": ".FullModalOverlay",
             "TargetCss": "libraryroot.custom.css",
             "TargetJs": "libraryroot.custom.js"
-        }
-    ],
-    "Fluenty": [
-        {
-            "palette": {
-                "primary":"",
-                "secondary":"",
-                "tertiary":"",
-                "quaternary":""
-            }
         }
     ]
 }

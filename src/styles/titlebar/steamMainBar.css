@@ -1,0 +1,64 @@
+/* Window Buttons */
+
+@font-face {
+    font-family: FluentSystemIcons;
+    src: url("../../fonts/FluentSystemIcons-Resizable.woff2");
+}
+
+.title-area-icon-inner {
+  font-family: FluentSystemIcons !important;
+
+  height: 100% !important; /* default height of the titlebar button on windows */
+  width: 46px !important; /* default width of the titlebar button on windows */
+  text-align: center;
+  color: #fff;
+}
+
+[class*="steamdesktop_Wrapper_"] .title-area-icon, .friendsui-container .title-area-icon {
+  height: 100% !important;
+  width: 46px !important;
+}
+
+/* remove the original image from the buttons */
+.title-area-icon-inner svg {
+  display: none !important;
+}
+
+.closeButton .title-area-icon-inner::before {  
+  font-size: 16px !important;
+  content: '';
+}
+
+.maximizeButton .title-area-icon-inner::before {
+  font-size: 14px !important;
+  content: '';
+}
+.restoreButton .title-area-icon-inner::before {
+  font-size: 13px !important;
+  content: '';
+}
+
+.minimizeButton .title-area-icon-inner::before {
+  font-size: 13px !important;
+  content: '';
+}
+
+/* Position close buttons outside of row and hug window */
+.title-bar-actions.window-controls {
+  /* position: relative;
+  top: -8px; */
+}
+
+.TitleBar.title-area.WindowFocus {
+    max-height: none !important;
+    height: 100% !important;
+}
+
+/* close button hover */
+.title-area-icon.closeButton.windowControlButton:hover {
+  background: #E81123 !important;
+}
+
+[class*="steamdesktop_Wrapper_"] .title-bar-actions, .friendsui-container .title-bar-actions {
+	max-height: none !important;
+}

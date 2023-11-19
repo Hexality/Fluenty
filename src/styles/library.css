@@ -1,0 +1,1939 @@
+@import url(./downloadPage.css);
+@font-face {
+    font-family: FluentSystemIcons;
+    src: url("../fonts/FluentSystemIcons-Resizable.woff2");
+}
+:root {
+    --color-light: #303030;
+    --color-dark: #212121;
+    --color-darker: #191919;
+    --color-darkest: #141414;
+}
+[class*="bottombar_BottomBarContainer_"] {
+    height: 0 !important;
+}
+::-webkit-scrollbar{
+    background-color: transparent !important;
+    -webkit-box-shadow: none !important;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-light) !important;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-dark) !important;
+    border: 0px solid transparent !important;
+    background-clip: padding-box !important;
+    -webkit-box-shadow: none !important;
+    border-radius: 10px !important;
+}
+::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+}
+::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+}
+::-webkit-scrollbar-track {
+    background: transparent !important;
+    border-radius: 10px !important;
+}
+::-webkit-scrollbar {
+    width: 2px !important;
+    margin: 0;
+    background-color: transparent;
+    overflow: overlay;
+}
+::-webkit-scrollbar-thumb {
+    width: 2px !important;
+    background-color: #9F9F9F !important;
+    border-radius: 160px !important;
+    opacity: 0;
+}
+*:hover::-webkit-scrollbar-thumb {
+    opacity: 1;
+}
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar {
+    transition: all 0.3s;
+}
+.steamdesktop_InitContainer_2YwTw {
+    background: var(--color-darker);
+}
+.DialogContent {
+    background: var(--color-dark) !important;
+}
+.DialogButton {
+    background: var(--color-light) !important;
+}
+[class*="launchoptionsdialog_LaunchOptionDialog_"] {
+    background: var(--color-dark) !important;
+}
+[class*="launchoptionsdialog_ListContainer_"] {
+    background: var(--color-darkest) !important;
+}
+[class*="launchoptionsdialog_ListItem_"] {
+    background: var(--color-light) !important;
+    border-radius: 4px;
+}
+[class*="launchoptionsdialog_CancelButton_"] {
+    background: var(--color-light) !important;
+}
+img[class*="libraryassetimage_Image_"][class*="libraryassetimage_Visibility_"][class*="libraryassetimage_Visible_"] {
+    border-radius: 4px;
+}
+.bottombar_Queue_3wJnT {
+    display: none !important;
+}
+.gamelistdropdown_MenuHeader_2PF_m {
+    background: var(--color-dark) !important;
+}
+[class*="apppartnereventspage_CloseButton_"] svg {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 320px !important;
+    max-height: 320px !important;
+}
+[class*="apppartnereventspage_CloseButton_"][class*="apppartnereventspage_AnimIn_"],
+[class*="apppartnereventspage_ScrollButton_"] {
+    background: var(--color-dark) !important;
+}
+[class*="appfilterpane_Container"] {
+    background: var(--color-dark) !important;
+}
+[class*="gamelistsearchbar_Container"] [class*="gamelistsearchbar_AdvancedSearchContainer"] [class*="gamelistsearchbar_AdvancedSearchPaneContainer"] [class*="gamelistsearchbar_AdvancedSearchPane"]:before {
+    background: var(--color-dark) !important;
+}
+[class*="gamelistsearchbar_Container_"] [class*="gamelistsearchbar_AdvancedSearchContainer_"] [class*="gamelistsearchbar_AdvancedSearchPaneContainer_"].gamelistsearchbar_Visible_ [class*="gamelistsearchbar_AdvancedSearchPane_"] {
+    border-radius: 7px !important;
+}
+[class*="gamelistsearchbar_Container_"] [class*="gamelistsearchbar_SearchInput_"] .DialogTextInputBase {
+    background: var(--color-dark) !important;
+}
+[class*="gamelistsearchbar_Container_"] [class*="gamelistsearchbar_AdvancedSearchContainer_"] .gamelistsearchbar_AdvancedSearchButton_1TxHd { 
+    background: var(--color-dark) !important;
+    border-radius: 0px 4px 4px 0px !important;
+}
+[class*="library_AppDetailsMain_"] {
+    background: var(--color-darker) !important;
+    border-top: none;
+}
+[class*="smartscrollcontainer_Body_"][class*="collectionview_ContainerScroll_"] {
+  background: var(--color-darker) !important;  
+}
+[class*="partnereventdisplay_LibraryEventTitleContainer_"] {
+    background: var(--color-dark) !important;
+}
+[class*="appportrait_LibraryItemBox"] {
+    border-radius: 4px;
+    background: var(--color-dark);
+}
+[class*="gamelistsectionheader_Container_"] {
+    border: none !important;
+    background: var(--color-darker) !important;
+}
+[class*="gamelistbar_Container_"] {
+    background-image: none !important;
+    background: #2B2B2B !important;
+}
+[class*="gamelistbar_GameListHomeAndSearch_"] {
+    background-color: var(--color-darkest) !important;
+    box-shadow: none !important;
+    border-bottom: 2px solid var(--color-darker) !important;
+    display: none !important;
+}
+[class*="gamelisthome_Bar_"][class*="gamelisthome_Selected_"],
+[class*="gamelisthome_Bar_"][class*="gamelisthome_CollectionButton_"] {
+    background-color: rgba(33,33,36,.6) !important;
+}
+[class*="gamelisthome_CollectionIcon_"] 
+[class*="gamelisthome_CollectionIconBox_"] {
+    background: #292929 !important;
+}
+[class*="gamelistsearchbar_Container_"] 
+[class*="gamelistsearchbar_AdvancedSearchContainer_"] {
+    border-radius: 0px 4px 4px 0px;
+}
+[class*="gamelisthome_Bar_"] {
+    background-color: rgba(33,33,36,.6) !important;
+}
+[class*="gamelistentry_Selected_"][class*="gamelistentry_Container_"], 
+[class*="gamelistentry_Selected_"] [class*="gamelistentry_Container_"] {
+    background-color: #313131 !important;
+    box-shadow: none !important;
+}
+[class*="libraryhome_UpdatesContainer_"] {
+    background: #141414;
+}
+[class*="library_LibraryWindowDivider_"] {
+    background: none;
+    background: var(--color-darker);
+}
+[class*="appdetailsworkshopsection_WorkshopContainer_"] {
+    background: none !important;
+}
+[class*="libraryhome_LibraryHome_"] {
+    background: #141414!important;
+}
+[class*="appdetailsspotlight_ReviewContainer_"] {
+    background: var(--color-dark) !important;
+}
+[class*="appdetailsprimarylinkssection_LinksSection_"]>div {
+    background: var(--color-dark) !important;
+}
+[class*="posttextentry_PostTextEntry_"] [class*="posttextentry_PostTextEntryArea_"] {
+    background: #272727 !important;
+    font-family: unset;
+}
+[class*="appactivityday_PartnerEventMediumImage_Container_"] {
+    background: var(--color-dark) !important;
+}
+[class*="appactivityday_PartnerEventUpdate_"] { 
+    border: none !important;
+}
+[class*="appactivityday_ActivityAchievementUnlocked_"] {
+    background: #2B2B2B !important;
+}
+[class*="appactivityday_TradingCardSection_"] {
+    background: var(--color-dark) !important;
+}
+[class*="appdetailssection_AppDetailsSectionContainer_"][class*="appdetailssection_RightColumnSection_"] {
+    background: #2B2B2B !important;
+    border-radius: 6px;
+    border: .5px solid #1D1D1D !important;
+}
+[class*="appdetailssection_Highlight_"] {
+    background: var(--color-light) !important;
+}
+[class*="appdetailscommunityfeed_AuthorSection_"] {
+    background: var(--color-dark) !important;
+}
+[class*="appdetailscommunityfeed_CommunityItem_"] {
+    background: var(--color-dark) !important;
+}
+[class*="appdetailscommunityfeed_Guide_"] [class*="appdetailscommunityfeed_TopSectionInner_"] {
+    background: var(--color-light) !important;
+    padding: 8px;
+}
+.appdetailscommunityfeed_Guide_-85o5 .appdetailscommunityfeed_Preview_AxZMH {
+    border-radius: 4px !important;
+}
+.smartscrollcontainer_ScrollToTopButton_1bCHN div {
+    background: #505050;
+    color: #fff;
+}
+.appdetailscommunityfeed_HeaderStyles_2lNdD {
+    background: var(--color-dark) !important;
+    color: #fff !important;
+}
+.appactionbutton_Green_3cI5T>.appactionbutton_ButtonChild_2AzIX.appactionbutton_StreamingSelector_2q-gZ {
+    background: linear-gradient(to right, #235ecf 0%, #235ecf 60%) !important;
+}
+.appactionbutton_Green_3cI5T>.appactionbutton_ButtonChild_2AzIX {
+    background: linear-gradient(to right, #47bfff 0%, #235ecf 60%) !important;
+}
+.appactionbutton_Green_3cI5T>.appactionbutton_ButtonChild_2AzIX svg {
+    fill: #fff !important;
+}
+:not(.appactionbutton_Disabled_1Pb6P)>.appactionbutton_ButtonChild_2AzIX svg line, :not(.appactionbutton_Disabled_1Pb6P)>.appactionbutton_ButtonChild_2AzIX svg polygon {
+    fill: #fff !important;
+    stroke: #fff !important;
+}
+.LibraryDisplaySizeSmall .appportrait_LibraryItemBoxSubscript_1LJqx {
+    background: var(--color-dark) !important;
+}
+.appdetails_Glassy_3Fmxx.appdetails_ScrollContainer_2l416 {
+    background: var(--color-darker) !important;
+}
+.libraryhome_InnerContainer_2AUVZ {
+    background: var(--color-darker) !important;
+    border-radius: 10px 0px 0px 0px;
+}
+.appactivityday_PartnerEvent_1AYE1 {
+    border: none !important;
+}
+.ModalPosition_Content>div:not(.ModalPosition_TopBar):not(.ModalPosition_Dismiss)
+{
+    background: var(--color-dark) !important;
+}
+.partnereventdisplay_LibraryEventBodyContainer_2ZgLv {
+    background: var(--color-dark) !important;
+}
+.partnereventdisplay_LibraryEventBodyContainer_2ZgLv {
+    background: var(--color-dark) !important;
+}
+.appdetailsachievementssection_Remainder_2gISW .appdetailsachievementssection_RemainderText_1-H7t {
+    background: var(--color-light) !important;
+}
+.appactivityday_PartnerEventTextOnly_Container_1wJJQ {
+    background: var(--color-dark) !important;
+}
+.allcollections_ScrollContainer_u1xD3 {
+    background: none !important;
+}
+.allcollections_Collection_3IWn- {
+    background: #454545 !important;
+}
+[class*="steamdesktop_TopBar"] {
+    background: var(--color-darker) !important;
+}
+[class*="steamdesktop_LocalContentContainer"] [class*="steamdesktop_URLBarReplacement"] {
+    min-height: 1px !important;
+    height: 1px !important;
+    background: var(--color-dark) !important;
+    display: none;
+}
+[class*="menu_MenuPopup"] {
+    background: var(--color-darker) !important;
+}
+[class*="friendListHeaderContainer"] [class*="titleBarContainer"] {
+    background: var(--color-darker) !important;
+}
+.friendlistListContainer {
+    background: var(--color-dark) !important;
+}
+[class*="activeTab"] {
+    background: var(--color-light) !important;
+}
+.steamdesktop_SuperNavBar_3Z3oh {
+    -webkit-app-region: no-drag !important;
+}
+.titlebarcontrols_GamepadUIToggle_3LKQ3 {
+    display: none !important;
+}
+.steamdesktop_TopBar_3Z7VQ {
+    box-shadow: none !important;
+}
+.titlebarcontrols_AccountMenu_3yD46 {
+    background: none;
+}
+.titlebarcontrols_NotificationsButton_RtSv3, .titlebarcontrols_AnnouncementsButton_5wILZ {
+    background: var(--color-dark) !important;
+}
+.supernav_SuperNavMenu_7AlhC {
+    font-size: 13px !important;
+    height: auto !important;
+}
+.supernav_Arrow_25lBL {
+    padding: 0px 10px 0px 0px !important;
+}
+.supernav_Arrow_25lBL:first-child {
+    padding-left: 12px !important;
+}
+.DesktopUI .title-area-icon:hover, .friendsui-container .title-area-icon:hover {
+    background: var(--color-light) !important;
+}
+.menu_MenuItem_2jXHP.menu_Item_2uiDe:hover {
+    background-color: #454545 !important;
+    color: #fff !important;
+}
+.titlebarcontrols_AnnouncementsButton_5wILZ:hover {
+    background: var(--color-light) !important;
+}
+.titlebarcontrols_NotificationsButton_RtSv3.titlebarcontrols_WasNew_9YK5I:not(.titlebarcontrols_Disabled_1QQWj):hover, .titlebarcontrols_NotificationsButton_RtSv3.titlebarcontrols_NoNew_3qhGk:not(.titlebarcontrols_Disabled_1QQWj):hover {
+    background: var(--color-light) !important;
+}
+.bottombar_FriendsButton_1TdaA:hover:not(.bottombar_Disabled_2Sdix) .bottombar_Icon_1KrJ3 {
+    color: none !important;
+}
+.supernav_Arrow_25lBL.supernav_Disabled_2cO0H {
+    color: var(--color-light) !important;
+}
+.gamepaddialog_Field_S-_La.gamepaddialog_WithBottomSeparatorStandard_3s1Rk::after {
+    background: #353535 !important;
+}
+.pagedsettings_PageListSeparator_1UEEm {
+    background: #353535 !important;
+}
+.radio_Group_2qYC3 {
+    background: #252525 !important;
+}
+.radio_Button_3lwcR {
+    background: none !important;
+}
+.radio_Button_3lwcR.radio_Active_3ZBFo, .radio_Button_3lwcR.radio_Active_3ZBFo:hover {
+    background: #1f8dff !important;
+}
+.steamdesktop_BrowserWrapper_1bGew .steamdesktop_URLBar_UkR3s .steamdesktop_URLBarText_2m_or:hover {
+    background: var(--color-dark) !important;
+}
+.console_Console_1fuML, .console_Console_1fuML pre {
+    background: var(--color-dark) !important;
+}
+.insetshadow_FriendsListInsetShadowCtn_17ewz {
+    display: none !important;
+}
+.friendListHeaderContainer {
+    background: var(--color-dark) !important;
+}
+.statusHeaderGlow {
+    display: none !important;
+}
+.steamavatar_avatarHolder_1YGAH .steamavatar_avatarFrame_3atbN {
+    display: none !important;
+}
+.ChatTabContent .avatarHolder .avatarStatus, .friend.quickAccessFriend .avatarHolder .avatarStatus {
+    display: none !important;
+}
+.friend.quickAccessFriend .avatarHolder .avatar {
+    border: 1px solid #383c43 !important;
+    border-radius: 6px !important;
+}
+.steamavatar_avatar_1p_Qr {
+    border-radius: 4px !important;
+}
+.friendsListSectionTitle {
+    background: var(--color-light) !important;
+}
+.friendListFooter {
+    display: none !important;
+}
+.friendsListSectionTitle {
+    display: none !important;
+}
+.FriendsListContent .friendlistListContainer .friendGroup.onlineFriends {
+    border-top: .5px solid rgba(143,143,143,.25);
+}
+.contextmenu_contextMenuContents_2y2tU.contextmenu_ForceDesktop_7K1n9 {
+    background: var(--color-dark) !important;
+    border: 1px solid #353535 !important;
+    padding: 0 !important;
+}
+.titlebarcontrols_NotificationsButton_RtSv3.titlebarcontrols_HasNew_3L1c8 {
+	color: #8b929a !important;
+}
+.titlebarcontrols_Button_2Szzh.titlebarcontrols_AnnouncementsButton_5wILZ.titlebarcontrols_Active_1oEwi {
+	color: #8b929a !important;
+}
+.singleWindowFocusBar.chatSingleWindowFocusBar {
+    display: none !important;
+}
+/* .contextmenu_contextMenu_LQkrb {
+    background: var(--color-dark) !important;
+} */
+.contextMenuItem:not(.library_ContextMenuAction_Z5iAX):hover {
+    background: var(--color-dark) !important;
+    color: #fff !important;
+}
+.gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z:hover, .gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy, .gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z :hover, .gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z:hover, .gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy, .gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z :hover {
+    background: var(--color-dark) !important;
+}
+.appdetailsoverview_Glassy_2OOzY .appdetailsoverview_BackdropGlass_Jbe-- {
+    background: linear-gradient(to top, #202020 0%, #202020 75%, transparent 100%) !important;
+    backdrop-filter: blur(10px) !important;
+}
+.appdetailsplaysection_PlayBar_3fLo1.appdetailsplaysection_Glassy_3DeO9 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgb(31 31 31 / 0%) calc(100%), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 100%) !important;
+}
+.appdetailsoverview_Glassy_2OOzY .appdetailsoverview_ColumnContainer_OhSdL {
+    background: #202020 !important; 
+}
+.appactivityday_GameCarouselWrapper_3jFOA {
+    background: #151515 !important;
+}
+.appactivityday_Event_UVeN0 .appactivityday_EventBody_NEMXh {
+    border-radius: 4px !important;
+}
+.window_resize_grip {
+    height: 0px !important;
+    width: 0px !important;
+}
+.mllnm-addon-list .mllnm-addon-header {
+    background: #252525 !important;
+}
+.millennium-icons,
+.mllnm-addon-list .mllnm-addon-card,
+button.mllnm-button,
+button.mllnm-button.mllnm-button-title,
+.mllnm-search-wrapper {
+    background: var(--color-light) !important;
+}
+.libraryhome_Container_2gSXC {
+    background: none !important;
+}
+.library_MainPanel_3BFcm.MediumRightPanel {
+    background: var(--color-darker) !important;
+}
+.rootmenu_SteamButton_bSKGl .rootmenu_Logo_GG9wV {
+    color: #fff !important;
+}
+.supernav_Arrow_25lBL {
+    min-width: 13px !important;
+    width: 13px !important;
+}
+.supernav_Arrow_25lBL:nth-child(2) {
+    display: none !important;
+}
+.appdetailsprimarylinkssection_LinksSection_3-V8v .appdetailssection_AppDetailsSectionContainer_31ptF.appdetailssection_RightColumnSection_3KfxI.Panel {
+    background: none !important;
+}
+.appdetailsplaysection_StickyHeader_39Rhe .appdetailsplaysection_PlayBar_3fLo1 .appdetailsplaysection_InnerContainer_3Y87Y.Panel {
+    
+    background: linear-gradient(to bottom, #191919 25%, rgb(25, 25, 25, 0.9) 100%);
+}
+.titlebarcontrols_NotificationsButton_RtSv3,
+.titlebarcontrols_AnnouncementsButton_5wILZ {
+    padding: none !important;
+}
+.bottombar_FriendsButton_1TdaA .bottombar_Icon_1KrJ3 {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACQklEQVR4nO2ZQU8TURDHNyhe9ETQkxe/DhoRA96MJz/HCsZI3xTTeW1IZhovqJd+EzUCJwwabsZzRQ9ygDWzRWjSFfbNvD0g75+8pGn3tzPzZnYmfZtlSUlJl0uwvn7LIT0HT1vO06/jtSnfvcDXN5vmTQLkRfC0D56LquU8/wDff9gUb5IYd0hH/zI+tg6rnLDyJknaz9q5iYU8HC8HK2/WqGZrGj8th+VYvFkOeTvcAdqMxZvlkH+GOiAlE4s3K6h+xzpKLN4s6dnBO4j8KRZvFiCvhDtAz2LxZklLGw2Z2rs3bLdpNhYfRTJcRkPmXAcO254exOajqHQCeXjWzrkOLzTFR5GkVoaMPGSj9kj75WfPy3XSbuWTLpRaXb7nPH8ATwf1BxDt9Xq9G1oeThYdHLN31c6HGy0n6FMLD9XBhAcByB81xlaRb1t4qOxO9D48AFXauRgMBlcsPFRn9bciAJ0xKw/n3DcFACkDnEqoltJD7FMXKi53G3WqoxAuADaum3gf6YTCIe0qDd4x8sVEAMifgwMA5HcaY61Of87CQ9VCeqMJ4JFyt15ZeKgMgBeDAyCiaYf0VVGv3/J8cE3Lw8T9aE/ul2kkJwQqwx16YuL932zSUbtL91XOnwSB5BRZ+L621p/R8nBaOi8zq/I8nwLkVujOAdJjC+88rQqbxZKcltWpablG/g9refD8xSHPZ01IHszyXZent9KbZViVbxmRdp3nDdelpTzPrwbxWB5u7UirlN/kmkacT0r6T/UHzI9c6K4VuNMAAAAASUVORK5CYII=);
+    background-size: 16px;
+}
+.bottombar_DownloadStatus_2EQ7g .bottombar_DownloadStatusContent_ip-YZ .bottombar_Icon_1KrJ3 {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABhklEQVR4nO2YTUoDQRCFe6N3EHMhXagLwYUXUDxEtrF6EqzOQqpyA7d6BUX8uYJi1IAuk2WESOEEZoYEZyLpykh9UDAzabrf69eZTto5wzCMf0kSaM8H+gTkj6RLO65ueKR3H3giBYHfXN3wqfhpubrhzYAyloA2loA2loA2loA2loA2loA2tUkAkHcBqe8DP8v1bwakzU9b6mfbqwGBBxmh49PQO5hnQD6TNpl/agNt/S6d/UnRRNFAUXxaL9r6p0uiKKx4P+vZeCWWkOCR9+eInlmA9JUgH7pVoqyJlRRf1kRU8cmCB1Nzvqy5N1Spfs5623KeJOUDbUU9mJphopJ4QfaKTHJPLvZOmib4Kq9ZuY49vtP+KeDNQKBhdhba7fPNWLPfQm7kE6Bh5U4g8G2uE6TLGCZayA1AvsqPzTeVOwLkk7I769Kry0eVDTSbF+se+VFbPAS+I6I1twidDm1AoAc1A8j3osH9BXEPSMcQ+BqQR0ufceSRjCXLZuGZNwzDcLH4Bj2K7WVUAi90AAAAAElFTkSuQmCC);
+    background-size: 16px;
+}
+.bottombar_AddGameButton_2foCk .bottombar_Icon_1KrJ3 {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACt0lEQVR4nO1Zy27TUBC1gA07KCseO+APgLJg2S9ACPElPBeueKTJHdxkxmnDTJDYB4oQ/RIQu3RT6IJHYduUTdEkaaAika9zb2xH8pGuZCXO+Jw745m5kyAoUaKEM8IwPBahXK+RPDTIG4D8CVB+GZTfuvR6+NkbQH4AdV7U3wR5o4pyAVBWDMkOkBykW/zFkFSiqHU+c+KVOD5jkFtAvJ+e+NFlSHoGZS2K2guZkIcG3wGUXVfiY4T8AJTbMyMehuGJwa77JQ7/h1ZTn+WVfBRFJwF5c/bkZegNfq/P9EK+0+kcB+K3WZGHw4W86cUT2YSNjPcESuz+wuZEHkaekFtTkde01s8M+QvY1bSdeegY5K5Bvjhc3UxDqaoV1rFIaZUdbQZJxdFWrxa/PGctQNsDd9fz8l97vOxqzyA/syKvTZZB/lw4ASQ7mtITBWhX6Ux+BgKA5KBK7WuJAgzyo6IKAJR7iQK8Vd0ZCDDEr5MF6MGjqAJQPiaHEPFPO2P93A6GuDphLf1jc2nSfaA2LOuEFlabELLK/1qgAk+oNVqXLQX0vAmImu1LhRRg0oQQymPNDOPW8wbfOLSp15PuM8hPgGTLXwjN/UuMvFFUAYDSSRSgs52iCjDEd5NDqM6LRRVQi19cmdtmDki2rad5rv37jAQ8DWyh4z7NuUU50ADyXqoDTf+hKGtOApC7WuyGRWrLzZZgKvIDL7QXgPi7B9c7LYPybWV9/XQwDXRWmbcAoPbNqciPRBA3c9z9RuAKPYd6q855jBYVOmjVgWt2Avidt+Hu0fG6xBmEDVpNH6aFzio1M3gnTvzV+YW1haY19YZrsYNBrO/prtfrr04FWUOro07MpuydtrU9WF3ls0He0CZLh06G+L6OPvTgMTjZ6fGU94fXH/S7/kmswVcL8TdriRLB/OMPqhTeZrPsDdQAAAAASUVORK5CYII=);
+    background-size: 16px;
+}
+.bottombar_FriendsButton_1TdaA .bottombar_Icon_1KrJ3 svg,
+.bottombar_DownloadStatus_2EQ7g .bottombar_DownloadStatusContent_ip-YZ .bottombar_Icon_1KrJ3 svg,
+.bottombar_AddGameButton_2foCk .bottombar_Icon_1KrJ3 svg {
+    display: none !important;
+}
+.titlebarcontrols_NotificationsButton_RtSv3,
+.titlebarcontrols_AnnouncementsButton_5wILZ {
+    padding: 0 !important;
+}
+.gamelistdropdown_Bar_1ZS_x .gamelistdropdown_SearchBar_2WgQE {
+    justify-content: center;
+    align-items: center;
+}
+.gamelistdropdown_ViewName_3kSh7 {
+    font-weight: normal !important;
+    text-transform: none !important;
+}
+.gamelistsearchbar_Container_20QAC .gamelistsearchbar_AdvancedSearchContainer_vCCmY .gamelistsearchbar_AdvancedSearchButton_1TxHd svg {
+    width: 16px !important;
+}
+.appactivityday_ActivityAchievementUnlocked_yJLy7.Panel,
+.appactivityday_PartnerEventMediumImage_By7D9.appactivityday_PartnerEvent_1AYE1.appactivityday_Event_UVeN0 {
+    border-radius: 6px !important;
+}
+.appactivityday_PartnerEventFeaturedHeader_1WdC0 {
+    border-radius: 4px 4px 0 0;
+}
+img.appactivityday_PartnerEventMediumImage_Image_VytJz {
+    border-radius: 4px !important;
+}
+.appactivityday_LeftSideMajorUpdateBar_3oMUS {
+    background: none !important;
+}
+.appactivityday_PartnerEventLargeUpdate_39Zk3 {
+    border: none !important;
+    border-radius: 4px !important;
+    background: #212121;
+}
+.appactivityday_PartnerEventLargeImage_Container_Libri {
+    border-radius: 6px !important;
+    background: none;
+}
+svg.titlebarcontrols_Chevron_3x51w {
+    display: none;
+}
+.steamavatar_avatarStatus_1yIzy.avatarStatus.right {
+    width: 0 !important;
+}
+.library_MainPanel_3BFcm {
+    background: var(--color-darker) !important;
+}
+svg#arrowBase {
+    border: none !important;
+    background: var(--color-dark) !important;
+    border-radius: 6px !important;
+}
+.supernav_MenuButton_19axK, 
+.supernav_MenuButton_19axK span {
+    font-family: "Motiva Sans","Twemoji","Noto Sans",Helvetica,sans-serif !important;
+}
+.appdetailsbroadcastsection_BroadcastThumbnail_2l1gE {
+    border: none !important;
+}
+.appdetailsbroadcastsection_BroadcastThumbnail_2l1gE img,
+.appdetailsbroadcastsection_BroadcastThumbnail_2l1gE .appdetailsbroadcastsection_PlayButtonWrapper__-Sx3 {
+    border-radius: 4px !important;
+}
+.boxcarousel_BoxCarousel_3fiHs.spotlightgameplaysummary_SummaryCarouselContainer_wgbDI {
+    background: #191919 !important;
+}
+.steamdesktop_Wrapper_1ENHE {
+    background: #202020 !important;
+}
+.writereview_RatingContainer_2SAb6 {
+    background: none !important;
+}
+.steamdesktop_ContentFrame_1rDh5 {
+	font-family: "Segoe UI Variable Text", "Segoe UI" !important;
+}
+.contextmenu_contextMenuItem_pFo3k.contextMenuItem:hover {
+    border: 0.5px solid #3A3A3A !important;
+    background: #3A3A3A !important;
+    border-radius: 6px !important;
+}
+.contextmenu_contextMenuItem_pFo3k.contextMenuItem {
+    border: 0.5px solid transparent !important;
+}
+.contextmenu_SubMenu_jVo8T.contextmenu_active_1KPWU.contextmenu_contextMenuItem_pFo3k.contextMenuItem {
+    border: 0.5px solid #3A3A3A !important;
+    box-sizing: border-box !important;
+    background: #373737 !important;
+    border-radius: 6px !important;
+    color: white !important;
+}
+[class*="contextmenu_contextMenu_"] {
+    background: #2E2E2E !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    border-radius: 8px !important;
+    border: .5px solid #202020 !important;
+}
+[class*="contextmenu_contextMenu_"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../media/noise_1.png);
+    opacity: 0.4;
+    pointer-events: none;
+}
+.DesktopUI .library_ContextMenuAction_Z5iAX.Stream, .DesktopUI .library_ContextMenuAction_Z5iAX.Connect, .DesktopUI .library_ContextMenuAction_Z5iAX.Launch, .DesktopUI .library_ContextMenuAction_Z5iAX.PlayMusic, .DesktopUI .library_ContextMenuAction_Z5iAX.Play {
+    background: #5ABCE9 !important;
+    border: 0.5px solid #3A3A3A !important;
+    box-sizing: border-box !important;
+    border-radius: 6px !important;
+}
+.tooltip_TextToolTip_29b2a {
+    border-radius: 6px !important;
+    border: 0.5px solid #3A3A3A !important;
+    background: #373737 !important;
+    box-shadow: 0px 5px 12px 1px #0005 !important;
+}
+.hoverposition_HoverPosition_3XUAN::before,
+.tooltip_TextToolTip_29b2a::before {
+   content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../media/noise_1.png);
+    opacity: 0.4;
+    pointer-events: none;
+}
+.gamelistentry_Container_2-O4Z .gamelistentry_GameListEntryContainer_1vO6B {
+    font-weight: normal !important;
+}
+.appportraithover_AppPortraitHover_2sGn0 {
+    border-radius: 6px !important;
+    background: #373737 !important;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,.5);
+    border: 0.5px solid #3A3A3A !important;
+    padding: 10px;
+}
+.appportraithover_FadeIn_uUYjX {
+    border-radius: 6px !important;
+    border: 0.5px solid #3A3A3A !important;
+}
+.appportraithover_ScreenshotCrossfade_2R6-l {
+    -webkit-mask-image: none !important;
+    background: none !important;
+}
+.appportraithover_AppStatus_My_Sv {
+    margin-top: 0 !important;
+    padding: 0px !important;
+}
+.appportraithover_AppTitleContainer_1Rfxl {
+    padding: 0px 0px 5px !important;
+}
+.appportraithover_CapsuleBackgroundContainer_Yts2c {
+    display: none !important;
+}
+.downloads_TopBar_SEmVp {
+    background: linear-gradient(to right, var(--SystemAccentColorDark1), var(--SystemAccentColorDark2)) !important;
+}
+.downloadgraph_HeroAndLogo_3mZ2r.downloadgraph_Empty_pHDI1 {
+    background: linear-gradient(to right, var(--SystemAccentColorDark2) 0%, var(--SystemAccentColorDark1) 100%) !important;
+}
+.downloadgraph_GraphAndStats_3KDkL {
+    background: var(--SystemAccentColorDark3) !important;
+}
+.downloads_SectionItem_1VNuY.downloads_Active_IbePL {
+    background: #272727;
+    border-radius: 0px !important;
+}
+.downloads_SectionList_OINnO {
+    border: none !important;
+}
+.downloads_SectionItemStatus_1Sygg .downloads_Downloading_33BlY .downloads_State_2ns4w {
+    color: var(--SystemAccentColorLight1);
+}
+.downloads_SectionItemStatus_1Sygg .downloads_ProgressBar_1vMU1 div {
+    background: var(--SystemAccentColorLight1) !important;
+}
+.downloads_DownloadsPage_1bq4x.Panel {
+    background: #1d1d1d;
+}
+.appactivityday_PartnerEventMediumImage_Container_1HZy7.Panel {
+    background: #2B2B2B !important;
+    border-radius: 6px;
+}
+.appactivityday_PartnerEventType_1ujzu {
+    position: absolute;
+    top: -47px;
+    left: -302px;
+}
+.appactivityday_MediumImageContainer_ddB5G {
+    margin-top: 45px;
+}
+.appactivityday_PartnerEventMediumImage_TextColumn_3dJ4B {margin-top: 45px;/* border: 1px solid #fff; */}
+.appactivityday_PartnerEventMediumImage_TextColumn_3dJ4B .appactivityday_PartnerEventType_1ujzu {
+    border-bottom: 1px solid #1D1D1D;
+    width: 100vw;
+}
+.appactivityday_PartnerEventType_1ujzu div {
+    margin-left: 20px;
+    margin-bottom: 13px;
+    text-transform: none !important;
+    color: white;
+    font-family: "Segoe UI Variable Text", "Segoe UI" !important;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: normal !important;
+}
+.appactivityday_PartnerEventMediumImage_By7D9.appactivityday_PartnerEvent_1AYE1.appactivityday_Event_UVeN0::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../media/noise_1.png);
+    opacity: 0.4;
+    pointer-events: none;
+}
+.appactivityday_PartnerEventMediumImage_By7D9.appactivityday_PartnerEvent_1AYE1.appactivityday_Event_UVeN0 {
+    box-shadow: none !important;
+    border: .5px solid #1D1D1D !important;
+}
+.appdetailssectionheader_SectionHeader_1Q2q_.appdetailssectionheader_PadLeft_3jY6x {
+    position: absolute;
+    z-index: 999 !important;
+    padding: 15px 20px 20px 30px;
+}
+.appdetailssection_Body_5uvIN:not(.appdetailsactivitysection_InnerContainer_2EEAp):not(.appdetailsprimarylinkssection_LinksSectionBody_25f0f) {
+    margin-top: 50px;
+    border-top: 1px solid #1D1D1D;
+}
+.appdetailstradingcardssection_BadgeSection_3g3jm {
+    margin-top: 55px;
+}
+.appdetailssection_Highlight_38t1m {
+    margin-top: 50px;
+    margin-bottom: -52px;
+    border-top: 1px solid #1D1D1D;
+}
+.appdetailssectionheader_LabelText_3i0ko {
+    color: white !important;
+    text-transform: none !important;
+    font-family: "Segoe UI Variable Text", "Segoe UI" !important;
+    font-size: 16px;
+    letter-spacing: normal;
+    font-weight: 500 !important;
+}
+.appdetailsfriendssection_FriendsSection_qGJMO .appdetailssectionheader_SectionHeader_1Q2q_ {
+    padding: 20px 20px 20px 30px !important;
+}
+.posttextentry_PostTextEntry_3x31A.appdetailsactivitysection_AddToFeed_2bqRp.appdetailsactivitysection_PostTextEntry_YFAtL.Panel {
+    background: #2B2B2B !important;
+    border-radius: 6px !important;
+    padding: 50px 10px 10px 10px;
+    margin-bottom: 0p;
+}
+.posttextentry_Controls_37e7D.Panel {
+    margin-bottom: 0px !important;
+}
+.posttextentry_PostTextEntry_3x31A.appdetailsactivitysection_AddToFeed_2bqRp.appdetailsactivitysection_PostTextEntry_YFAtL.Panel {
+    border: .5px solid #1D1D1D !important;
+}
+textarea.posttextentry_PostTextEntryArea_1JlC2.Focusable {
+    font-family: "Segoe UI Variable Text", "Segoe UI" !important;
+    font-weight: normal;
+}
+.appactivityday_AppActivityDay_S2Fu9 {
+    margin-bottom: 0px !important;
+}
+.appactivityday_AppActivityDate_19LfM {
+    text-align: right;
+    position: relative;
+    z-index: 99999999999 !important;
+    margin-bottom: -32px !important;
+    margin-right: 15px;
+    font-size: 11px !important;
+    text-transform: none !important;
+}
+.appactivityday_AppActivityDate_19LfM::after {
+    content: "";
+    font-family: FluentSystemIcons;
+}
+.comment_thread_RatingBar_1yWgP {
+    margin-top: -35px;
+}
+.comment_thread_LikeButton_161IK {
+    margin-right: 5px;
+}
+.comment_thread_LikeButton_161IK:hover, .comment_thread_CommentButton_3i62H:hover{
+    background: #1D1D1D !important;
+    border-radius: 6px !important;
+}
+.comment_thread_LikeButton_161IK, .comment_thread_CommentButton_3i62H{
+    border-radius: 6px !important;
+}
+[class*="comment_thread_LikeIcon_"] svg,
+.comment_thread_CommentIcon_1R6Ou svg {
+    display: none !important;
+}
+[class*="comment_thread_LikeIcon_"]::before,
+.comment_thread_CommentIcon_1R6Ou::before {
+    font-family: FluentSystemIcons;
+    font-size: 18px;
+}
+[class*="comment_thread_LikeIcon_"]::before {
+    content: "";
+}
+.comment_thread_CommentIcon_1R6Ou::before {
+    content: "";
+}
+.comment_thread_RatingBar_1yWgP.comment_thread_IsVisible_1XYMA {
+    font-family: "Segoe UI Variable Text", "Segoe UI" !important;
+}
+.comment_thread_LikeCount_3grvn, 
+.comment_thread_CommentCount_2RkIc {
+    font-size: 14px !important;
+    font-weight: 500;
+}
+.appactivityday_AppActivityDate_19LfM {
+    display: flex;
+    float: right;
+    margin-top: 12px;
+    align-items: center;
+}
+.appactivityday_AppActivityDate_19LfM::after {
+    font-size: 18px !important;
+    margin-left: 5px;
+}
+.appactivityday_ActivityAchievementUnlocked_yJLy7.Panel {
+    border: 0.5px solid #3A3A3A !important;
+}
+.appactionbutton_PlayButtonContainer_1FnJ6.appactionbutton_Green_3cI5T.appactionbutton_ShowingStreaming_1hhB2.Panel {
+    border-radius: 6px !important;
+}
+.appactionbutton_ShowingStreaming_1hhB2 .appactionbutton_PlayButton_3ydig {
+    border-radius: 6px 0px 0px 6px !important;
+}
+.appdetailsprimarylinkssection_LinksSection_3-V8v .appdetailssection_AppDetailsSectionContainer_31ptF.appdetailssection_RightColumnSection_3KfxI.Panel {
+    border: none !important;
+    border-radius: unset !important;
+}
+.appdetailsprimarylinkssection_Anchor_DY4_w .appdetailsprimarylinkssection_Link_1b6LY:hover {
+    background-color: #2B2B2Ba8;
+    border: 0.5px solid #3A3A3A !important;
+}
+.appdetailsprimarylinkssection_Anchor_DY4_w .appdetailsprimarylinkssection_Link_1b6LY {
+    transition: background-color 0.2s !important;
+    border: 0.5px solid transparent;
+    border-radius: 30px !important;
+}
+.appactivityday_PartnerEventLargeImage_Contents_2tDv0,
+.appactivityday_PartnerEventLargeUpdate_39Zk3.appactivityday_Event_UVeN0 {
+    border-radius: 6px !important;
+}
+.appactivityday_PartnerEventLargeUpdate_39Zk3.appactivityday_Event_UVeN0 {
+    box-shadow: none !important;
+    border: .5px solid #1D1D1D !important;
+}
+.appactivityday_PartnerEventLargeImage_Title_3fsjz {
+    font-size: 16px !important;
+    font-family: "Segoe UI Variable Text", "Segoe UI" !important;
+    font-weight: normal !important;
+    letter-spacing: normal !important;
+}
+.appactivityday_PartnerEventLargeImage_TextColumn_2HzKE {
+    padding: 17px 12px 12px 0px !important;
+}
+.appactivityday_PartnerEventLargeImage_Summary_3zwBR {
+    color: #ffffff85;
+    font-family: "Segoe UI Variable Text", "Segoe UI" !important;
+    font-weight: normal !important;
+    letter-spacing: normal !important;
+}
+.appactivityday_PartnerEventLargeImage_Container_Libri.Panel {
+    background: #2B2B2B !important;
+}
+img.appactivityday_PartnerEventLargeImage_Image_fGDsm.appactivityday_Blur_3cX_v {
+    z-index: -1;
+}
+.smartscrollcontainer_ScrollToTopButton_1bCHN div {
+    margin-right: 20px;
+    font-size: 0px;
+    height: 35px !important;
+    width: 35px !important;
+    padding: 0 !important;
+    border-radius: 50px !important;
+    box-shadow: 0 0 6px 0px #00000088;
+}
+.smartscrollcontainer_ScrollToTopButton_1bCHN {
+    text-align: right !important;
+    margin-bottom: 10px;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.smartscrollcontainer_ScrollToTopButton_1bCHN div::before {
+    content: "";
+    font-family: FluentSystemIcons;
+}
+.smartscrollcontainer_ScrollToTopButton_1bCHN div {
+    margin-right: 20px;
+    font-size: 0px;
+    height: 35px !important;
+    width: 35px !important;
+    padding: 0 !important;
+    border-radius: 50px !important;
+    box-shadow: 0 0 6px 0px #00000088;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+}
+.smartscrollcontainer_ScrollToTopButton_1bCHN {
+    text-align: right !important;
+    margin-bottom: 10px;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.smartscrollcontainer_ScrollToTopButton_1bCHN div::before {
+    content: "";
+    font-family: FluentSystemIcons;
+    font-size: 24px;
+    margin-left: 6px;
+}
+.smartscrollcontainer_ScrollToTopButton_1bCHN div:hover {background: #1D1D1D;transform: translateY(-2px);filter: none !important;}
+.smartscrollcontainer_ScrollToTopButton_1bCHN:hover.smartscrollcontainer_Visible_2ZDSm { filter: none !important;}
+.appdetailsplaysection_InnerContainer_3Y87Y.Panel {
+    margin: 10px auto auto auto;
+    width: 65%;
+}
+.appdetailsoverview_Container_27RcN.appdetailsoverview_Glassy_2OOzY {
+    margin-top: 50px;
+}
+.sharedappdetailsheader_ImgSrc__dije {
+    height: 125% !important;
+}
+.appdetailsplaysection_Playtime_1aKeg .appdetailsplaysection_PlaytimeIcon_1GZdo svg, .appdetailsplaysection_Playtime_1aKeg .appdetailsplaysection_PlaytimeIconForced_1UXbB svg {
+    display: none !important;
+}
+.appdetailsplaysection_GameStatIcon_1tIg- {
+    display: flex;
+}
+.appdetailsplaysection_PlayBarLabel_34lrt {
+    text-transform: none !important;
+    font-family: "Segoe UI Variable Text", "Segoe UI" !important;
+    letter-spacing: normal !important;
+    font-weight: 500 !important;
+}
+.appdetailsplaysection_GameStat_1kiZK .appdetailsplaysection_AchievementSVG_k-QNT svg {
+    display: none;
+}
+.appdetailsplaysection_Playtime_1aKeg .appdetailsplaysection_PlaytimeIcon_1GZdo::before, 
+.appdetailsplaysection_Playtime_1aKeg .appdetailsplaysection_PlaytimeIconForced_1UXbB::before,
+.appdetailsplaysection_GameStat_1kiZK .appdetailsplaysection_AchievementSVG_k-QNT::before {
+    font-family: FluentSystemIcons;
+    font-size: 32px;
+    text-align: center !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255,255,255,.52);
+}
+.appdetailsplaysection_Playtime_1aKeg .appdetailsplaysection_PlaytimeIcon_1GZdo::before, 
+.appdetailsplaysection_Playtime_1aKeg .appdetailsplaysection_PlaytimeIconForced_1UXbB::before {
+    content: "";
+}
+.appdetailsplaysection_GameStat_1kiZK .appdetailsplaysection_AchievementSVG_k-QNT::before {
+    content: "";
+}
+.appdetailsplaysection_AppButtonsContainer_lO1IF .appdetailsplaysection_MenuButton_3qDWQ svg {
+   display: none !important;
+}
+.appdetailsplaysection_AppButtonsContainer_lO1IF .appdetailsplaysection_MenuButton_3qDWQ  {
+    font-family: FluentSystemIcons;
+    font-size: 22px;
+    text-align: center !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255,255,255,.52);
+}
+.appdetailsplaysection_AppButtonsContainer_lO1IF .appdetailsplaysection_MenuButton_3qDWQ:nth-child(1)::before {
+    content: "";
+}
+.appdetailsplaysection_AppButtonsContainer_lO1IF .appdetailsplaysection_MenuButton_3qDWQ:nth-child(2)::before {
+    content: "";
+}
+.appdetailsplaysection_AppButtonsContainer_lO1IF .appdetailsplaysection_MenuButton_3qDWQ:not(.appdetailsplaysection_Favorited_2WaHZ):nth-child(3)::before {
+    content: "";
+}
+.appdetailsplaysection_AppButtonsContainer_lO1IF .appdetailsplaysection_MenuButton_3qDWQ.appdetailsplaysection_Favorited_2WaHZ:nth-child(3)::before {
+    content: "";
+    color: #67b3ff;
+}
+.appactionbutton_StreamingSelector_2q-gZ.appactionbutton_ButtonChild_2AzIX.Focusable {
+    border-radius: 0px 6px 6px 0px !important;
+    margin-left: 0px !important;
+    display: flex;
+}
+.appactionbutton_ButtonText_33cnX {
+    font-weight: normal !important;
+}
+.appactionbutton_StreamingSelector_2q-gZ.appactionbutton_ButtonChild_2AzIX.Focusable svg {
+    display: none !important;
+}
+.appactionbutton_StreamingSelector_2q-gZ.appactionbutton_ButtonChild_2AzIX.Focusable::before {
+    font-family: FluentSystemIcons;
+    font-size: 18px;
+    text-align: center !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255,255,255,.52);
+    content: ""
+}
+.appdetailsfriendssection_AvatarAndLabel_1GCZA:hover {
+    background: #1D1D1D;
+    border-radius: 6px;
+    border: 1px;
+    border: .5px solid #1D1D1D !important;
+    box-sizing: border-box !important;
+}
+.appdetailsfriendssection_AvatarAndLabel_1GCZA {
+    border: .5px solid transparent !important;
+}
+.overflowbox_OverflowBoxContent_3Mm0K.overflowbox_BoxCollapsed_3y6bU.overflowbox_NoMask_H4th2 {
+    max-height: 192px !important;
+}
+.comment_thread_RatingBar_1yWgP {
+    margin-bottom: 35px !important;
+}
+.appactivityday_DayPosted_ElNfQ {
+    margin-left: 10px !important;
+    color: #ffffffbf !important;
+}
+.appactivityday_PartnerEventFeaturedHeader_1WdC0 {
+    background: transparent !important;
+    margin-left: 20px !important;
+    padding: 10px 0px 0px 0px !important;
+    margin-bottom: -43px;
+    text-transform: none !important;
+    color: #d0d0d0 !important;
+    font-size: 0px !important;
+}
+.appactivityday_PartnerEventMediumImage_By7D9.appactivityday_PartnerEvent_1AYE1.appactivityday_PartnerEventUpdate_fmLfu.appactivityday_Event_UVeN0.appactivityday_PartnerEventFeatured_3xi-H {
+    background: #2B2B2B !important;
+}
+.appactivityday_PartnerEventFeaturedHeader_1WdC0::before {
+    content: "";
+    font-family: FluentSystemIcons;
+    font-size: 20px;
+}
+.appactivityday_PartnerEventFeatured_3xi-H .appactivityday_PartnerEventType_1ujzu div {
+    margin-left: 50px;
+}
+.appactivityday_DayPosted_ElNfQ {
+    margin-bottom: 11px !important;
+    margin-left: 7px !important;
+    font-weight: normal !important;
+}
+.appactivityday_PartnerEventMediumImage_Title_1gljE {text-transform: none !important;text-shadow: none !important;font-weight: normal !important;}
+* {
+    text-shadow: none !important;
+    font-family: "Segoe UI Variable Text", "Segoe UI";
+}
+.appactivitydlc_Contents_2kqz- {
+    border-radius: 6px !important;
+    border: 0.5px solid;
+    border: .5px solid #1D1D1D !important;
+}
+.appactivitydlc_Rollup_2UySY {
+    border-radius: 6px !important;
+}
+.tooltip_ToolTipCustom_3Dt__ {
+    background: #1D1D1D;
+    border: 0.5px solid #737373;
+    border-radius: 6px !important;
+    box-shadow: 0px 5px 7px 3px #0006 !important;
+}
+.appactivitydlc_Contents_2kqz- {
+    border-radius: 6px !important;
+    border: 0.5px solid;
+    border: .5px solid #1D1D1D !important;
+}
+.appactivitydlc_Rollup_2UySY {
+    border-radius: 6px !important;
+}
+.tooltip_ToolTipCustom_3Dt__ {
+    background: #1D1D1D;
+    border: 0.5px solid #737373;
+    border-radius: 6px !important;
+    box-shadow: 0px 5px 7px 3px #0006 !important;
+}
+.appactivityday_Event_UVeN0.Panel {
+    background: #2B2B2B;
+    border: .5px solid #1D1D1D !important;
+    border-radius: 6px !important;
+    margin-bottom: 20px;
+}
+.comment_thread_CommentThread_34ZDO.comment_thread_Shown_kfRj0 {
+    margin-top: -30px;
+}
+.appactivityday_EventBody_NEMXh {
+    border: none !important;
+    box-shadow: none !important;
+    margin-left: 0px !important;
+}
+.appactivityday_ActivityAchievementUnlocked_yJLy7.Panel {
+    border: none !important;
+}
+.appactivityday_EventHeadline_QCKBq.Panel {
+    border-bottom: 0.5px solid #1D1D1D !important;
+}
+.appactivityday_EventActorAvatar_1gVy5.Panel {
+    padding-left: 5px;
+}
+button.DialogButton::before {
+    box-shadow: none !important;
+}
+.appdetailsactivitysection_AddToFeed_2bqRp {
+    margin-bottom: 20px;
+}
+.appdetailssection_Highlight_38t1m {
+    box-shadow: none !important;
+}
+button.appdetailsactivitysection_FetchMoreContainer_39Zur.DialogButton._DialogLayout.Secondary.Focusable,
+button.appdetailsbutton_AppDetailsButton_3Cdin.appdetailsbutton_BottomRight_3nJyY.DialogButton._DialogLayout.Secondary.Focusable,
+button.DialogButton.appdetailsbutton_AppDetailsButton_3Cdin.appdetailsbutton_Left_Q7tUL,
+button.DialogButton,
+.appdetailscommunityfeed_LoadContentButton_2RSxE {
+    padding: 7px 12px;
+    margin-top: 8px;
+    background: #373737 !important;
+    border-radius: 6px !important;
+    border-top: 0.5px solid #3F3F3F;
+    border-left: .5px solid #3A3A3A;
+    border-bottom: .5px solid #3A3A3A;
+    border-right: .5px solid #3A3A3A;
+    color: white !important;
+    min-width: 130px !important;
+    text-align: center !important;
+    line-height: normal !important;
+    box-sizing: border-box !important;
+}
+.appdetailssectionheader_SectionHeader_1Q2q_.appdetailssectionheader_PadLeft_3jY6x.appdetailscommunityfeed_HeaderStyles_2lNdD {
+    position: unset !important;
+    z-index: unset !important;
+    padding: 0px 0px 8px 20px !important;
+    background: transparent !important;
+}
+button.appdetailsactivitysection_FetchMoreContainer_39Zur.DialogButton._DialogLayout.Secondary.Focusable:hover,
+button.appdetailsbutton_AppDetailsButton_3Cdin.appdetailsbutton_BottomRight_3nJyY.DialogButton._DialogLayout.Secondary.Focusable:hover,
+button.DialogButton.appdetailsbutton_AppDetailsButton_3Cdin.appdetailsbutton_Left_Q7tUL:hover,
+button.DialogButton:hover {
+    background: #3C3C3C !important;
+}
+.appactivityday_PartnerEventTextOnly_3QRf-.appactivityday_PartnerEvent_1AYE1.appactivityday_Event_UVeN0 {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+.appactivityday_PartnerEventTextOnly_Container_1wJJQ.Panel {
+    background: #2B2B2B !important;
+    border-radius: 6px !important;
+    border: 0.5px solid #1D1D1D;
+    box-shadow: none !important;
+}
+.appactivityday_PartnerEventTextOnly_Title_1Cva_ {
+    font-weight: normal !important;
+}
+.appdetailstradingcardssection_Card_1WsOn.appdetailstradingcardssection_Unowned_1A6NC .appdetailstradingcardssection_CardContainer_2DUDv, .appdetailstradingcardssection_Card_1WsOn.appdetailstradingcardssection_Loading_2ZOgN .appdetailstradingcardssection_CardContainer_2DUDv {
+    background: #212121 !important;
+}
+.appactivitydlc_Contents_2kqz- {
+    border: 0.5px solid var(--SystemAccentColorLight2) !important;
+    background: #2B2B2B !important;
+}
+[class*="appdetailssection_AppDetailsSectionContainer_"][class*="appdetailssection_RightColumnSection_"] {
+    box-shadow: none !important;
+}
+.appdetailsplaysection_PlayBar_3fLo1.appdetailsplaysection_Glassy_3DeO9 {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+.appdetails_PlayBar_2L3s2.appdetails_ShowPlayBar_jnXtv.appdetailsplaysection_Container_3Yf8b.appdetailsplaysection_StickyHeader_39Rhe {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+.appdetailsplaysection_StickyHeaderShadow_2_86Q.appdetailsplaysection_Visible_2sKVn {
+    background: transparent !important;
+}
+.appdetailsplaysection_StickyHeader_39Rhe .appdetailsplaysection_PlayBar_3fLo1 .appdetailsplaysection_InnerContainer_3Y87Y.Panel {
+    border-radius: 6px !important;
+    display: flex;
+    height: 73px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.appdetails_PlayBar_2L3s2.appdetails_ShowPlayBar_jnXtv.appdetailsplaysection_Container_3Yf8b.appdetailsplaysection_StickyHeader_39Rhe {transition: transform 0.3s;}
+.appdetailsplaysection_StickyHeader_39Rhe .appdetailsplaysection_PlayBar_3fLo1 .appdetailsplaysection_InnerContainer_3Y87Y.Panel {
+    background: #1b1b1bad;
+    backdrop-filter: blur( 12.5px );
+    -webkit-backdrop-filter: blur( 12.5px );
+    border-radius: 10px;
+    border: 1px solid rgb(255 255 255 / 11%);
+}
+.appdetailsplaysection_StickyHeader_39Rhe .appdetailsplaysection_PlayBar_3fLo1 .appdetailsplaysection_InnerContainer_3Y87Y.Panel .appdetailsplaysection_Row_9EHg9 {
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.appdetailsplaysection_StickyHeader_39Rhe .appdetailsplaysection_ActionSection_2zxzS {
+    height: 90% !important;
+}
+.appdetailsplaysection_InnerContainer_3Y87Y {
+    padding: 10px 20px 10px 20px !important;
+}
+.appdetailsplaysection_AppButtonsContainer_lO1IF .appdetailsplaysection_MenuButton_3qDWQ {
+    background: #40404080 !important;
+}
+textarea.posttextentry_PostTextEntryArea_1JlC2.Focusable {
+    border: .5px solid #3A3A3A !important;
+}
+.posttextentry_PostTextEntry_3x31A .posttextentry_PostTextEntryArea_1JlC2:focus {
+    box-shadow: none !important;
+    background: #272727 !important;
+}
+.posttextentry_PostButton_2JSyA.Panel {
+    background: #272727 !important;
+    border: .5px solid #3A3A3A !important;
+    border-radius: 6px !important;
+    padding: 10px 0px !important;
+    height: 10px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.posttextentry_PostTextEntry_3x31A .posttextentry_Controls_37e7D button.posttextentry_EmoticonButton_bACIu {
+    background: #272727 !important;
+    border: .5px solid #3A3A3A !important;
+    border-radius: 6px !important;
+    height: 32px;
+}
+.posttextentry_Controls_37e7D.posttextentry_Active_1_KMh.Panel {
+    padding-bottom: 0 !important;
+}
+.ModalPosition_Content>div:not(.ModalPosition_TopBar):not(.ModalPosition_Dismiss) {
+    border-radius: 6px !important;
+    background: #4848484d !important;
+    backdrop-filter: blur(24px);
+    border: .5px solid #3f3f3f96 !important;
+}
+.ModalPosition_TopBar {
+    display: none !important;
+}
+.ModalPosition_Content>div:not(.ModalPosition_TopBar):not(.ModalPosition_Dismiss)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../media/noise_1.png);
+    opacity: 0.3;
+    pointer-events: none;
+}
+.DesktopUI .DialogBodyText {
+    font-weight: normal !important;
+    font-size: 14px;
+}
+.DialogHeader {
+    margin-bottom: 15px !important;
+}
+button.DialogButton {
+    background: #37373775 !important;
+    border-top: 0.5px solid #3f3f3f96;
+    border-left: .5px solid #3f3f3f96;
+    border-bottom: .5px solid #3f3f3f96;
+    border-right: .5px solid #3f3f3f96;
+    height: 32px !important;
+}
+.DialogBodyText {
+    font-size: 14px !important;
+    font-weight: normal !important;
+}
+.ModalPosition_Dismiss .closeButton .SVGIcon_X_Line line {
+    stroke: #666;
+}
+textarea.posttextentry_PostTextEntryArea_1JlC2.Focusable {
+    box-shadow: none !important;
+    border-radius: 6px !important;
+    border-right: 0.5px solid #303030 !important;
+    border-top: 0.5px solid #303030 !important;
+    border-left: 0.5px solid #303030 !important;
+    border-bottom: 1px solid #9A9A9A !important;
+    background: #232323 !important;
+    height: 30px;
+}
+.posttextentry_PostTextEntry_3x31A .posttextentry_PostTextEntryArea_1JlC2:focus {
+    background: #1F1F1F !important;
+    border-bottom: 1px solid var(--SystemAccentColorLight2) !important;
+}
+.appdetailsprimarylinkssection_Links_DgVQa.Panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gamelistsearchbar_Container_20QAC {
+    box-shadow: none !important;
+    border-radius: 6px !important;
+    border-right: 0.5px solid #303030 !important;
+    border-top: 0.5px solid #303030 !important;
+    border-left: 0.5px solid #303030 !important;
+    border-bottom: 1px solid #9A9A9A !important;
+    background: #202020a6 !important;
+    height: 32px;
+    padding: 0px;
+    margin: 6px;
+    box-sizing: content-box;
+}
+.gamelistsearchbar_Container_20QAC:focus-within {
+    background: #1F1F1F !important;
+    border-bottom: 1px solid var(--SystemAccentColorLight2) !important;
+}
+.DesktopUI .DialogTextInputBase:focus, .DialogTextInputBase:focus-within {
+    box-shadow: none !important;
+}
+input.DialogInput.DialogInputPlaceholder.DialogTextInputBase.Focusable {
+    font-family: "Segoe UI Variable Text", "Segoe UI";
+    text-transform: none;
+}
+input.DialogInput.DialogInputPlaceholder.DialogTextInputBase.Focusable::placeholder {
+    font-style: normal;
+}
+.gamelistsearchbar_Container_20QAC .gamelistsearchbar_SearchInput_12vo5 .DialogInput_Wrapper::before {
+    content: "";
+    font-family: FluentSystemIcons;
+    font-size: 20px;
+    margin: 7px;
+}
+input.DialogInput.DialogInputPlaceholder.DialogTextInputBase.Focusable {
+    background: none !important;
+}
+.gamelistsearchbar_AdvancedSearchContainer_vCCmY {
+    background: none !important;
+}
+[class*="gamelistsearchbar_Container_"] [class*="gamelistsearchbar_AdvancedSearchContainer_"] .gamelistsearchbar_AdvancedSearchButton_1TxHd {
+    background: none !important;
+}
+input.DialogInput.DialogInputPlaceholder.DialogTextInputBase.Focusable {
+    padding-left: 0px !important;
+}
+.gamelistdropdown_MenuHeader_2PF_m {
+    border-radius: 6px !important;
+    border: 0.5px solid #303030 !important;
+}
+.gamelistdropdown_MenuHeader_2PF_m {
+    height: 34px !important;
+}
+.DialogCheckbox_Container._DialogLayout.gamelistdropdown_Row_1BAKX.gamelistdropdown_Checkbox_2_iY4.Panel {
+    height: 26px;
+    display: flex;
+    align-items: center;
+}
+.contextmenu_contextMenu_LQkrb.gamelistdropdown_DropDown_EDl_m.visible.contextmenu_ContextMenuFocusContainer_2qyBZ {
+    padding: 10px;
+    text-transform: none !important;
+}
+.DialogCheckbox_Container._DialogLayout.gamelistdropdown_Row_1BAKX.gamelistdropdown_Checkbox_2_iY4.Panel {
+    text-transform: none !important;
+}
+.DialogCheckbox.Active {border-radius: 4px;box-shadow: none !important;background: var(--SystemAccentColorLight2);}
+.DialogCheckbox.Active:hover {
+    background: var(--SystemAccentColorLight3) !important;
+}
+.DialogCheckbox {
+    height: 20px !important;
+    width: 20px !important;
+}
+.DialogCheckbox.Active::before {
+    content: "";
+    font-family: FluentSystemIcons;
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 6px;
+    margin-left: 2px;
+}
+.DialogCheckbox svg {
+    display: none !important
+}
+.DialogCheckbox:not(.Active) {
+    background: #1D1D1D !important;
+    border: 0.5px solid #999999;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.DialogCheckbox:not(.Active) {
+    background: #2A2A2A !important;
+}
+.DialogCheckbox_Container:hover .DialogCheckbox:not(.Disabled), .DialogCheckbox:hover:not(.Disabled), .DialogCheckbox_Container:focus .DialogCheckbox:not(.Disabled), .DialogCheckbox:focus:not(.Disabled) {
+    background: var(--SystemAccentColorLight3);
+}
+.DialogCheckbox {
+    max-width: unset !important;
+    display: block !important;
+    flex-basis: unset !important;
+    flex-grow: unset !important;
+    transition: all .2s;
+}
+.gamelistdropdown_DropDown_EDl_m .gamelistdropdown_Rule_2kvdT {
+    background: #66666647 !important;
+}
+[class*="gamelistsearchbar_Container"] [class*="gamelistsearchbar_AdvancedSearchContainer"] [class*="gamelistsearchbar_AdvancedSearchPaneContainer"] [class*="gamelistsearchbar_AdvancedSearchPane"]:before {
+    background: none !important;
+}
+.appfilterpane_Container_170Np {
+    border-radius: 6px;
+    background: #2d2d2dde !important;
+    backdrop-filter: blur(29px);
+    border: .5px solid #66666645;
+}
+.gamelistsearchbar_AdvancedSearchPane_Woh0k {
+    border-radius: 10px !important;
+    background: transparent !important;
+}
+[class*="gamelistbar_Container_"] {
+    background: none !important;
+}
+[class*="gamelistsectionheader_Container_"] {
+    background: none !important;
+}
+span.gamelistsectionheader_SectionName_2mZ8L {color: white !important;text-transform: none !important;}
+.gamelistentry_Container_2-O4Z:hover, .gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy {
+    background: #2f2f2f !important;
+}
+.gamelistentry_Container_2-O4Z.gamelistentry_Uninstalled_5YTBr.Focusable {
+    color: #ababab !important;
+}
+.gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z:hover, .gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy, .gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z :hover, .gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z:hover, .gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy, .gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z :hover {
+    background: #3e3e3e !important;
+}
+.collapseicon_CollapseIconParent_ehAsU .collapseicon_Container_3SFRZ svg {
+    display: none;
+}
+.collapseicon_Container_3SFRZ.collapseicon_Collapsed_2hFLg::before {
+    font-family: FluentSystemIcons;
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+     margin-right: 5px;
+}
+.collapseicon_Container_3SFRZ::before {
+    font-family: FluentSystemIcons;
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-right: 5px;
+}
+.collapseicon_Container_3SFRZ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: unset !important;
+    order: 2;
+}
+.gamelistsectionheader_SectionRule_1PxXc {
+    background: #ffffff47;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 1px;
+}
+.gamelistsectionheader_Container_2sYIg.collapseicon_CollapseIconParent_ehAsU.Focusable {
+    width: inherit;
+}
+.gamelistsectionheader_SectionHeaderContent_3cV3O {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+.collapseicon_Container_3SFRZ {
+    margin-left: -4px !important;
+}
+span.gamelistentry_DownloadDash_2RggX {
+    font-size: 0px;
+}
+span.gamelistentry_DownloadDash_2RggX::after {content: "•";font-size: 13px;}
+.gamelistentry_Container_2-O4Z.gamelistentry_Updating_1LVQp {
+    color: var(--SystemAccentColorLight1) !important;
+}
+.gamelistentry_Container_2-O4Z .gamelistentry_GameListEntryContainer_1vO6B .gamelistentry_DownloadProgress_3uk3F {
+    color: var(--SystemAccentColorLight2);
+}
+.gamelistentry_AppIconDownloading_2kzMb svg.gamelistentry_DownloadProgressSVG_f6-7- circle {
+    stroke: var(--SystemAccentColorLight3);
+}
+.DialogMenuPosition.appgrid_SortingDropDownContainer_1ZpBQ.visible.contextmenu_ContextMenuFocusContainer_2qyBZ {
+    border-radius: 6px !important;
+    border: .5px solid #161616;
+    background: #2D2D2D !important;
+}
+.appgrid_SortingDropDownContainer_1ZpBQ>div.DesktopUI, .DesktopUI .appgrid_SortingDropDownContainer_1ZpBQ>div {
+    background: #2D2D2D !important;
+}
+.appgrid_SortingDropDownContainer_1ZpBQ .appgrid_SortingDropDownItems_1ZtpS:hover.DesktopUI, .DesktopUI .appgrid_SortingDropDownContainer_1ZpBQ .appgrid_SortingDropDownItems_1ZtpS:hover {
+    background: #3B3B3B !important;
+    border-radius: 6px !important;
+    color: white !important;
+    border-top: .5px solid #454545 !important;
+    padding: 0px 18px !important;
+}
+.appgrid_SortingDropDownContainer_1ZpBQ .appgrid_SortingDropDownItems_1ZtpS.DesktopUI, .DesktopUI .appgrid_SortingDropDownContainer_1ZpBQ .appgrid_SortingDropDownItems_1ZtpS {
+    border-top: .05px solid transparent;
+    height: 32px;
+}
+.appgrid_SortingDropDownContainer_1ZpBQ .appgrid_SortingDropDownItems_1ZtpS.DesktopUI, .DesktopUI .appgrid_SortingDropDownContainer_1ZpBQ .appgrid_SortingDropDownItems_1ZtpS:not(:last-child) {
+    margin-bottom: 5px;
+}
+.dropdown_DialogDropDownMenu_1tiuY._DialogInputContainer {
+    padding: 5px;
+}
+.libraryhome_LibraryHome_3Sb2o {
+    background: #202020 !important;
+}
+.libraryhome_UpdatesContainer_17uEB {
+    background: #202020 !important;
+}
+.smartscrollcontainer_Body_g6Mwh.libraryhome_InnerContainer_2AUVZ {
+    border-radius: 0px !important;
+}
+.libraryhome_UpdatesContainer_17uEB {
+    margin: 12px;
+    border-radius: 6px;
+    background: #2B2B2B !important;
+    border: .5px solid #1D1D1D;
+}
+.libraryhome_InnerContainer_2AUVZ {
+    background: #202020 !important;
+}
+.pageablecontainer_HeaderPageControls_2pAbU .pageablecontainer_Name_1Y5_H {
+    text-transform: none !important;
+    font-weight: 500 !important;
+    letter-spacing: unset !important;
+}
+.pageablecontainer_HeaderPageControls_2pAbU {
+    margin-bottom: 23px !important;
+    margin-top: 12px !important;
+}
+.LibraryDisplaySizeMedium .libraryhome_UpdatesContainer_17uEB {
+    height: 335px !important;
+}
+img.libraryhomenewupdates_PartnerEventRowCapsule_MainImage_1-W_Z {
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+.libraryhomenewupdates_PartnerEventRowCapsule_MainImageContainer_SPz0i {
+    border-radius: 4px;
+}
+.libraryhomenewupdates_Event_Title_1Gu1U div.libraryhomenewupdates_PartnerEventRowCapsule_TextTitle_DVBcp {
+    font-weight: normal;
+    letter-spacing: unset !important;
+    font-size: 14px !important;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.libraryhomenewupdates_GameIconAndName_3_xMy.Focusable {
+    padding: 2px 10px 2px 2px;
+    border-radius: 1000px;
+    border: 1px solid #3F3F3F;
+    background: rgba(95,101,107,.2) !important;
+    top: -100px;
+    right: 0;
+}
+.libraryassetimage_Container_1R9r2.libraryassetimage_GreyBackground_2E7G8.libraryhomenewupdates_GameIcon_3tdft img {
+    border-radius: 100px;
+    border: .5px solid #ffffff3d;
+    box-sizing: border-box;
+}
+.libraryhomenewupdates_SettingsButton_1eFe5::before {
+    content: "";
+    font-family: FluentSystemIcons;
+    font-size: 20px;
+}
+.libraryhomenewupdates_SettingsButton_1eFe5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+.libraryhomenewupdates_SettingsButton_1eFe5 svg {
+    display: none !important;
+}
+svg#arrowBase {
+    background: none !important;
+}
+.pageablecontainer_PageRight_2qGnL {
+    margin-right: 5px !important;
+}
+.libraryhomerecentgames_AddedDate_1ANYF {
+    position: relative;
+    background: #202020ad;
+    width: fit-content;
+    padding: 2px 8px 5px 8px;
+    backdrop-filter: blur(20px);
+    border-radius: 6px;
+    color: white;
+    border: 1px solid #ffffff21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.libraryhomerecentgames_AddedDate_1ANYF {
+    margin-bottom: -39px;
+    margin-top: 7px;
+    z-index: 999;
+    margin-left: 7px;
+}
+.libraryhomerecentgames_EmptyDate_33gR3 {
+    margin-bottom: -20px;
+}
+.libraryhomenewupdates_EventTime_2rlKq {
+    position: relative;
+    background: #202020ad;
+    width: fit-content;
+    padding: 2px 8px 5px 8px;
+    margin-left: 5px;
+    backdrop-filter: blur(20px);
+    margin-top: 5px;
+    border-radius: 6px;
+    color: white;
+    border: 1px solid #ffffff21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.libraryhomenewupdates_PartnerEventRowCapsule_Container_B-vCd.libraryhomenewupdates_HoversEnabled_278jF {
+    margin-top: -31px;
+    z-index: -1;
+}
+.libraryhomenewupdates_EventTime_2rlKq::before,
+.libraryhomerecentgames_AddedDate_1ANYF::before {
+    content: "";
+    font-family: FluentSystemIcons;
+    font-size: 14px;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+.DialogDropDown {
+    padding: 6px 6px 6px 12px !important;
+    border: .5px solid #3F3F3F !important;
+    background: #373737 !important;
+    border-radius: 6px;
+}
+.DialogDropDown:hover {
+    background: #3C3C3C !important;
+    box-shadow: none !important;
+}
+.DialogDropDown_Arrow::before {
+    content: "";
+    font-family: FluentSystemIcons;
+    margin-right: -5px;
+}
+.DialogDropDown_Arrow svg {
+    display: none;
+}
+.gamelistsearchbar_AdvancedSearchButton_1TxHd svg {
+    display: none;
+}
+.gamelistsearchbar_AdvancedSearchButton_1TxHd::before {content: "";font-family: FluentSystemIcons;font-size: 20px;}
+.gamelistsearchbar_AdvancedSearchButton_1TxHd svg {
+    display: none;
+}
+.gamelistsearchbar_AdvancedSearchButton_1TxHd::before {content: "";font-family: FluentSystemIcons;font-size: 20px;}
+.libraryhomeshowcases_ShowcaseOuter_2tC_c.Focusable {
+    background: #2b2b2b;
+    border-radius: 6px;
+    margin-top: 20px;
+    border: .5px solid #1d1d1d;
+    padding: 12px;
+}
+.DialogDropDown._DialogInputContainer.Panel {
+    font-size: 14px;
+    height: 32px;
+    align-items: center;
+}
+.appgrid_SortingDropDown_1tBzy ._DialogInputContainer .DialogDropDown_CurrentDisplay {
+    background: none !important;
+    letter-spacing: normal !important;
+    font-weight: normal !important;
+    padding-left: 0 !important;
+}
+.DialogDropDown_Arrow {
+    padding: 0 !important;
+    background: none !important;
+}
+.appgrid_SortingDropDownLabel_1ljKT {
+    text-transform: none !important;
+    font-weight: normal !important;
+    letter-spacing: normal !important;
+    font-size: 0px !important;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-right: -40px;
+    z-index: 990;
+}
+.appgrid_SortingDropDownLabel_1ljKT::before {content: "";font-family: FluentSystemIcons;font-size: 20px;}
+.appgrid_SortingDropDown_1tBzy ._DialogInputContainer {
+    padding-left: 40px !important;
+}
+.libraryhomeplaynext_PlayNextSubHead_1kdin {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    letter-spacing: normal !important;
+    font-weight: normal !important;
+    font-size: 13px;
+}
+.libraryhomeplaynext_PlayNextSubHead_1kdin {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    letter-spacing: normal !important;
+    font-weight: normal !important;
+    font-size: 13px;
+}
+.libraryhomeshowcases_AddShowcaseRow_3SkuN {
+    margin-bottom: -62px;
+    margin-top: 12px;
+    z-index: 1000;
+    position: relative;
+}
+.libraryhomeshowcases_ShowcaseOuter_2tC_c.Focusable:first-child {
+    padding-top: 40px;
+    z-index: -1;
+}
+.libraryhomeshowcases_Sortable_2Z9gJ {
+    z-index: 0;
+}
+.libraryhomeshowcases_AddShowcase_2aw5a svg {
+    display: none;
+}
+.libraryhomeshowcases_AddShowcase_2aw5a::before {content: "";font-family: FluentSystemIcons;font-size: 20px;margin-right: 5px;}
+.libraryhomeshowcases_AddShowcase_2aw5a {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-transform: n;
+}
+.appportrait_LibraryItemBox_WYgDg {
+    box-shadow: none !important;
+    border: 1px solid #1d1d1d;
+    box-sizing: border-box;
+    border-radius: 6px !important;
+}
+.boxcarousel_BoxCarousel_3fiHs.libraryhomerecentgames_RecentGames_1RLny {
+    height: 230px !important;
+}
+.gamelistdropdown_Bar_1ZS_x .gamelistdropdown_MenuHeader_2PF_m::before {content: "";font-family: FluentSystemIcons;font-size: 20px;}
+.gamelistdropdown_Bar_1ZS_x .gamelistdropdown_MenuHeader_2PF_m {
+    width: 35px !important;
+    flex: unset !important;
+    background: none !important;
+    border: none !important;
+    margin-left: 70px;
+}
+.gamelistdropdown_Arrow_15aGn {
+    display: none !important;
+}
+.gamelistdropdown_MenuHeader_2PF_m .gamelistdropdown_ViewName_3kSh7 {
+    display: none !important;
+}
+.gamelistdropdown_SearchBar_2WgQE {
+    width: -webkit-fill-available;
+    justify-content: left !important;
+}
+.gamelistdropdown_ScrollToTop_uE7Pj.Focusable {
+    display: none !important;
+}
+.gamelistdropdown_Bar_1ZS_x {order: 1;padding-top: 2px !important;}
+.gamelistsearchbar_Container_20QAC {
+    order: initial;
+}
+.gamelistbar_GameListHomeAndSearch_2TKEa {
+    display: flex !important;
+}
+.gamelist_Container_1ijTa {
+    order: 3;
+}
+.gamelistbar_GameListHomeAndSearch_2TKEa {
+    order: 2;
+    background: none !important;
+    border-bottom: none !important;
+    margin-top: -37px;
+    z-index: 100;
+    width: fit-content;
+}
+.gamelistbar_HomeBox_3AhYl {
+    width: fit-content;
+    flex: unset !important;
+}
+.gamelistbar_HomeBox_3AhYl .gamelisthome_Bar_3pSPl::before {
+    content: "";
+    font-family: FLuentSystemIcons;
+    font-size: 20px !important;
+}
+.gamelisthome_Label_3O48L {
+    display: none !important;
+}
+a.gamelisthome_Bar_3pSPl {
+    padding: 5px;
+}
+.gamelisthome_CollectionIcon_nC-pL::before {content: "";font-family: FluentSystemIcons;font-size: 20px;}
+.gamelisthome_CollectionIconBox_2tyaV {
+    display: none !important;
+}
+.gamelisthome_CollectionIcon_nC-pL {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+}
+a.gamelisthome_Bar_3pSPl.gamelisthome_CollectionButton_30KGS {
+    background: none !important;
+}
+a.gamelisthome_Bar_3pSPl {
+    background: none !important;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+}
+a.gamelisthome_Bar_3pSPl {
+    color: rgb(174, 174, 175) !important;
+    transition: color .2s;
+}
+a.gamelisthome_Bar_3pSPl:hover {
+    color: white !important;
+}
+a.gamelisthome_Bar_3pSPl.gamelisthome_CollectionButton_30KGS {
+    color: rgb(174, 174, 175) !important;
+    transition: color .2s;
+}
+a.gamelisthome_Bar_3pSPl.gamelisthome_CollectionButton_30KGS:hover {
+    color: white !important;
+}
+a.gamelisthome_Bar_3pSPl {
+    background: none !important;
+}
+a.gamelisthome_Bar_3pSPl.gamelisthome_Selected_eNLOx {
+    background: none !important;
+    color: white !important;
+}
+.library_LibraryWindowDivider_276E6.library_Sizable_2g5K_ {
+    min-width: 1px !important;
+    width: .5px !important;
+    background: #1D1D1D !important;
+}
+.gamelistbar_Container_3x1Hk::before,
+.appdetailsoverview_Container_27RcN.appdetailsoverview_Glassy_2OOzY::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../media/noise_1.png);
+    opacity: 0.4;
+    pointer-events: none;
+}
+.library_Container_3xRRJ {
+    display: inline-flex;
+    flex-direction: row;
+    height: 100% !important;
+    width: 100%!important;
+    overflow-y: scroll;
+}
+.library_LibraryWindowDivider_276E6.library_Sizable_2g5K_ {
+    margin-left: calc(17.9167% + 11px);
+}
+.library_LeftListSizableContainer_9sPoV {
+    position: fixed;
+    height: 100%;
+    z-index: 1;
+    height: 100%;
+    margin-right: 100px;
+}
+.smartscrollcontainer_Body_g6Mwh.appdetails_ScrollContainer_2l416.appdetails_Glassy_3Fmxx {
+    overflow: unset !important;
+}
+.library_AppDetailsTransitionGroup_2Dd4T {
+    overflow-y: unset !important;
+    overflow-x: unset !important;
+}
+.library_Container_3xRRJ {
+    overflow-x: hidden !important;
+}
+.gamelistbar_Container_3x1Hk {
+    backdrop-filter: blur(81px);
+}
+.gamelistentry_Container_2-O4Z.gamelistentry_Installed_2ws8D.gamelistentry_Selected_1UBpA.Focusable {
+    background: #13131370 !important;
+}
+.gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z:hover, .gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy, .gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z :hover, .gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z:hover, .gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy, .gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z :hover {
+    background: #33333330 !important;
+}
+.gamelistentry_Container_2-O4Z:hover, .gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy {
+    background: #1d1d1d5e !important;
+}
+.appdetails_ScrollContainer_2l416 .appdetails_InnerContainer_1Svpj {
+    overflow: unset !important; 
+}
+.appdetailssection_Body_5uvIN.appdetailsprimarylinkssection_LinksSectionBody_25f0f {
+    justify-content: center;
+}
+.appdetailsprimarylinkssection_Links_DgVQa.Panel {
+    width: 61%;
+}
+.appactivityday_PartnerEventMediumImage_Contents_2gv3E {
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+    padding: 12px;
+    flex-direction: row !important;
+}
+div.NarrowRightPanel .appactivityday_ImageContainer_1XpBI {
+    min-width: 305px;
+}
+.appdetailsachievementssection_AchievementProgressContainer_3ns91 .appdetailsachievementssection_AchievementProgress_3Rm36 {
+    background: var(--SystemAccentColorLight1) !important;
+}
+.appdetailsreviewsection_ReviewIconThumbsUp_2BlTq {
+    background: radial-gradient(ellipse farthest-corner at 6% 8%, var(--SystemAccentColorLight1) 0%, var(--SystemAccentColorDark1) 34%, var(--SystemAccentColorDark2) 100%) !important;
+}
+.appdetailsreviewsection_ReviewIconThumbsUpColor_3QZfw {
+    fill: var(--SystemAccentColorLight2) !important;
+}

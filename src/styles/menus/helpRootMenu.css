@@ -1,0 +1,37 @@
+@import url(rootMenu.css);
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:first-child::before {
+    content: "";
+}
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:first-child:hover::before {
+    content: "";
+}
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(4)::before {
+    content: "";
+}
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(4):hover::before {
+    content: "";
+}
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(6)::before {
+    content: "";
+}
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(6):hover::before {
+    content: "";
+}
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(8)::before {
+    content: "";
+}
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(8):hover::before {
+    content: "";
+}
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(11)::before {
+    content: "";
+}
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(11):hover::before {
+    content: "";
+}
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(14)::before {
+    content: "";
+}
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(14):hover::before {
+    content: "";
+}

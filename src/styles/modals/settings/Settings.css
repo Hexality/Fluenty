@@ -1,0 +1,183 @@
+/* Set the width of the sidebar */
+[class*='pagedsettings_PagedSettingsDialog_PageListColumn_'] {
+    min-width: 330px !important;
+}
+.title-area-children::after {
+    content: "Settings";
+    float: left;
+    padding-top: 16px;
+    font-size: 12px;
+    color: white;
+    font-weight: normal;
+}
+.title-area-children::before {
+    content: "";
+    font-family: FluentSystemIcons;
+    float: left;
+    padding: 18px;
+    font-size: 14px
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_'] [class*='pagedsettings_PageListItem_Icon_'] svg {
+    display: none !important;
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_'] [class*='pagedsettings_PageListItem_Icon_']::before{
+    border-radius: 4px !important;
+    text-align: center;
+    color: #fff;
+    font-size: 20px !important;
+    line-height: 18px !important;
+    margin-right: 15px !important;
+    font-family: FluentSystemIcons !important;
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'].Panel {
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 100% !important;
+}
+.pagedsettings_PagedSettingsDialog_PageListColumn_RTicB.PageListColumn.Panel {
+    height: unset !important;
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(1):not(.pagedsettings_Active_Myra7) [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "" !important;
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(1):hover [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "";
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(1) [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "";
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(2):not(.pagedsettings_Active_Myra7) [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "" !important;
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(2):hover [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "";
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(2) [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "";
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(3):not(.pagedsettings_Active_Myra7) [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "" !important;
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(3):hover [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "";
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(3) [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "";
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(4):not(.pagedsettings_Active_Myra7) [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "" !important;
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(4):hover [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "";
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(4) [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "";
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(6):not(.pagedsettings_Active_Myra7) [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "" !important;
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(6):hover [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "";
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(6) [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "";
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(7):not(.pagedsettings_Active_Myra7) [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "" !important;
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(7):hover [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "";
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(7) [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "";
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(8):not(.pagedsettings_Active_Myra7) [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "" !important;
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(8):hover [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "";
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(8) [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "";
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(9):not(.pagedsettings_Active_Myra7) [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "" !important;
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(9):hover [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "";
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(9) [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "";
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(10):not(.pagedsettings_Active_Myra7) [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "" !important;
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(10):hover [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "";
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(10) [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "";
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(11):not(.pagedsettings_Active_Myra7) [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "" !important;
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(11):hover [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "";
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(11) [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "";
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(12):not(.pagedsettings_Active_Myra7) [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "" !important;
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(12):hover [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "";
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(12) [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "";
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(14):not(.pagedsettings_Active_Myra7) [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "" !important;
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(14):hover [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "";
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(14) [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "";
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(15):not(.pagedsettings_Active_Myra7) [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "" !important;
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(15):hover [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "";
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(15) [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "";
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(16):not(.pagedsettings_Active_Myra7) [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "" !important;
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(16):hover [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "";
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(16) [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "";
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(17):not(.pagedsettings_Active_Myra7) [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "" !important;
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(17):hover [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "";
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(17) [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "";
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(18):not(.pagedsettings_Active_Myra7) [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "" !important;
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(18):hover [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "";
+}
+[class*='pagedsettings_PagedSettingsDialog_PageList_'] [class*='pagedsettings_PagedSettingsDialog_PageListItem_']:nth-child(18) [class*='pagedsettings_PageListItem_Icon_']::before {
+    content: "";
+}

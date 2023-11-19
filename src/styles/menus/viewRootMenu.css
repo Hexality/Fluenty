@@ -1,0 +1,91 @@
+@import url(rootMenu.css);
+/* Library */
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:first-child::before {
+    content: "";
+}
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:first-child:hover::before {
+    content: "";
+}
+/* Downloads */
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(6)::before {
+    content: "";
+}
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(6):hover::before {
+    content: "";
+}
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(8)::before {
+    content: "";
+}
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(8):hover::before {
+    content: "";
+}
+/* Small Mode */
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(11)::before {
+    content: "";
+}
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(11):hover::before {
+    content: "";
+}
+/* Big Picture */
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(13)::before {
+    content: "";
+}
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(13):hover::before {
+    content: "";
+}
+/* Music Player */
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(15)::before {
+    content: "";
+}
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(15):hover::before {
+    content: "";
+}
+/* Players */
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(4)::before {
+    content: "";
+}
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(4):hover::before {
+    content: "";
+} 
+/* Friends and Chat */
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(16)::before {
+    content: "";
+}
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(16):hover::before {
+    content: "";
+}
+/* Player */
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(18)::before {
+    content: "";
+}
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(18):hover::before {
+    content: "";
+}
+/* Servers */
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(20)::before {
+    content: "";
+}
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(20):hover::before {
+    content: "";
+}
+/* Screenshots */
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(22)::before {
+    content: "";
+}
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(22):hover::before {
+    content: "";
+}
+/* Inventory */
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(24)::before {
+    content: "";
+}
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(24):hover::before {
+    content: "";
+}
+/* Update News */
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(26)::before {
+    content: "";
+}
+[class*="menu_MenuItem_"][class*="menu_Item_"][class*="contextmenu_contextMenuItem_"].contextMenuItem:nth-child(26):hover::before {
+    content: "";
+}
